@@ -1,0 +1,62 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/db06e42a66c0b7d3dad9ddf27b6d31dc.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:53:06:832][v8fuzz_runtime][3792255][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:53:06:832][v8fuzz_runtime][3792255][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:53:06:832][v8fuzz_runtime][3792255][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:53:06:833][v8fuzz_runtime][3792255][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:53:06:833][v8fuzz_runtime][3792255][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/db06e42a66c0b7d3dad9ddf27b6d31dc.ron'
+[2026-03-21 04:53:06:833][v8fuzz_runtime][3792255][input.rs:175][INFO] Loaded 3221 bytes input
+[2026-03-21 04:53:06:833][v8fuzz_runtime][3792255][input.rs:68][TRACE] loaded js file is 1132 bytes long
+[2026-03-21 04:53:06:833][v8fuzz_runtime][3792255][input.rs:70][TRACE] total_msk_len is Some(1973) bytes
+[2026-03-21 04:53:06:833][v8fuzz_runtime][3792255][input.rs:80][TRACE] Of the 1973 bytes, are 98.8342625443487% zeros (i.e., have no effect)
+[2026-03-21 04:53:06:833][v8fuzz_runtime][3792255][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(4)
+[2026-03-21 04:53:06:841][v8fuzz_runtime][3792255][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:53:06:841][v8fuzz_runtime][3792255][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:53:07:078][v8fuzz_runtime][3792255][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:53:07:082][v8fuzz_runtime][3792255][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:53:07:082][v8fuzz_runtime][3792255][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(4)
+[2026-03-21 04:53:07:087][v8fuzz_runtime][3792255][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(19)
+[2026-03-21 04:53:07:087][v8fuzz_runtime][3792255][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(20)
+[2026-03-21 04:53:07:087][v8fuzz_runtime][3792255][runtime.rs:212][INFO] Reached delayed fork position after 4 injection points (not forking, because we are running without an attached fuzzer)
+[2026-03-21 04:53:07:087][v8fuzz_runtime][3792255][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(21)
+[2026-03-21 04:53:07:087][v8fuzz_runtime][3792255][runtime.rs:150][TRACE] Setting enable_fuzzing. Fuzzing can start now.
+
+## V8 sandbox violation detected!
+
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3792255==ERROR: AddressSanitizer: SEGV on unknown address 0x6d334c504c5c (pc 0x587cd07dd865 bp 0x7ffcf5b23ed0 sp 0x7ffcf5b23e60 T0)
+==3792255==The signal is caused by a READ memory access.
+    #0 0x587cd07dd865 in v8::internal::WasmDispatchTable::SetForNonWrapper(int, v8::internal::Tagged<v8::internal::Object>, v8::internal::WasmCodePointer, v8::internal::wasm::CanonicalTypeIndex, v8::internal::WasmDispatchTable::NewOrExistingEntry) src/common/ptr-compr.h:192:12
+    #1 0x587cd07d104e in v8::internal::WasmTableObject::UpdateDispatchTable(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::WasmTableObject>, int, v8::internal::wasm::WasmFunction const*, v8::internal::DirectHandle<v8::internal::WasmTrustedInstanceData>) src/wasm/wasm-objects.cc:582:21
+    #2 0x587cd07cab72 in v8::internal::WasmTableObject::SetFunctionTableEntry(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::WasmTableObject>, int, v8::internal::DirectHandle<v8::internal::Object>) src/wasm/wasm-objects.cc:357:5
+    #3 0x587cd07c291b in v8::internal::WasmTableObject::Grow(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::WasmTableObject>, unsigned int, v8::internal::DirectHandle<v8::internal::Object>) src/wasm/wasm-objects.cc:320:5
+    #4 0x587cd06e9321 in v8::internal::wasm::WebAssemblyTableGrow(v8::FunctionCallbackInfo<v8::Value> const&) src/wasm/wasm-js.cc:2611:24
+    #5 0x587cd75254ad in Builtins_CallApiCallbackGeneric setup-isolate-deserialize.cc
+    #6 0x587cd752365d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #7 0x587cd7520f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #8 0x587cd7520caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #9 0x587ccaeae34e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #10 0x587ccaeb42a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #11 0x587cca14d1bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #12 0x587cc9b17d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #13 0x587cc9ba86db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #14 0x587cc9bc97d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #15 0x587cc9bc7d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #16 0x587cc9bd16bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #17 0x71343ed011c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #18 0x71343ed0128a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #19 0x587cc99be029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+==3792255==Register values:
+rax = 0x0000000000000000  rbx = 0x000000004c4c48a0  rcx = 0x0000000000000004  rdx = 0x00007dd000000000  
+rdi = 0x00007ffcf5b23f00  rsi = 0x00000000c4c4c48a  rbp = 0x00007ffcf5b23ed0  rsp = 0x00007ffcf5b23e60  
+ r8 = 0x0000000000000004   r9 = 0x0000000000000001  r10 = 0x00007fffffffff01  r11 = 0x0000000000000001  
+r12 = 0x0000010000000000  r13 = 0x000000004c4c48bb  r14 = 0x00006d33000403a1  r15 = 0x00006d334c504c5c  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/common/ptr-compr.h:192:12 in v8::internal::WasmDispatchTable::SetForNonWrapper(int, v8::internal::Tagged<v8::internal::Object>, v8::internal::WasmCodePointer, v8::internal::wasm::CanonicalTypeIndex, v8::internal::WasmDispatchTable::NewOrExistingEntry)
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3792255==ABORTING

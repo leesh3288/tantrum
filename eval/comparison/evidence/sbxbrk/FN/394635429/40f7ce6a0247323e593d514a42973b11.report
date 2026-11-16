@@ -1,0 +1,132 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/40f7ce6a0247323e593d514a42973b11.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:50:26:124][v8fuzz_runtime][3787757][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:50:26:124][v8fuzz_runtime][3787757][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:50:26:124][v8fuzz_runtime][3787757][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:50:26:125][v8fuzz_runtime][3787757][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:50:26:125][v8fuzz_runtime][3787757][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/40f7ce6a0247323e593d514a42973b11.ron'
+[2026-03-21 04:50:26:125][v8fuzz_runtime][3787757][input.rs:175][INFO] Loaded 16717 bytes input
+[2026-03-21 04:50:26:126][v8fuzz_runtime][3787757][input.rs:68][TRACE] loaded js file is 216 bytes long
+[2026-03-21 04:50:26:126][v8fuzz_runtime][3787757][input.rs:70][TRACE] total_msk_len is Some(16384) bytes
+[2026-03-21 04:50:26:126][v8fuzz_runtime][3787757][input.rs:80][TRACE] Of the 16384 bytes, are 99.957275390625% zeros (i.e., have no effect)
+[2026-03-21 04:50:26:126][v8fuzz_runtime][3787757][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: None
+[2026-03-21 04:50:26:135][v8fuzz_runtime][3787757][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:50:26:135][v8fuzz_runtime][3787757][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:50:26:370][v8fuzz_runtime][3787757][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:50:26:374][v8fuzz_runtime][3787757][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:50:26:374][v8fuzz_runtime][3787757][runtime.rs:150][TRACE] Setting enable_fuzzing. Fuzzing can start now.
+=================================================================
+==3787757==ERROR: AddressSanitizer: use-after-poison on address 0x7b2ed89d2cb0 at pc 0x64b6b41d5734 bp 0x7ffc5cd2e100 sp 0x7ffc5cd2e0f8
+WRITE of size 8 at 0x7b2ed89d2cb0 thread T0
+    #0 0x64b6b41d5733 in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::GetCapture(int) src/zone/zone-list.h:177:6
+    #1 0x64b6b41c099a in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::ParseDisjunction() src/regexp/regexp-parser.cc:1087:42
+    #2 0x64b6b4189d43 in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::Parse(v8::internal::RegExpCompileData*) src/regexp/regexp-parser.cc:899:24
+    #3 0x64b6b41ac253 in v8::internal::RegExpParser::ParseRegExpFromHeapString(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::DirectHandle<v8::internal::String>, v8::base::Flags<v8::internal::RegExpFlag, int, int>, v8::internal::RegExpCompileData*) src/regexp/regexp-parser.cc:3260:10
+    #4 0x64b6b4291ca2 in v8::internal::RegExpImpl::CompileIrregexp(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::IrRegExpData>, v8::internal::Handle<v8::internal::String>, bool) src/regexp/regexp.cc:619:8
+    #5 0x64b6b42829de in v8::internal::RegExpImpl::IrregexpPrepare(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::IrRegExpData>, v8::internal::Handle<v8::internal::String>) src/regexp/regexp.cc:538:10
+    #6 0x64b6b42845b6 in v8::internal::RegExpImpl::IrregexpExec(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::IrRegExpData>, v8::internal::Handle<v8::internal::String>, int, int*, unsigned int) src/regexp/regexp.cc:831:7
+    #7 0x64b6b4283c66 in v8::internal::RegExp::Exec(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, int, int*, unsigned int) src/regexp/regexp.cc:341:14
+    #8 0x64b6b479578f in v8::internal::Runtime_RegExpExec(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-regexp.cc:926:10
+    #9 0x64b6bd65de35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #10 0x64b6bd6ee175 in Builtins_RegExpPrototypeExecSlow setup-isolate-deserialize.cc
+    #11 0x64b6bd6effd8 in Builtins_RegExpPrototypeExec setup-isolate-deserialize.cc
+    #12 0x64b6bd5a3f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #13 0x64b6bd5a3caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #14 0x64b6b0f3134e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #15 0x64b6b0f2d7dd in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #16 0x64b6b427c11d in v8::internal::RegExpUtils::RegExpExec(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::DirectHandle<v8::internal::String>, v8::internal::DirectHandle<v8::internal::Object>) src/regexp/regexp-utils.cc:110:5
+    #17 0x64b6b47b469a in v8::internal::Runtime_RegExpReplaceRT(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-regexp.cc:1933:5
+    #18 0x64b6bd65de35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #19 0x64b6bd6fcd04 in Builtins_RegExpPrototypeReplace setup-isolate-deserialize.cc
+    #20 0x64b6bd64728e in Builtins_StringPrototypeReplace setup-isolate-deserialize.cc
+    #21 0x64b6bd5a665d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #22 0x64b6bd5a3f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #23 0x64b6bd5a3caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #24 0x64b6b0f3134e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #25 0x64b6b0f372a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #26 0x64b6b01d01bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #27 0x64b6afb9ad17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #28 0x64b6afc2b6db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #29 0x64b6afc4c7d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #30 0x64b6afc4ad16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #31 0x64b6afc546bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #32 0x7cded93011c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #33 0x7cded930128a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #34 0x64b6afa41029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+0x7b2ed89d2cb0 is located 944 bytes inside of 8192-byte region [0x7b2ed89d2900,0x7b2ed89d4900)
+allocated by thread T0 here:
+    #0 0x64b6afae4908 in malloc (/work/v8-build/out/fuzzing-build/d8+0x1d32908) (BuildId: 8baf296317236785)
+    #1 0x64b6b4ba52e8 in v8::internal::AllocAtLeastWithRetry(unsigned long) src/base/platform/memory.h:44:10
+    #2 0x64b6b4bc7bf3 in v8::internal::AccountingAllocator::AllocateSegment(unsigned long, bool) src/zone/accounting-allocator.cc:89:19
+    #3 0x64b6b4bca2a0 in v8::internal::Zone::Expand(unsigned long) src/zone/zone.cc:179:19
+    #4 0x64b6b4bc9edb in v8::internal::Zone::AsanNew(unsigned long) src/zone/zone.cc:55:5
+    #5 0x64b6b41b456b in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::ParseDisjunction() src/zone/zone.h:63:12
+    #6 0x64b6b4189d43 in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::Parse(v8::internal::RegExpCompileData*) src/regexp/regexp-parser.cc:899:24
+    #7 0x64b6b41ac253 in v8::internal::RegExpParser::ParseRegExpFromHeapString(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::DirectHandle<v8::internal::String>, v8::base::Flags<v8::internal::RegExpFlag, int, int>, v8::internal::RegExpCompileData*) src/regexp/regexp-parser.cc:3260:10
+    #8 0x64b6b4291ca2 in v8::internal::RegExpImpl::CompileIrregexp(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::IrRegExpData>, v8::internal::Handle<v8::internal::String>, bool) src/regexp/regexp.cc:619:8
+    #9 0x64b6b42829de in v8::internal::RegExpImpl::IrregexpPrepare(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::IrRegExpData>, v8::internal::Handle<v8::internal::String>) src/regexp/regexp.cc:538:10
+    #10 0x64b6b42845b6 in v8::internal::RegExpImpl::IrregexpExec(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::IrRegExpData>, v8::internal::Handle<v8::internal::String>, int, int*, unsigned int) src/regexp/regexp.cc:831:7
+    #11 0x64b6b4283c66 in v8::internal::RegExp::Exec(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, int, int*, unsigned int) src/regexp/regexp.cc:341:14
+    #12 0x64b6b479578f in v8::internal::Runtime_RegExpExec(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-regexp.cc:926:10
+    #13 0x64b6bd65de35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #14 0x64b6bd6ee175 in Builtins_RegExpPrototypeExecSlow setup-isolate-deserialize.cc
+    #15 0x64b6bd6effd8 in Builtins_RegExpPrototypeExec setup-isolate-deserialize.cc
+    #16 0x64b6bd5a3f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #17 0x64b6bd5a3caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #18 0x64b6b0f3134e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #19 0x64b6b0f2d7dd in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #20 0x64b6b427c11d in v8::internal::RegExpUtils::RegExpExec(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSReceiver>, v8::internal::DirectHandle<v8::internal::String>, v8::internal::DirectHandle<v8::internal::Object>) src/regexp/regexp-utils.cc:110:5
+    #21 0x64b6b47b469a in v8::internal::Runtime_RegExpReplaceRT(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-regexp.cc:1933:5
+    #22 0x64b6bd65de35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #23 0x64b6bd6fcd04 in Builtins_RegExpPrototypeReplace setup-isolate-deserialize.cc
+    #24 0x64b6bd64728e in Builtins_StringPrototypeReplace setup-isolate-deserialize.cc
+    #25 0x64b6bd5a665d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #26 0x64b6bd5a3f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #27 0x64b6bd5a3caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #28 0x64b6b0f3134e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #29 0x64b6b0f372a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+
+SUMMARY: AddressSanitizer: use-after-poison src/zone/zone-list.h:177:6 in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::GetCapture(int)
+Shadow bytes around the buggy address:
+  0x7b2ed89d2a00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7b2ed89d2a80: 00 00 00 f7 f7 f7 00 00 00 00 00 00 00 00 00 00
+  0x7b2ed89d2b00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7b2ed89d2b80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7b2ed89d2c00: 00 00 00 00 00 00 f7 f7 f7 00 00 f7 f7 f7 00 f7
+=>0x7b2ed89d2c80: f7 f7 00 00 00 f7[f7]f7 00 00 f7 f7 f7 00 f7 f7
+  0x7b2ed89d2d00: f7 00 00 00 00 00 f7 f7 f7 00 00 00 00 00 f7 f7
+  0x7b2ed89d2d80: f7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7b2ed89d2e00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7b2ed89d2e80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x7b2ed89d2f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+NOTE: the stack trace above identifies the code that *accessed* the poisoned memory.
+To identify the code that *poisoned* the memory, try the experimental setting ASAN_OPTIONS=poison_history_size=<size>.
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3787757==ABORTING
+
+## V8 sandbox violation detected!
+

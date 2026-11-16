@@ -1,0 +1,278 @@
+[*] ===== testcase =====
+CMD: builds/fe14dcc/d8 --single-threaded --allow-natives-syntax --expose-gc --sandbox-testing --trace-turbo-path=nonexistent --allow-natives-syntax --turbofan --allow-natives-syntax --turbolev --turbofan ./test/mjsunit/mjsunit.js ./runner.js -- test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js
+Hook Logs (Max 0x1000):
+- [*] watching 0x57590, 0x1177c0, 0x1b7fc0, 0x1b9780
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits -0x761, -0x63d, -0x1e3, -0x125, -0xf4, 0x11d, 0x2cd
+-     [+] => addr 0x3cec000574a3 : 0x20 -> 0xa0
+-     [+] => addr 0x3cec000574c8 : 0x20 -> 0x28
+-     [+] => addr 0x3cec00057553 : 0x20 -> 0x0
+-     [+] => addr 0x3cec0005756b : 0x78 -> 0x70
+-     [+] => addr 0x3cec00057571 : 0xa -> 0x1a
+-     [+] => addr 0x3cec000575b3 : 0x0 -> 0x20
+-     [+] => addr 0x3cec000575e9 : 0x0 -> 0x20
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits -0x7c5, -0x5e6, -0x5da, -0x275, -0x10f, 0xfe, 0x258, 0x290, 0x42a, 0x594, 0x68a, 0x68c, 0x6bb
+-     [+] => addr 0x3cec00057497 : 0x31 -> 0x39
+-     [+] => addr 0x3cec000574d3 : 0x20 -> 0x24
+-     [+] => addr 0x3cec000574d4 : 0x3d -> 0x7d
+-     [+] => addr 0x3cec00057541 : 0x20 -> 0x28
+-     [+] => addr 0x3cec0005756e : 0x20 -> 0x22
+-     [+] => addr 0x3cec000575af : 0x0 -> 0x40
+-     [+] => addr 0x3cec000575db : 0x0 -> 0x1
+-     [+] => addr 0x3cec000575e2 : 0x0 -> 0x1
+-     [+] => addr 0x3cec00057615 : 0x0 -> 0x4
+-     [+] => addr 0x3cec00057642 : 0x0 -> 0x10
+-     [+] => addr 0x3cec00057661 : 0x0 -> 0x4
+-     [+] => addr 0x3cec00057661 : 0x4 -> 0x14
+-     [+] => addr 0x3cec00057667 : 0x0 -> 0x8
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits -0x6fd, -0x65a, 0x62c
+-     [+] => addr 0x3cec000574b0 : 0x3d -> 0x35
+-     [+] => addr 0x3cec000574c4 : 0x31 -> 0x71
+-     [+] => addr 0x3cec00057655 : 0x0 -> 0x10
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits -0x737, -0x624, -0x48b, -0x2d8, -0xf8, -0x5f, 0x13, 0x6f, 0xcc, 0x295, 0x2c7, 0x430, 0x599, 0x6c9, 0x7c8, 0x7de
+-     [+] => addr 0x3cec000574a9 : 0x31 -> 0x33
+-     [+] => addr 0x3cec000574cb : 0x3d -> 0x2d
+-     [+] => addr 0x3cec000574fe : 0x20 -> 0x0
+-     [+] => addr 0x3cec00057535 : 0x78 -> 0x79
+-     [+] => addr 0x3cec00057571 : 0x1a -> 0x1b
+-     [+] => addr 0x3cec00057584 : 0x20 -> 0x22
+-     [+] => addr 0x3cec00057592 : 0x20 -> 0x28
+-     [+] => addr 0x3cec0005759d : 0x0 -> 0x80
+-     [+] => addr 0x3cec000575a9 : 0x0 -> 0x10
+-     [+] => addr 0x3cec000575e2 : 0x1 -> 0x21
+-     [+] => addr 0x3cec000575e8 : 0x0 -> 0x80
+-     [+] => addr 0x3cec00057616 : 0x0 -> 0x1
+-     [+] => addr 0x3cec00057643 : 0x0 -> 0x2
+-     [+] => addr 0x3cec00057669 : 0x0 -> 0x2
+-     [+] => addr 0x3cec00057689 : 0x0 -> 0x1
+-     [+] => addr 0x3cec0005768b : 0x0 -> 0x40
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits 0x74, 0xef
+-     [+] => addr 0x3cec0005759e : 0x0 -> 0x10
+-     [+] => addr 0x3cec000575ad : 0x0 -> 0x80
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits 0x41c
+-     [+] => addr 0x3cec00057613 : 0x0 -> 0x10
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits -0x6b1, -0x51b, -0x2e6, -0x1d3, 0x497, 0x50a, 0x609, 0x631, 0x695, 0x720
+-     [+] => addr 0x3cec000574b9 : 0x3d -> 0xbd
+-     [+] => addr 0x3cec000574ec : 0x20 -> 0x0
+-     [+] => addr 0x3cec00057533 : 0x20 -> 0x24
+-     [+] => addr 0x3cec00057555 : 0x3b -> 0x1b
+-     [+] => addr 0x3cec00057622 : 0x0 -> 0x80
+-     [+] => addr 0x3cec00057631 : 0x0 -> 0x4
+-     [+] => addr 0x3cec00057651 : 0x0 -> 0x2
+-     [+] => addr 0x3cec00057656 : 0x0 -> 0x2
+-     [+] => addr 0x3cec00057662 : 0x0 -> 0x20
+-     [+] => addr 0x3cec00057674 : 0x0 -> 0x1
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0x3cec00057590 - targeting addresses 0x3cec00057590
+-     [*] 0x3cec00057590 - flipping bits -0x6a2, -0x66a, -0x38b, -0x372, 0xee, 0x1fd, 0x392, 0x70f
+-     [+] => addr 0x3cec000574bb : 0x31 -> 0x71
+-     [+] => addr 0x3cec000574c2 : 0x3d -> 0x7d
+-     [+] => addr 0x3cec0005751e : 0x31 -> 0x11
+-     [+] => addr 0x3cec00057521 : 0x20 -> 0x60
+-     [+] => addr 0x3cec000575ad : 0x80 -> 0xc0
+-     [+] => addr 0x3cec000575cf : 0x0 -> 0x20
+-     [+] => addr 0x3cec00057602 : 0x0 -> 0x4
+-     [+] => addr 0x3cec00057671 : 0x0 -> 0x80
+- [*] mprotect(0x7fffd7c80000, 0x10000, 0b11)
+- [*] watching 0x71b68, 0x11eae0, 0x12a348, 0x19d0b8
+- [*] mprotect(0x3cef00000000, 0x10000, 0b11)
+- [*] watching 0x7fe80, 0xaa218, 0xf1938, 0x11d0d0
+- [*] mprotect(0x7fffefca0000, 0x10000, 0b11)
+- [*] watching 0x73aa0, 0xaef98, 0xca3a8, 0x19e5d8
+- [+] hit @ 0x555555cdaee3 on accessing address 0x3cec0019e5d8 - targeting addresses 0x3cec0019e5d8
+-     [*] 0x3cec0019e5d8 - flipping bits -0x2f7, -0x26c, -0x4f, 0x2bd, 0x645, 0x6e0
+-     [+] => addr 0x3cec0019e579 : 0x8 -> 0xa
+-     [+] => addr 0x3cec0019e58a : 0x0 -> 0x10
+-     [+] => addr 0x3cec0019e5ce : 0x40 -> 0x42
+-     [+] => addr 0x3cec0019e62f : 0x0 -> 0x20
+-     [+] => addr 0x3cec0019e6a0 : 0x0 -> 0x20
+-     [+] => addr 0x3cec0019e6b4 : 0x0 -> 0x1
+- [+] hit @ 0x555555fd979d on accessing address 0x3cec0019e5d8 - targeting addresses 0x3cec0019e5d8
+-     [*] 0x3cec0019e5d8 - flipping bits -0x752, -0x52d, -0x4b1, -0x18, 0x206
+-     [+] => addr 0x3cec0019e4ed : 0x0 -> 0x40
+-     [+] => addr 0x3cec0019e532 : 0x0 -> 0x8
+-     [+] => addr 0x3cec0019e541 : 0xdf -> 0x5f
+-     [+] => addr 0x3cec0019e5d5 : 0x0 -> 0x1
+-     [+] => addr 0x3cec0019e618 : 0x0 -> 0x40
+- [*] sigaction(11, 93825021703088, 0)
+- [*] sigaction(6, 93825021689256, 0)
+[*] ===== stderr log =====
+## V8 sandbox violation detected!
+
+Received signal 11 SEGV_MAPERR 002d00001db3
+
+==== C stack trace ===============================
+
+builds/fe14dcc/d8(+0x19ba2c7)[0x555556f0e2c7]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7cd1330]
+builds/fe14dcc/d8(+0xd29f88)[0x55555627df88]
+builds/fe14dcc/d8(+0xd3b77a)[0x55555628f77a]
+builds/fe14dcc/d8(+0xd3b203)[0x55555628f203]
+builds/fe14dcc/d8(+0xcc81a5)[0x55555621c1a5]
+builds/fe14dcc/d8(+0xcc74c8)[0x55555621b4c8]
+builds/fe14dcc/d8(+0xcc48d0)[0x5555562188d0]
+builds/fe14dcc/d8(+0x147ea61)[0x5555569d2a61]
+builds/fe14dcc/d8(+0x12c5308)[0x555556819308]
+builds/fe14dcc/d8(+0x12bb940)[0x55555680f940]
+builds/fe14dcc/d8(+0x12bb85f)[0x55555680f85f]
+builds/fe14dcc/d8(+0x64f4df)[0x555555ba34df]
+builds/fe14dcc/d8(+0x650d8d)[0x555555ba4d8d]
+builds/fe14dcc/d8(+0xbb35b9)[0x5555561075b9]
+builds/fe14dcc/d8(+0xbaf721)[0x555556103721]
+builds/fe14dcc/d8(+0x18151b6)[0x555556d691b6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+[*] running test: test/mjsunit/asm/zero-extend.js
+[*] running test: test/mjsunit/compiler/for-in-1.js
+[*] running test: test/mjsunit/regress/regress-abort-preparsing-params.js
+[*] running test: test/mjsunit/turboshaft/maglev-frontend/generator-async.js
+
+
+[*] ===== memory map =====
+MemoryMap(start=0x10000, end=0x100000000, permissions=---p, size=0xffff0000, offset=0x0, backing_file=anon_10000)
+MemoryMap(start=0x1e4600000000, end=0x1e4600100000, permissions=---p, size=0x100000, offset=0x0, backing_file=anon_1e4600000000)
+MemoryMap(start=0x1e4600100000, end=0x1e4600101000, permissions=rw-p, size=0x1000, offset=0x0, backing_file=anon_1e4600100000)
+MemoryMap(start=0x1e4600101000, end=0x1e4600140000, permissions=---p, size=0x3f000, offset=0x0, backing_file=anon_1e4600101000)
+MemoryMap(start=0x1e4600140000, end=0x1e4600180000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_1e4600140000)
+MemoryMap(start=0x1e4600180000, end=0x1e4640000000, permissions=---p, size=0x3fe80000, offset=0x0, backing_file=anon_1e4600180000)
+MemoryMap(start=0x200c4b24e000, end=0x200c4b258000, permissions=rwxp, size=0xa000, offset=0x0, backing_file=anon_200c4b24e000)
+MemoryMap(start=0x3ce300000000, end=0x3cec00000000, permissions=---p, size=0x900000000, offset=0x0, backing_file=anon_3ce300000000)
+MemoryMap(start=0x3cec00000000, end=0x3cec00010000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_3cec00000000)
+MemoryMap(start=0x3cec00010000, end=0x3cec00020000, permissions=---p, size=0x10000, offset=0x0, backing_file=anon_3cec00010000)
+MemoryMap(start=0x3cec00020000, end=0x3cec00040000, permissions=r--p, size=0x20000, offset=0x0, backing_file=anon_3cec00020000)
+MemoryMap(start=0x3cec00040000, end=0x3cec00143000, permissions=rw-p, size=0x103000, offset=0x0, backing_file=anon_3cec00040000)
+MemoryMap(start=0x3cec00143000, end=0x3cec00180000, permissions=---p, size=0x3d000, offset=0x0, backing_file=anon_3cec00143000)
+MemoryMap(start=0x3cec00180000, end=0x3cec001c0000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_3cec00180000)
+MemoryMap(start=0x3cec001c0000, end=0x3cec00280000, permissions=---p, size=0xc0000, offset=0x0, backing_file=anon_3cec001c0000)
+MemoryMap(start=0x3cec00280000, end=0x3cec00299000, permissions=r--p, size=0x19000, offset=0x0, backing_file=anon_3cec00280000)
+MemoryMap(start=0x3cec00299000, end=0x3cec002c0000, permissions=---p, size=0x27000, offset=0x0, backing_file=anon_3cec00299000)
+MemoryMap(start=0x3cec002c0000, end=0x3cef00000000, permissions=---p, size=0x2ffd40000, offset=0x0, backing_file=anon_3cec002c0000)
+MemoryMap(start=0x3cef00000000, end=0x3cef00010000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_3cef00000000)
+MemoryMap(start=0x3cef00010000, end=0x3e2d00000000, permissions=---p, size=0x13dffff0000, offset=0x0, backing_file=anon_3cef00010000)
+MemoryMap(start=0x555555554000, end=0x555555a74000, permissions=r--p, size=0x520000, offset=0x0, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x555555a75000, end=0x55555709b000, permissions=r-xp, size=0x1626000, offset=0x520000, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x55555709b000, end=0x5555570fb000, permissions=r--p, size=0x60000, offset=0x1b45000, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x5555570fc000, end=0x555557106000, permissions=rw-p, size=0xa000, offset=0x1ba5000, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x555557106000, end=0x555557107000, permissions=r--p, size=0x1000, offset=0x1baf000, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x555557107000, end=0x555557108000, permissions=rw-p, size=0x1000, offset=0x1bb0000, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x555557108000, end=0x555557109000, permissions=r--p, size=0x1000, offset=0x1bb1000, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x555557109000, end=0x555557118000, permissions=rw-p, size=0xf000, offset=0x1bb2000, backing_file=/tantrum/builds/fe14dcc/d8)
+MemoryMap(start=0x555557118000, end=0x55555718e000, permissions=rw-p, size=0x76000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x55555718e000, end=0x555557276000, permissions=rw-p, size=0xe8000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x5555b6c80000, end=0x5555d6c80000, permissions=rwxp, size=0x20000000, offset=0x0, backing_file=anon_5555b6c80000)
+MemoryMap(start=0x7fff6fc20000, end=0x7fff6fc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff6fc20000)
+MemoryMap(start=0x7fff6fc30000, end=0x7fff73c20000, permissions=---p, size=0x3ff0000, offset=0x0, backing_file=anon_7fff6fc30000)
+MemoryMap(start=0x7fff73c20000, end=0x7fff73c30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff73c20000)
+MemoryMap(start=0x7fff73c30000, end=0x7fff73c40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff73c30000)
+MemoryMap(start=0x7fff73c40000, end=0x7fff93c20000, permissions=---p, size=0x1ffe0000, offset=0x0, backing_file=anon_7fff73c40000)
+MemoryMap(start=0x7fff93c20000, end=0x7fff93c30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff93c20000)
+MemoryMap(start=0x7fff93c30000, end=0x7fff93c40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff93c30000)
+MemoryMap(start=0x7fff93c40000, end=0x7fff97c20000, permissions=---p, size=0x3fe0000, offset=0x0, backing_file=anon_7fff93c40000)
+MemoryMap(start=0x7fff97c20000, end=0x7fff97c30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff97c20000)
+MemoryMap(start=0x7fff97c30000, end=0x7fffb7c20000, permissions=---p, size=0x1fff0000, offset=0x0, backing_file=anon_7fff97c30000)
+MemoryMap(start=0x7fffb7c20000, end=0x7fffb7c30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffb7c20000)
+MemoryMap(start=0x7fffb7c30000, end=0x7fffb7c50000, permissions=rw-p, size=0x20000, offset=0x0, backing_file=anon_7fffb7c30000)
+MemoryMap(start=0x7fffb7c50000, end=0x7fffd7c20000, permissions=---p, size=0x1ffd0000, offset=0x0, backing_file=anon_7fffb7c50000)
+MemoryMap(start=0x7fffd7c2e000, end=0x7fffd7c80000, permissions=rw-p, size=0x52000, offset=0x0, backing_file=anon_7fffd7c2e000)
+MemoryMap(start=0x7fffd7c80000, end=0x7fffd7c90000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffd7c80000)
+MemoryMap(start=0x7fffd7c90000, end=0x7fffdfc80000, permissions=---p, size=0x7ff0000, offset=0x0, backing_file=anon_7fffd7c90000)
+MemoryMap(start=0x7fffdfc80000, end=0x7fffdfc90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffdfc80000)
+MemoryMap(start=0x7fffdfc90000, end=0x7fffdfca0000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffdfc90000)
+MemoryMap(start=0x7fffdfca0000, end=0x7fffefc80000, permissions=---p, size=0xffe0000, offset=0x0, backing_file=anon_7fffdfca0000)
+MemoryMap(start=0x7fffefc80000, end=0x7fffefc90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffefc80000)
+MemoryMap(start=0x7fffefc90000, end=0x7fffefcb0000, permissions=rw-p, size=0x20000, offset=0x0, backing_file=anon_7fffefc90000)
+MemoryMap(start=0x7fffefcb0000, end=0x7ffff7c80000, permissions=---p, size=0x7fd0000, offset=0x0, backing_file=anon_7fffefcb0000)
+MemoryMap(start=0x7ffff7c8a000, end=0x7ffff7c8c000, permissions=rw-p, size=0x2000, offset=0x0, backing_file=anon_7ffff7c8a000)
+MemoryMap(start=0x7ffff7c8c000, end=0x7ffff7cb4000, permissions=r--p, size=0x28000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7cb4000, end=0x7ffff7e3c000, permissions=r-xp, size=0x188000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e3c000, end=0x7ffff7e8b000, permissions=r--p, size=0x4f000, offset=0x1b0000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8b000, end=0x7ffff7e8f000, permissions=r--p, size=0x4000, offset=0x1fe000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8f000, end=0x7ffff7e91000, permissions=rw-p, size=0x2000, offset=0x202000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e91000, end=0x7ffff7e9e000, permissions=rw-p, size=0xd000, offset=0x0, backing_file=anon_7ffff7e91000)
+MemoryMap(start=0x7ffff7e9e000, end=0x7ffff7ea2000, permissions=r--p, size=0x4000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ea2000, end=0x7ffff7ec6000, permissions=r-xp, size=0x24000, offset=0x4000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ec6000, end=0x7ffff7eca000, permissions=r--p, size=0x4000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7eca000, end=0x7ffff7ecb000, permissions=r--p, size=0x1000, offset=0x2b000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecb000, end=0x7ffff7ecc000, permissions=rw-p, size=0x1000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecc000, end=0x7ffff7edc000, permissions=r--p, size=0x10000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7edc000, end=0x7ffff7f5b000, permissions=r-xp, size=0x7f000, offset=0x10000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7f5b000, end=0x7ffff7fb3000, permissions=r--p, size=0x58000, offset=0x8f000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb3000, end=0x7ffff7fb4000, permissions=r--p, size=0x1000, offset=0xe7000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb4000, end=0x7ffff7fb5000, permissions=rw-p, size=0x1000, offset=0xe8000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb5000, end=0x7ffff7fb6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb6000, end=0x7ffff7fb7000, permissions=r-xp, size=0x1000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb7000, end=0x7ffff7fb8000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb8000, end=0x7ffff7fb9000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb9000, end=0x7ffff7fba000, permissions=rw-p, size=0x1000, offset=0x3000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fbb000, end=0x7ffff7fbf000, permissions=rw-p, size=0x4000, offset=0x0, backing_file=anon_7ffff7fbb000)
+MemoryMap(start=0x7ffff7fbf000, end=0x7ffff7fc3000, permissions=r--p, size=0x4000, offset=0x0, backing_file=[vvar])
+MemoryMap(start=0x7ffff7fc3000, end=0x7ffff7fc5000, permissions=r-xp, size=0x2000, offset=0x0, backing_file=[vdso])
+MemoryMap(start=0x7ffff7fc5000, end=0x7ffff7fc6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7fc6000, end=0x7ffff7ff1000, permissions=r-xp, size=0x2b000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ff1000, end=0x7ffff7ffb000, permissions=r--p, size=0xa000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffb000, end=0x7ffff7ffd000, permissions=r--p, size=0x2000, offset=0x36000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffd000, end=0x7ffff7fff000, permissions=rw-p, size=0x2000, offset=0x38000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffffffde000, end=0x7ffffffff000, permissions=rw-p, size=0x21000, offset=0x0, backing_file=[stack])
+
+[*] ===== crash state =====
+--------------------------------------------------------
+[91mrax[0m	0xb
+[91mrbx[0m	[33m0x7fffffffcec0[0m
+[91mrcx[0m	[33m0x555557258d30[0m
+[91mrdx[0m	[33m0x555557258d38[0m
+[91mrdi[0m	[33m0x7fffffffcec0[0m
+[91mrsi[0m	0x2d00001db3
+[91mr8[0m	[33m0x7ffff7e8fb20[0m
+[91mr9[0m	0x50
+[91mr10[0m	[33m0x555557239c50[0m
+[91mr11[0m	[33m0x555557258d68[0m
+[91mr12[0m	0x0
+[91mr13[0m	0xa
+[91mr14[0m	[33m0x555557258460[0m
+[91mr15[0m	[33m0x5555572584b8[0m
+[91mrbp[0m	[33m0x7fffffffc500[0m
+[91mrsp[0m	[33m0x7fffffffc460[0m
+[91mrip[0m	[91m0x55555627df88[0m
+--------------------------------------------------------
+[*] Instructions: 00 00 85 c0 0f 85 11 02 00 00 41 83 7f 68 00 0f 84 06 02 00 00 45 31 ed 44 0f b6 a5 6c ff ff ff 0f 1f 84 00 00 00 00 00 4d 8b 77 70 4b 8b 34 ee <0f> b7 06 3d d4 00 00 00 74 1e 48 89 df 3d d0 00 00 00 75 34 44 89 e2 e8 2c ff ff ff 4b 89 04 ee eb 2d 66 0f 1f 44 00 00 48 8b 76 50 48 89 df e8 54
+[91m0x55555627df88 <v8::internal::maglev::MaglevGraphBuilder::BuildInlinedAllocation(v8::internal::maglev::VirtualObject*, v8::internal::AllocationType)+b8> [0m
+[91m0x55555628f77a <v8::internal::maglev::MaglevGraphBuilder::TryBuildAndAllocateJSGeneratorObject(v8::internal::maglev::ValueNode*, v8::internal::maglev::ValueNode*)+25a> [0m
+[91m0x55555628f203 <v8::internal::maglev::MaglevGraphBuilder::VisitIntrinsicCreateJSGeneratorObject(v8::internal::interpreter::RegisterList)+43> [0m
+[91m0x55555621c1a5 <v8::internal::maglev::MaglevGraphBuilder::VisitSingleBytecode()+575> [0m
+[91m0x55555621b4c8 <v8::internal::maglev::MaglevGraphBuilder::BuildBody()+108> [0m
+[91m0x5555562188d0 <v8::internal::maglev::MaglevGraphBuilder::Build()+320> [0m
+[91m0x5555569d2a61 <v8::internal::compiler::turboshaft::MaglevGraphBuildingPhase::Run(v8::internal::compiler::turboshaft::PipelineData*, v8::internal::Zone*, v8::internal::compiler::Linkage*)+1c1> [0m
+[91m0x555556819308 <_ZN2v88internal8compiler10turboshaft8Pipeline3RunITkNS2_15TurboshaftPhaseENS2_24MaglevGraphBuildingPhaseEJRPNS1_7LinkageEEEEDaDpOT0_+d8> [0m
+[91m0x55555680f940 <v8::internal::compiler::turboshaft::Pipeline::CreateGraphWithMaglev(v8::internal::compiler::Linkage*)+b0> [0m
+[91m0x55555680f85f <v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl(v8::internal::RuntimeCallStats*, v8::internal::LocalIsolate*)+25f> [0m
+[91m0x555555ba34df <v8::internal::(anonymous namespace)::GetOrCompileOptimized(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode, v8::internal::CodeKind, v8::internal::BytecodeOffset, v8::internal::(anonymous namespace)::CompileResultBehavior)+119f> [0m
+[91m0x555555ba4d8d <v8::internal::Compiler::CompileOptimized(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode, v8::internal::CodeKind)+cd> [0m
+[91m0x5555561075b9 <v8::internal::(anonymous namespace)::CompileOptimized(v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode, v8::internal::CodeKind, v8::internal::Isolate*)+e9> [0m
+[91m0x555556103721 <v8::internal::Runtime_OptimizeTurbofanEager(int, unsigned long*, v8::internal::Isolate*)+41> [0m
+[91m0x555556d691b6 <Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit+36> [0m
+[91m0x555556cc3582 <Builtins_OptimizeTurbofanEager+42> [0m
+[91m0x555556cc1c35 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556cc1c35 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556cbf71c <Builtins_JSEntryTrampoline+5c> [0m
+[91m0x555556cbf46b <Builtins_JSEntry+ab> [0m
+[91m0x555555c5459d <v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&)+9cd> [0m
+[91m0x555555c54d07 <v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>)+b7> [0m
+[91m0x555555ab3c71 <v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>)+3c1> [0m
+[91m0x555555a8487f <v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*)+4ff> [0m
+[91m0x555555a9a929 <v8::SourceGroup::Execute(v8::Isolate*)+289> [0m
+[91m0x555555a9e69a <v8::Shell::RunMainIsolate(v8::Isolate*, bool)+13a> [0m
+[91m0x555555a9e3c9 <v8::Shell::RunMain(v8::Isolate*, bool)+129> [0m
+[91m0x555555a9fa5f <v8::Shell::Main(int, char**)+bff> [0m
+[91m0x7ffff7cb61ca <__libc_start_call_main+7a> [0m
+[91m0x7ffff7cb628b <__libc_start_main+8b> [0m
+[91m0x555555a7502a <_start+2a> [0m
+--------------------------------------------------------
+
+

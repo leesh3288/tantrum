@@ -1,0 +1,99 @@
+Input: test/mjsunit/shared-memory/mutex-lock-twice.js
+Fault: {93825034950740: ((0, b'\xff\xff\xff\xff'), (0, b'\xff\xff\xff\xff'), (0, b'\xff\xff\xff\xff'))}
+[*] ===== testcase =====
+CMD: builds/a39e6d2-ttbuild-asan/d8 --single-threaded --allow-natives-syntax --expose-gc --sandbox-testing --trace-turbo-path=nonexistent --predictable --expose-gc --harmony-struct ./test/mjsunit/mjsunit.js test/mjsunit/shared-memory/mutex-lock-twice.js
+Hook Logs (Max 0x1000):
+- [*] sigaction(6, 93825126174560, 0)
+[*] ===== stderr log =====
+[COV] edge counters initialized. Shared memory: psm_7535452b with 896467 edges
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+V8 is running with experimental features enabled. Stability and security will suffer.
+=================================================================
+[1m[31m==894321==ERROR: AddressSanitizer: stack-use-after-return on address 0x7bfff5c0d298 at pc 0x555558158095 bp 0x7fffffffd7c0 sp 0x7fffffffd7b8
+[1m[0m[1m[34mREAD of size 8 at 0x7bfff5c0d298 thread T0[1m[0m
+==894321==WARNING: invalid path to external symbolizer!
+==894321==WARNING: Failed to use and restart external symbolizer!
+    #0 0x555558158094  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x2c04094) (BuildId: 56107fd4ab301870)
+    #1 0x555557e11018  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x28bd018) (BuildId: 56107fd4ab301870)
+    #2 0x555557e112cc  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x28bd2cc) (BuildId: 56107fd4ab301870)
+    #3 0x555556ea84b8  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x19544b8) (BuildId: 56107fd4ab301870)
+    #4 0x55555c2ebf75  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6d97f75) (BuildId: 56107fd4ab301870)
+    #5 0x55555c23e934  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6cea934) (BuildId: 56107fd4ab301870)
+    #6 0x55555c23b55b  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6ce755b) (BuildId: 56107fd4ab301870)
+    #7 0x55555c23b2aa  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6ce72aa) (BuildId: 56107fd4ab301870)
+    #8 0x5555571572f1  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x1c032f1) (BuildId: 56107fd4ab301870)
+    #9 0x555557155ba4  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x1c01ba4) (BuildId: 56107fd4ab301870)
+    #10 0x555556ea21d3  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x194e1d3) (BuildId: 56107fd4ab301870)
+    #11 0x55555c2ebf75  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6d97f75) (BuildId: 56107fd4ab301870)
+    #12 0x55555c23e934  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6cea934) (BuildId: 56107fd4ab301870)
+    #13 0x55555c23b55b  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6ce755b) (BuildId: 56107fd4ab301870)
+    #14 0x55555c23b2aa  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x6ce72aa) (BuildId: 56107fd4ab301870)
+    #15 0x5555571572f1  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x1c032f1) (BuildId: 56107fd4ab301870)
+    #16 0x555557159b58  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x1c05b58) (BuildId: 56107fd4ab301870)
+    #17 0x555556d12707  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x17be707) (BuildId: 56107fd4ab301870)
+    #18 0x55555690ce70  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x13b8e70) (BuildId: 56107fd4ab301870)
+    #19 0x55555694e0f7  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x13fa0f7) (BuildId: 56107fd4ab301870)
+    #20 0x55555695c618  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x1408618) (BuildId: 56107fd4ab301870)
+    #21 0x55555695b83e  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x140783e) (BuildId: 56107fd4ab301870)
+    #22 0x555556960859  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x140c859) (BuildId: 56107fd4ab301870)
+    #23 0x7ffff7c2a1c9  (/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9) (BuildId: 6d64b17fbac799e68da7ebd9985ddf9b5cb375e6)
+    #24 0x7ffff7c2a28a  (/lib/x86_64-linux-gnu/libc.so.6+0x2a28a) (BuildId: 6d64b17fbac799e68da7ebd9985ddf9b5cb375e6)
+    #25 0x5555567f6029  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x12a2029) (BuildId: 56107fd4ab301870)
+
+[1m[32mAddress 0x7bfff5c0d298 is located in stack of thread T0 at offset 152 in frame[1m[0m
+[1m[0m    #0 0x555557e1115f  (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x28bd15f) (BuildId: 56107fd4ab301870)
+
+  This frame has 5 object(s):
+    [32, 48) 'callback'
+    [64, 80) 'info'
+    [96, 112) 'callback'
+    [128, 184) 'this_waiter' (line 1187)[1m[32m <== Memory access at offset 152 is inside this variable[1m[0m
+    [224, 256) 'ref.tmp' (line 1200)
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-use-after-return (/root/tantrum/builds/a39e6d2-ttbuild-asan/d8+0x2c04094) (BuildId: 56107fd4ab301870) 
+Shadow bytes around the buggy address:
+  0x7bfff5c0d000: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d080: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d100: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d180: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d200: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+=>0x7bfff5c0d280: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m[[1m[35mf5[1m[0m][1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d300: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d380: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d400: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d480: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5c0d500: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           [1m[0m00[1m[0m
+  Partially addressable: [1m[0m01[1m[0m [1m[0m02[1m[0m [1m[0m03[1m[0m [1m[0m04[1m[0m [1m[0m05[1m[0m [1m[0m06[1m[0m [1m[0m07[1m[0m 
+  Heap left redzone:       [1m[31mfa[1m[0m
+  Freed heap region:       [1m[35mfd[1m[0m
+  Stack left redzone:      [1m[31mf1[1m[0m
+  Stack mid redzone:       [1m[31mf2[1m[0m
+  Stack right redzone:     [1m[31mf3[1m[0m
+  Stack after return:      [1m[35mf5[1m[0m
+  Stack use after scope:   [1m[35mf8[1m[0m
+  Global redzone:          [1m[31mf9[1m[0m
+  Global init order:       [1m[36mf6[1m[0m
+  Poisoned by user:        [1m[34mf7[1m[0m
+  Container overflow:      [1m[34mfc[1m[0m
+  Array cookie:            [1m[31mac[1m[0m
+  Intra object redzone:    [1m[33mbb[1m[0m
+  ASan internal:           [1m[33mfe[1m[0m
+  Left alloca redzone:     [1m[34mca[1m[0m
+  Right alloca redzone:    [1m[34mcb[1m[0m
+==894321==ABORTING
+
+## V8 sandbox violation detected!
+
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

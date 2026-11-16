@@ -1,0 +1,14 @@
+.git
+paper
+backend/preprocessor
+eval/baselines/final-v8sbxfuzzer
+eval/baselines/final-sbxbrk-comparison/SbxBrk
+eval/baselines/final-sbxbrk-comparison/shared-eval-corpus-fzil.tar.gz
+eval/comparison/coverage
+eval/comparison/logs
+eval/comparison/evidence/sbxbrk
+eval/comparison/evidence/v8sbxfuzzer
+eval/comparison/source/tantrum-sbxbrk-mod
+repro-results
+**/.DS_Store
+**/__pycache__

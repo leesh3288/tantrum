@@ -1,0 +1,127 @@
+diff --git a/BUILD.gn b/BUILD.gn
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -5439,6 +5439,7 @@
+     "src/builtins/builtins-weak-refs.cc",
+     "src/builtins/builtins.cc",
+     "src/builtins/constants-table-builder.cc",
++    "src/builtins/builtins-fuzz.cc",
+     "src/codegen/aligned-slot-allocator.cc",
+     "src/codegen/assembler.cc",
+     "src/codegen/bailout-reason.cc",
+@@ -7328,6 +7329,7 @@
+       "src/interpreter/bytecode-traits.h",
+       "src/interpreter/bytecodes.cc",
+       "src/interpreter/bytecodes.h",
++      "src/fuzzing_dummy.cc",
+     ]
+ 
+     configs = [ ":internal_config" ]
+@@ -7404,7 +7406,7 @@
+   v8_executable("torque") {
+     visibility = [ ":*" ]  # Only targets in this file can depend on this.
+ 
+-    sources = [ "src/torque/torque.cc" ]
++    sources = [ "src/torque/torque.cc", "src/fuzzing_dummy.cc" ]
+ 
+     deps = [
+       ":torque_base",
+@@ -7461,6 +7463,7 @@
+       sources = [
+         "src/regexp/gen-regexp-special-case.cc",
+         "src/regexp/special-case.h",
++        "src/fuzzing_dummy.cc",
+       ]
+ 
+       deps = [
+diff --git a/src/builtins/builtins-definitions.h b/src/builtins/builtins-definitions.h
+--- a/src/builtins/builtins-definitions.h
++++ b/src/builtins/builtins-definitions.h
+@@ -104,6 +104,8 @@
+ #endif
+ 
+ #define BUILTIN_LIST_BASE_TIER1(CPP, TSJ, TFJ, TSC, TFC, TFS, TFH, ASM)        \
++  /* Fuzzing builtins */                                                       \
++  CPP(GlobalFuzzerInjectionPoint, kDontAdaptArgumentsSentinel)                 \
+   /* GC write barriers */                                                      \
+   TFC(IndirectPointerBarrierSaveFP, IndirectPointerWriteBarrier)               \
+   TFC(IndirectPointerBarrierIgnoreFP, IndirectPointerWriteBarrier)             \
+diff --git a/src/builtins/builtins-fuzz.cc b/src/builtins/builtins-fuzz.cc
+new file mode 100644
+--- /dev/null
++++ b/src/builtins/builtins-fuzz.cc
+@@ -0,0 +1,16 @@
++#include "src/api/api-inl.h"
++#include "src/builtins/builtins-utils-inl.h"
++#include "src/builtins/builtins.h"
++#include "src/execution/isolate.h"
++#include "src/objects/objects-inl.h"
++
++namespace v8 {
++namespace internal {
++
++BUILTIN(GlobalFuzzerInjectionPoint) {
++  return ReadOnlyRoots(isolate).undefined_value();
++}
++
++}  // namespace internal
++}  // namespace v8
++
+diff --git a/src/fuzzing_dummy.cc b/src/fuzzing_dummy.cc
+new file mode 100644
+--- /dev/null
++++ b/src/fuzzing_dummy.cc
+@@ -0,0 +1,11 @@
++#include <stdlib.h>
++#include <cstddef>
++
++__attribute__((visibility("default")))
++extern "C" void __fuzzer_get_heap_snapshot() {}
++
++__attribute__((visibility("default")))
++extern "C" void __fuzzer_get_attributes() {}
++
++__attribute__((visibility("default")))
++extern "C" void __fuzzer_get_all_heap_objects() {}
+\ No newline at end of file
+diff --git a/src/init/bootstrapper.cc b/src/init/bootstrapper.cc
+--- a/src/init/bootstrapper.cc
++++ b/src/init/bootstrapper.cc
+@@ -10,6 +10,7 @@
+ #include "src/base/hashmap.h"
+ #include "src/base/ieee754.h"
+ #include "src/builtins/accessors.h"
++#include "src/builtins/builtins.h"
+ #include "src/codegen/compiler.h"
+ #include "src/common/globals.h"
+ #include "src/debug/debug.h"
+@@ -88,6 +89,8 @@
+ #if V8_ENABLE_WEBASSEMBLY
+ #include "src/wasm/wasm-js.h"
+ #endif  // V8_ENABLE_WEBASSEMBLY
++
++//extern "C" void __fuzzer_report_global_this_offset(size_t);
+ 
+ namespace v8 {
+ namespace internal {
+@@ -6136,6 +6139,9 @@
+   DirectHandle<JSGlobalObject> global_object(native_context()->global_object(),
+                                              isolate());
+ 
++ InstallFunctionWithBuiltinId(isolate(), global_object, "FuzzerInjectionPoint",
++                              Builtin::kGlobalFuzzerInjectionPoint, 1, kDontAdapt);
++
+   // Install Global.decodeURI.
+   InstallFunctionWithBuiltinId(isolate(), global_object, "decodeURI",
+                                Builtin::kGlobalDecodeURI, 1, kDontAdapt);
+@@ -6780,6 +6786,10 @@
+ 
+   native_context()->set_array_buffer_map(
+       native_context()->array_buffer_fun()->initial_map());
++
++  //Tagged<HeapObject> global_proxy_tag = Cast<HeapObject>(*global_proxy);
++  //uint32_t global_proxy_addr = static_cast<uint32_t>(global_proxy_tag->address());
++  //__fuzzer_report_global_this_offset((size_t)global_proxy_addr);
+ 
+   return true;
+ }

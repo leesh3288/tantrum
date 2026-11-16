@@ -1,0 +1,13 @@
+# REPRO: python3 ./tantrum/tantrum-v2.py --d8 ./builds/fe14dcc/d8 repro 7476430754071767543469426520 0-59,61-70
+
+1-v8sbx-1740742184704115508-3000152-7476430754071767543469426520.txt
+CMD: builds/fe14dcc/d8 --single-threaded --allow-natives-syntax --expose-gc --sandbox-testing --trace-turbo-path=nonexistent --allow-natives-syntax --turbofan --allow-natives-syntax --turbolev --turbofan ./test/mjsunit/mjsunit.js ./runner.js -- test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js test/mjsunit/asm/zero-extend.js test/mjsunit/compiler/for-in-1.js test/mjsunit/regress/regress-abort-preparsing-params.js test/mjsunit/turboshaft/maglev-frontend/generator-async.js test/mjsunit/regress/regress-crbug-357052.js
+
+python3 tantrum-v2.py repro 7476430754071767543469426520 0-59,61-70
+
+tests = random.choices(tests_list, k=5) * 8
+try_offsets = random.sample(range(-0x100, 0x100, 4), random.randrange(0, 9))
+bits_to_flip = sorted(random.sample(range(-0x100*8, 0x100*8), random.randrange(0, 17)))
+
+# sha256sum tests.txt
+70cd8a050db1db5145697153fd33f1d5fe1f6853de14698641dd4e3596db5cab  tests.txt

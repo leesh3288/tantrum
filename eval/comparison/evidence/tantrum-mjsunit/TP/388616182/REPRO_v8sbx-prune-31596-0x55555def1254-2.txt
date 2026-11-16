@@ -1,0 +1,105 @@
+Input: test/mjsunit/regress-343384810.js
+Fault: {93825136530004: (((b'\xc2\x17', None), 130), ((b'\x08\xa2', None), 129), ((b'\x9d!', None), 130), ((b'\xb9p', None), 193), ((b'"4', None), 130), ((b'\xc2U', None), 193), ((b'Q\xf1', None), 193), ((b'\x82\x8b', None), 130), ((b's@', None), 193), ((b'cp', None), 130), ((b'\x83\xd7', None), 130), ((b'2^', None), 130), ((b'\x92\x95', None), 194), ((b'\x11\xbb', None), 129), ((b'\x86w', None), 194), ((b'%$', None), 194), ((b'\xe4\x18', None), 193), ((b'?e', None), 194), ((b'\x8a\x98', None), 129), ((b'y1', None), 129), ((b'\xdd\x18', None), 193), ((b'.\xfb', None), 130), ((b'o\xd7', None), 130), ((b'\xb4\xee', None), 194), ((b'\xb9\x08', None), 194), ((b'l\x04', None), 130), ((b'\x89\xb6', None), 129), ((b'\xaf\x98', None), 194), ((b'9\x98', None), 193), ((b'0&', None), 130), ((b'\xfe\xc2', None), 130), ((b'\xecQ', None), 194), ((b'?\xdb', None), 129), ((b'\x1f\x18', None), 194), ((b'\xf1\xa5', None), 129), ((b'o_', None), 194), ((b',\xd8', None), 129), ((b'N\xa0', None), 193), ((b'\xdf6', None), 194), ((b'\xbb"', None), 194), ((b'\xcb\xe4', None), 129), ((b'\x96\xcd', None), 194), ((b']q', None), 193), ((b'u\x87', None), 130), ((b'\x9a\x04', None), 129), ((b'J\xae', None), 130), ((b'\x8e\xae', None), 129), ((b'$\xdb', None), 194), ((b'E\xfd', None), 129), ((b'\x15\x96', None), 194), ((b'\xf8\x85', None), 129), ((b'b\x0f', None), 130), ((b'b?', None), 129), ((b'l\xe0', None), 193), ((b'\xa6a', None), 193), ((b';6', None), 193), ((b'\x9f\x96', None), 129), ((b'\xd6\x90', None), 130), ((b'\xe0Q', None), 130), ((b'\xd6\x1c', None), 193), ((b'Zr', None), 129), ((b'\xc5\x9e', None), 193), ((b'\\,', None), 130), ((b'Ro', None), 129), ((b'\xa8q', None), 194), ((b'\x1f\x1b', None), 129), ((b'o\xa9', None), 194), ((b'\xefO', None), 130), ((b'\xca\x94', None), 129), ((b'E\xdf', None), 194), ((b'\xc6\x06', None), 193), ((b'\xa9\x8d', None), 193), ((b'k\x8c', None), 129), ((b'\xa5\xd6', None), 129), ((b'w\x06', None), 130), ((b'"\xd6', None), 193), ((b'8W', None), 193), ((b'\xdc\xc9', None), 130), ((b'\xec@', None), 193), ((b'\x86\x8d', None), 129), ((b';<', None), 193), ((b'/2', None), 130), ((b'\x18\x13', None), 193), ((b'M\x93', None), 129), ((b'\x911', None), 130), ((b'z\x83', None), 194), ((b'\xde\xa5', None), 193), ((b'\x01>', None), 129), ((b'\n\x1a', None), 129), ((b'U1', None), 130), ((b'\xa1\x01', None), 193), ((b'fb', None), 129), ((b'\xc7\x9a', None), 194), ((b'\x9d\x81', None), 194), ((b'\xe7s', None), 194), ((b'\xc5u', None), 194), ((b'>\xbf', None), 130), ((b'\x8f\x87', None), 129), ((b'LG', None), 193), ((b'\xf9\x9b', None), 193), ((b'\xd0\xc4', None), 130), ((b'b\xbc', None), 194), ((b'Ew', None), 130), ((b'\xde\xc0', None), 129), ((b'Od', None), 193), ((b'^]', None), 130), ((b'$X', None), 193), ((b'8\xff', None), 130), ((b'\x83i', None), 130), ((b'\x9aP', None), 129), ((b'\x1ec', None), 130), ((b'\x0c\xa2', None), 194), ((b'\xa5\xcf', None), 194), ((b'G<', None), 130), ((b'\xb9\xa4', None), 130), ((b'&\xc5', None), 194), ((b'@\xb5', None), 130), ((b'\xb5\x18', None), 129), ((b'<\xc3', None), 194), ((b'\x83\x7f', None), 129), ((b'\xber', None), 193), ((b'\xb1\xb0', None), 130), ((b'fl', None), 193), ((b'\xc1\xeb', None), 193), ((b'\xe6.', None), 194), ((b'\x0e\x15', None), 129), ((b'^\xb4', None), 194), ((b'^\xe2', None), 193), ((b'\xd6g', None), 129), ((b'\xaa\xe0', None), 194), ((b'\xee\xfd', None), 193), ((b'*\x11', None), 193), ((b'\x85\xe1', None), 194), ((b'\x0e\xb1', None), 194), ((b'Eb', None), 129), ((b'\xbc\xd5', None), 194), ((b'\xaa\xe7', None), 194), ((b'\xbcc', None), 194), ((b'\xb7+', None), 130), ((b'\xa9m', None), 193), ((b'W\xc2', None), 193), ((b'oZ', None), 129), ((b'*\xd6', None), 130), ((b'>\x19', None), 130), ((b'_\x8a', None), 130), ((b'{J', None), 129), ((b'X\xcc', None), 193), ((b'\xab\xc9', None), 194), ((b'\xd6\xd7', None), 193), ((b'\x16\x84', None), 194), ((b'\xe4a', None), 194), ((b'\xeaQ', None), 130), ((b'\xd2\xa0', None), 193), ((b'p&', None), 130), ((b'\x1a\xef', None), 194), ((b'\xa4\xcd', None), 194), ((b'9\x8f', None), 193), ((b'}\xb0', None), 130), ((b'/\xce', None), 193), ((b'\xe7r', None), 194), ((b',\xe3', None), 129), ((b'\r\x1c', None), 130), ((b'\xf0l', None), 129), ((b'\x16\x93', None), 193), ((b'\x06\xf0', None), 130), ((b'\n\x97', None), 129), ((b'\xd2\x05', None), 193), ((b'\x11\xa8', None), 130), ((b'\xd0\x0e', None), 130), ((b'\x1b\x0f', None), 130), ((b'\x06\xfc', None), 194), ((b'^B', None), 193), ((b'\x1c\x1b', None), 129), ((b'R\x07', None), 129), ((b'\x1dh', None), 129), ((b'\xc0\xd6', None), 129), ((b'f\xa8', None), 129), ((b'\xce7', None), 193), ((b'\x17\x95', None), 194), ((b'\x8e\x02', None), 130), ((b'i/', None), 130), ((b'c\xf8', None), 130), ((b'\xca\x89', None), 194), ((b'f\x11', None), 130), ((b'1\xc6', None), 130), ((b'\xa9\x17', None), 129), ((b'\x93\xa1', None), 129), ((b'$7', None), 130), ((b'x@', None), 193), ((b'\x98\xde', None), 194), ((b'DW', None), 129), ((b't\x82', None), 194), ((b'\xce\x13', None), 194), ((b'\x13\xba', None), 194), ((b'\xf9\x8f', None), 130), ((b'\x8b\xf7', None), 129), ((b'\x06\xa9', None), 193), ((b'S\xea', None), 130), ((b'k\xc5', None), 193), ((b'\x07\r', None), 130), ((b'\x95`', None), 194), ((b'\x80\x0f', None), 193), ((b'$\xf9', None), 193), ((b'\xd4c', None), 130), ((b'\xef\xe1', None), 129), ((b'%#', None), 194), ((b'(\xe5', None), 130), ((b'\x86`', None), 129), ((b'\x9a\x04', None), 193), ((b"\xdb'", None), 130), ((b'r7', None), 129), ((b'\xa74', None), 194), ((b'\x8a\x04', None), 130), ((b'g\xca', None), 193), ((b':^', None), 194), ((b'\xeb\xf9', None), 193), ((b'\xb4\x0f', None), 193), ((b'6\xe8', None), 194), ((b'\x1b\x17', None), 130), ((b'\x9d\x17', None), 130), ((b'2\xea', None), 193), ((b'u\xac', None), 193), ((b'\x1fI', None), 130), ((b'\xbf\x13', None), 129), ((b'\x17\x81', None), 193), ((b'\xf1\x90', None), 194), ((b'k\xdf', None), 130), ((b'\x82}', None), 194), ((b'\xe1\xac', None), 129), ((b'XW', None), 194), ((b'V\x8d', None), 194), ((b'\xa0\xe1', None), 194), ((b'\xe0\xde', None), 129), ((b'w1', None), 193), ((b'\xbe)', None), 129), ((b'\x93\x06', None), 130), ((b'\x0f\r', None), 129), ((b'\x97&', None), 194), ((b'B\xb4', None), 194), ((b'\xf9\x1d', None), 193), ((b'\xdb\xea', None), 193), ((b'\xe1\x83', None), 193), ((b'M\n', None), 129), ((b'f9', None), 129), ((b'8>', None), 194), ((b'&\x94', None), 193), ((b'\xff\xb6', None), 129), ((b'\xa1`', None), 194), ((b'\xd0Z', None), 130), ((b'~\xa6', None), 130), ((b'\x0e\xe6', None), 194), ((b'\x0f:', None), 129), ((b':{', None), 129), ((b'\x82\xff', None), 129), ((b'.\xe0', None), 193), ((b'Y\x93', None), 130))}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/x8 --no-abort-on-contradictory-flags --trace-turbo-path=nonexistent --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded --allow-natives-syntax test/mjsunit/mjsunit.js test/mjsunit/regress-343384810.js
+Hook Logs (Max 0x1000):
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+=================================================================
+[1m[31m==1762838==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7bfff5fe702f at pc 0x555558899c89 bp 0x7fffffffdea0 sp 0x7fffffffde98
+[1m[0m[1m[34mWRITE of size 1 at 0x7bfff5fe702f thread T0[1m[0m
+    #0 0x555558899c88 in v8::internal::DoubleToRadixStringView(double, int, v8::base::Vector<char>) src/numbers/conversions.cc:1295:30
+    #1 0x555559854190 in v8::internal::Runtime_DoubleToStringWithRadix(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-internal.cc:741:26
+    #2 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #3 0x55555def12c2 in Builtins_NumberPrototypeToString setup-isolate-deserialize.cc
+    #4 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #5 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #6 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #7 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #8 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #9 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #10 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #11 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #12 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #13 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #14 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #15 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #16 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #17 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #18 0x5555572a9029 in _start (/work/v8-build/out/fair-build/x8+0x1d55029) (BuildId: fcce9d6441377209)
+
+[1m[32mAddress 0x7bfff5fe702f is located in stack of thread T0 at offset 47 in frame[1m[0m
+[1m[0m    #0 0x555559853ebf in v8::internal::Runtime_DoubleToStringWithRadix(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-internal.cc:732
+
+  This frame has 2 object(s):
+    [32, 36) 'radix' (line 736)
+    [48, 2248) 'chars' (line 739)[1m[32m <== Memory access at offset 47 underflows this variable[1m[0m
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow src/numbers/conversions.cc:1295:30 in v8::internal::DoubleToRadixStringView(double, int, v8::base::Vector<char>)
+Shadow bytes around the buggy address:
+  0x7bfff5fe6d80: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5fe6e00: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5fe6e80: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5fe6f00: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+  0x7bfff5fe6f80: [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m [1m[35mf5[1m[0m
+=>0x7bfff5fe7000: [1m[31mf1[1m[0m [1m[31mf1[1m[0m [1m[31mf1[1m[0m [1m[31mf1[1m[0m [1m[0m04[1m[0m[[1m[31mf2[1m[0m][1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7bfff5fe7080: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7bfff5fe7100: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7bfff5fe7180: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7bfff5fe7200: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7bfff5fe7280: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           [1m[0m00[1m[0m
+  Partially addressable: [1m[0m01[1m[0m [1m[0m02[1m[0m [1m[0m03[1m[0m [1m[0m04[1m[0m [1m[0m05[1m[0m [1m[0m06[1m[0m [1m[0m07[1m[0m 
+  Heap left redzone:       [1m[31mfa[1m[0m
+  Freed heap region:       [1m[35mfd[1m[0m
+  Stack left redzone:      [1m[31mf1[1m[0m
+  Stack mid redzone:       [1m[31mf2[1m[0m
+  Stack right redzone:     [1m[31mf3[1m[0m
+  Stack after return:      [1m[35mf5[1m[0m
+  Stack use after scope:   [1m[35mf8[1m[0m
+  Global redzone:          [1m[31mf9[1m[0m
+  Global init order:       [1m[36mf6[1m[0m
+  Poisoned by user:        [1m[34mf7[1m[0m
+  Container overflow:      [1m[34mfc[1m[0m
+  Array cookie:            [1m[31mac[1m[0m
+  Intra object redzone:    [1m[33mbb[1m[0m
+  ASan internal:           [1m[33mfe[1m[0m
+  Left alloca redzone:     [1m[34mca[1m[0m
+  Right alloca redzone:    [1m[34mcb[1m[0m
+==1762838==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/x8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/x8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/x8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/x8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/x8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/x8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/x8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/x8(__asan_report_store1+0x3d)[0x555557355d2d]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal23DoubleToRadixStringViewEdiNS_4base6VectorIcEE+0x769)[0x555558899c89]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal31Runtime_DoubleToStringWithRadixEiPmPNS0_7IsolateE+0x2e1)[0x555559854191]
+/work/v8-build/out/fair-build/x8(+0x89303b6)[0x55555de843b6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

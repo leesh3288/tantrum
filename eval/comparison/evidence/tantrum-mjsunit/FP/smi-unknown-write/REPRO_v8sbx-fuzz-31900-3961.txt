@@ -1,0 +1,75 @@
+Input: test/mjsunit/wasm/imported-strings-utf8.js
+Fault: {93825074471586: (((b'\xd0D', None), 193), ((b'\xb6\xb0', None), 129), ((b'Vz', None), 130), ((b'\xf0\xb3', None), 129), ((b'\x99\xe3', None), 193), ((b'\xb0\xa3', None), 194), ((b'\xd1\xfa', None), 193), ((b'\xea\xe2', None), 130), ((b'"\xa4', None), 193), ((b'\\\xfa', None), 130), ((b'\x89\x80', None), 193), ((b'\xd7\xfb', None), 194), ((b'\xd4P', None), 129), ((b'\xce^', None), 130), ((b'\xa5i', None), 194), ((b'\x1cY', None), 193), ((b'5\xcf', None), 194), ((b' \xd5', None), 129), ((b'\x0b7', None), 129), ((b'\x820', None), 193), ((b'\x06:', None), 129), ((b'\x15\xf0', None), 193), ((b'\x18\xab', None), 130), ((b'}\xe7', None), 194), ((b'n\xb7', None), 130), ((b'\xf1a', None), 129), ((b'\x15\xa4', None), 194), ((b'\xdf\x80', None), 129), ((b'\xce7', None), 193), ((b'r\x85', None), 194), ((b'f\xea', None), 130), ((b'\x83T', None), 130), ((b'\xa4\x9d', None), 129), ((b'p]', None), 193), ((b'\x91\xce', None), 193), ((b'\xd7g', None), 193), ((b'J\xca', None), 193), ((b'\xc5\xaa', None), 193), ((b'\xd0w', None), 129), ((b'\xb2\x0e', None), 129), ((b'\xf41', None), 130), ((b'>\x88', None), 130), ((b'\xfcp', None), 130), ((b'2\x81', None), 129), ((b'=\xc7', None), 194), ((b'\x1e\x11', None), 129), ((b'\x19K', None), 130), ((b"'\xa1", None), 194), ((b'V\xea', None), 130), ((b'U\xf6', None), 193), ((b'\r\xd2', None), 194), ((b'\xed\x17', None), 130), ((b'M\xb2', None), 194), ((b'\x0c\xab', None), 129), ((b'\xa7G', None), 130), ((b'&r', None), 129), ((b'\xc9r', None), 130), ((b'z\xc5', None), 130), ((b'\xf1\xde', None), 130), ((b'=\xb8', None), 130), ((b'N\x86', None), 194), ((b'\xa4]', None), 130), ((b'B\x0e', None), 129), ((b'%\xad', None), 194), ((b'\xf7k', None), 129), ((b'b\xe4', None), 193), ((b'({', None), 194), ((b'\xd5\xea', None), 193), ((b'\x99\x17', None), 129), ((b'\xc9D', None), 193), ((b'\xc3o', None), 194), ((b'\xff\x8b', None), 130), ((b'\x96\xcb', None), 194), ((b'J\x13', None), 194), ((b'\xa7\x99', None), 129), ((b'd\xbb', None), 193), ((b'\x83W', None), 194), ((b'\xf4\x9b', None), 194), ((b'\x01=', None), 130), ((b'\xd0\x14', None), 130), ((b'\x1f\r', None), 129), ((b'\xef\x9e', None), 129), ((b'\x87\xcc', None), 130), ((b'YR', None), 193), ((b'\xb1\x82', None), 130), ((b'G\x86', None), 130), ((b'\xb3\x0c', None), 130), ((b'\xfd!', None), 193), ((b'o{', None), 130), ((b'\x8e\xcf', None), 130), ((b'\xe4\xac', None), 194), ((b'\x95-', None), 129), ((b'\x142', None), 193), ((b'\xbc\xcd', None), 129), ((b'\xd1\xcb', None), 130), ((b'=\xb8', None), 129), ((b'>\x8b', None), 130), ((b'\x07\xc2', None), 194), ((b'\x85S', None), 129), ((b'\xe6\xd6', None), 193), ((b'o\x97', None), 130), ((b'\xfak', None), 130), ((b'\x11\xfb', None), 194), ((b'<]', None), 129), ((b'\xd7(', None), 129), ((b'V\x19', None), 130), ((b'\xe1\x07', None), 129), ((b'\xf0\xf8', None), 194), ((b'\xe0d', None), 129), ((b'j\xa8', None), 130)), 93826745916926: (((b'\xe8\xe4\xa7\xed', None), 129), ((b'\xe4E\xa8\xd6', None), 129), ((b'Vz8!', None), 129), ((b'\xb0Y\xb5k', None), 194), ((b'\x9bpR\xa6', None), 194), ((b']\xa5d\x19', None), 129), ((b'\x19\xaa.A', None), 193), ((b'L\xedk\xf9', None), 129), ((b'\xbb\x1d\xd63', None), 194), ((b'\xb8\x9e\xce\xf0', None), 194), ((b'0w-\x88', None), 194), ((b'\xe5\xe7\x08\x85', None), 129), ((b'\xd1.\xcdH', None), 130), ((b'\x07\x8ew\x10', None), 129), ((b'\t\xd2\xd0\xbb', None), 194), ((b'Ji\x05\x80', None), 194), ((b'\x07~\x87d', None), 193), ((b'\xec\xf3z6', None), 129), ((b'1\xa8yv', None), 194), ((b'+\xa5\xcc\xdf', None), 193), ((b'\x8d\xff\x11O', None), 193), ((b'\xf4\xffuj', None), 130), ((b'o;\x04}', None), 194), ((b'0\xab\x16\x96', None), 193), ((b'&r\xd9\xd9', None), 193), ((b'I\xe3\xfeA', None), 194), ((b'\\\x82\x96=', None), 129), ((b'\xa8fb\xc6', None), 130), ((b'\xc0\xe4\xd6-', None), 194), ((b'\x9d\x8bLK', None), 194), ((b'\xe5m\xf5z', None), 194), ((b'\xb9\xfb`\x96', None), 194), ((b'\xff/L\xf7', None), 130), ((b'\xccJ\x13\x15', None), 130), ((b'\x03K\xf6\xe9', None), 130), ((b'\x8cG\xf7\x1f', None), 129), ((b'\xfe\xe5\x18\x86', None), 193), ((b'\x02\x07G\\', None), 130), ((b'\x89O\xeb\x91', None), 129), ((b'{j\xd8!', None), 130), ((b'\x8b\xbc\x1d\x97', None), 129), ((b'(\x15\x97\x87', None), 194), ((b'\xea\x9e@g', None), 194), ((b'{\xde(\xff', None), 194), ((b'\x1d20\x04', None), 194), ((b'\xf6c\xb2`', None), 130), ((b'\xd2\rS\x7f', None), 130), ((b'z$\xe9\x17', None), 194), ((b'\xab\xdfLd', None), 130), ((b'K\x0c\x90?', None), 194), ((b'\x9a\xa2\x9dR', None), 130), ((b'\xb8\x90\xef\x94', None), 129), ((b'E\xcd\xf3!', None), 130), ((b'+t\xbc\x01', None), 129), ((b'!\xa2\xdd\xf6', None), 130), ((b'\xee\x9dO\x9f', None), 130), ((b'\xc9w\x7f\x8c', None), 130), ((b'\xc0\xc6\xee*', None), 193), ((b'\xbd\xe2\x90\xf8', None), 130), ((b'\xf4\xc4w\xf5', None), 194), ((b'3\xdd\x85%', None), 193), ((b'\x7f\xe5\xaa\xff', None), 130), ((b'\xa6\x81\xf6L', None), 129), ((b'\x1bs\xaa`', None), 193), ((b'\xc7a\x90\x9b', None), 194), ((b'nZ\x11\xc6', None), 130), ((b'\x9f\xfa\xff\xa0', None), 130), ((b'J\x9a\xbe\xa9', None), 129), ((b'\xd65\x81\x18', None), 130), ((b'\x88E\xd15', None), 193), ((b'\xc6\\\x0ey', None), 130), ((b'\x8cQ\xfa\x04', None), 129), ((b'\x90h\xffu', None), 194), ((b'\x88\xcfC\x04', None), 130), ((b'\x96\x0b\xb2u', None), 130), ((b'\x0c\t\x91\x1a', None), 130), ((b';\xc4\xb3\x11', None), 129), ((b'\xa1TV^', None), 193), ((b'#\xf5P\x88', None), 130), ((b'\xf3\x12xR', None), 194), ((b';\xcb|\xa2', None), 194), ((b'\t\xf3\xce\x88', None), 130), ((b'\xa3Y\x87\xe0', None), 193), ((b'\x11eV\xee', None), 193), ((b'\xc5\xaaW\x98', None), 130), ((b'\xa1\xe3\x82\n', None), 129), ((b'X\xb1\xb3\x97', None), 129), ((b'X\x83\xac\xe6', None), 130), ((b'\x16\xf7\x7f\n', None), 193), ((b'\xafY\xb4\xda', None), 194), ((b'se\xce2', None), 193), ((b'G\xb9CY', None), 194), ((b'\x05\xee\xee\xff', None), 130), ((b'\xb9\xfb\x96\xf6', None), 194), ((b'\xbd\x19A}', None), 129), ((b'\xfc\xb0I\xde', None), 194), ((b'Z\xaf\x13\xd8', None), 193), ((b'1\xaf\x8e\x03', None), 130), ((b'4\x1d\xf0\xcb', None), 194), ((b'\xf6)ot', None), 129), ((b'=d\xf3\xff', None), 194), ((b'\xcc)\xd9\x13', None), 130), ((b'\x06\x1a\x87\x87', None), 193), ((b'\xa7\xde\xd9\xa3', None), 130), ((b'\xb9r\xc7\xa4', None), 129), ((b'\xe1n\xdc[', None), 193), ((b'\x08\xdf\xe0Z', None), 193), ((b'_@\xf2G', None), 129), ((b'\xa9&\xa9t', None), 129), ((b'h\xb4Vn', None), 130), ((b'\x1d\xc9\xd9\x9c', None), 193), ((b'\xd9\x7f\xceN', None), 193), ((b'\xdcRi"', None), 193), ((b'2E/`', None), 193), ((b'\x9d\xa3\xb6\xf4', None), 130), ((b'\x7f\xeb\xbc\xea', None), 193), ((b'\x18\xff\x1f\x13', None), 193), ((b'\xfe\xac6_', None), 193), ((b'\xc9\x05\xef\xcd', None), 129), ((b'\xb1l\xd6\xf0', None), 129), ((b'_\xa0)\xc5', None), 193), ((b'y?\xfd\x9d', None), 129), ((b'\x7fs&N', None), 194))}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/x8 --no-abort-on-contradictory-flags --trace-turbo-path=nonexistent --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded --experimental-wasm-imported-strings-utf8 --expose-externalize-string test/mjsunit/mjsunit.js test/mjsunit/wasm/imported-strings-utf8.js
+Hook Logs (Max 0x1000):
+- [*] mprotect(0x7abf00000000, 0x100000, 0b11)
+- [*] mprotect(0x7bffec420000, 0x10000, 0b11)
+- [*] mprotect(0x7ffff7771000, 0x8000, 0b111)
+- [*] mprotect(0x7ffff776f000, 0x2000, 0b111)
+- [*] mprotect(0x7bffdc400000, 0x10000, 0b11)
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+=================================================================
+[1m[31m==1760320==ERROR: AddressSanitizer: unknown-crash on address 0x0000f6df2b03 at pc 0x55555a3c2a46 bp 0x7fffffffdae0 sp 0x7fffffffdad8
+[1m[0m[1m[34mWRITE of size 8 at 0x0000f6df2b03 thread T0[1m[0m
+    #0 0x55555a3c2a45 in v8::internal::Runtime_WasmCastToSpecialPrimitiveArray(int, unsigned long*, v8::internal::Isolate*) src/handles/handles-inl.h:235:20
+    #1 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #2 0x55555df6982e in Builtins_WebAssemblyStringFromUtf8Array setup-isolate-deserialize.cc
+    #3 0x55555de7bdda in Builtins_WasmToJsWrapperCSA setup-isolate-deserialize.cc
+    #4 0x7ffff776f930  (<unknown module>)
+    #5 0x55555de7ad17 in Builtins_JSToWasmWrapperAsm setup-isolate-deserialize.cc
+    #6 0x55555df5d2ef in Builtins_JSToWasmWrapper setup-isolate-deserialize.cc
+    #7 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #8 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #9 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #11 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #12 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #13 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #14 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #15 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #16 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #17 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #18 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #19 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #20 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #21 0x5555572a9029 in _start (/work/v8-build/out/fair-build/x8+0x1d55029) (BuildId: fcce9d6441377209)
+
+Address 0x0000f6df2b03 is located in the shadow gap area.
+SUMMARY: AddressSanitizer: unknown-crash src/handles/handles-inl.h:235:20 in v8::internal::Runtime_WasmCastToSpecialPrimitiveArray(int, unsigned long*, v8::internal::Isolate*)
+==1760320==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/x8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/x8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/x8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/x8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/x8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/x8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/x8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/x8(__asan_report_store8+0x3d)[0x555557355ffd]
+/work/v8-build/out/fair-build/x8(+0x4e6ea46)[0x55555a3c2a46]
+/work/v8-build/out/fair-build/x8(+0x89303b6)[0x55555de843b6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+TestStringNewUtf8Array
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

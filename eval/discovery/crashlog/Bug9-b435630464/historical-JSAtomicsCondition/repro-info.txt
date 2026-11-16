@@ -1,0 +1,2 @@
+# REPRO: (cd ../../../backend/tantrum; python3 tantrum_repro.py ../../eval/vuln-crashlog/crashlog/Bug9-JSAtomicsCondition-stack-uar/v8sbx-fuzz-5906-67843.txt)
+# NOTE: also discovered as part of 6.4 cov/baseline eval

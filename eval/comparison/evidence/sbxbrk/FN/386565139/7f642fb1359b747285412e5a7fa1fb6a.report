@@ -1,0 +1,101 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/7f642fb1359b747285412e5a7fa1fb6a.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:51:01:429][v8fuzz_runtime][3788741][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:51:01:429][v8fuzz_runtime][3788741][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:51:01:429][v8fuzz_runtime][3788741][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:51:01:430][v8fuzz_runtime][3788741][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:51:01:430][v8fuzz_runtime][3788741][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/7f642fb1359b747285412e5a7fa1fb6a.ron'
+[2026-03-21 04:51:01:430][v8fuzz_runtime][3788741][input.rs:175][INFO] Loaded 4698 bytes input
+[2026-03-21 04:51:01:430][v8fuzz_runtime][3788741][input.rs:68][TRACE] loaded js file is 414 bytes long
+[2026-03-21 04:51:01:430][v8fuzz_runtime][3788741][input.rs:70][TRACE] total_msk_len is Some(4168) bytes
+[2026-03-21 04:51:01:430][v8fuzz_runtime][3788741][input.rs:80][TRACE] Of the 4168 bytes, are 99.42418426103646% zeros (i.e., have no effect)
+[2026-03-21 04:51:01:430][v8fuzz_runtime][3788741][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(5)
+[2026-03-21 04:51:01:439][v8fuzz_runtime][3788741][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:51:01:439][v8fuzz_runtime][3788741][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:51:01:674][v8fuzz_runtime][3788741][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:51:01:678][v8fuzz_runtime][3788741][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:51:01:678][v8fuzz_runtime][3788741][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(3)
+[2026-03-21 04:51:01:679][v8fuzz_runtime][3788741][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(4)
+[2026-03-21 04:51:01:679][v8fuzz_runtime][3788741][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(5)
+[2026-03-21 04:51:01:679][v8fuzz_runtime][3788741][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(6)
+[2026-03-21 04:51:01:679][v8fuzz_runtime][3788741][runtime.rs:212][INFO] Reached delayed fork position after 5 injection points (not forking, because we are running without an attached fuzzer)
+=================================================================
+==3788741==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x79d698f4ca00 at pc 0x64b4a6250f78 bp 0x7fff69d43770 sp 0x7fff69d43768
+WRITE of size 1 at 0x79d698f4ca00 thread T0
+    #0 0x64b4a6250f77 in v8::internal::(anonymous namespace)::TypedElementsAccessor<(v8::internal::ElementsKind)38, unsigned char>::CopyElementsFromTypedArray(v8::internal::Tagged<v8::internal::JSTypedArray>, v8::internal::Tagged<v8::internal::JSTypedArray>, unsigned long, unsigned long) third_party/libc++/src/include/__atomic/support/c11.h:68:3
+    #1 0x64b4b101ecde in Builtins_TypedArrayPrototypeSet setup-isolate-deserialize.cc
+    #2 0x64b4b0e9265d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #3 0x64b4b0e8ff62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #4 0x64b4b0e8fcaa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #5 0x64b4a481d34e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #6 0x64b4a48232a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #7 0x64b4a3abc1bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #8 0x64b4a3486d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #9 0x64b4a35176db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #10 0x64b4a35387d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #11 0x64b4a3536d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #12 0x64b4a35406bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #13 0x7db6997011c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #14 0x7db69970128a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #15 0x64b4a332d029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+0x79d698f4ca00 is located 0 bytes after 16-byte region [0x79d698f4c9f0,0x79d698f4ca00)
+allocated by thread T0 here:
+    #0 0x64b4a340a771 in operator new[](unsigned long) (/work/v8-build/out/fuzzing-build/d8+0x1d6c771) (BuildId: 8baf296317236785)
+    #1 0x64b4a6249adc in v8::internal::(anonymous namespace)::TypedElementsAccessor<(v8::internal::ElementsKind)38, unsigned char>::CopyElementsFromTypedArray(v8::internal::Tagged<v8::internal::JSTypedArray>, v8::internal::Tagged<v8::internal::JSTypedArray>, unsigned long, unsigned long) src/objects/elements.cc:3929:38
+    #2 0x64b4b101ecde in Builtins_TypedArrayPrototypeSet setup-isolate-deserialize.cc
+    #3 0x64b4b0e9265d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #4 0x64b4b0e8ff62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #5 0x64b4b0e8fcaa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #6 0x64b4a481d34e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #7 0x64b4a48232a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #8 0x64b4a3abc1bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #9 0x64b4a3486d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #10 0x64b4a35176db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #11 0x64b4a35387d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #12 0x64b4a3536d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #13 0x64b4a35406bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #14 0x7db6997011c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #15 0x7db69970128a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #16 0x64b4a332d029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow third_party/libc++/src/include/__atomic/support/c11.h:68:3 in v8::internal::(anonymous namespace)::TypedElementsAccessor<(v8::internal::ElementsKind)38, unsigned char>::CopyElementsFromTypedArray(v8::internal::Tagged<v8::internal::JSTypedArray>, v8::internal::Tagged<v8::internal::JSTypedArray>, unsigned long, unsigned long)
+Shadow bytes around the buggy address:
+  0x79d698f4c780: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x79d698f4c800: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x79d698f4c880: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x79d698f4c900: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x79d698f4c980: fa fa fd fa fa fa fd fa fa fa fd fa fa fa 00 00
+=>0x79d698f4ca00:[fa]fa fd fa fa fa fd fa fa fa fa fa fa fa fa fa
+  0x79d698f4ca80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x79d698f4cb00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x79d698f4cb80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x79d698f4cc00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x79d698f4cc80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3788741==ABORTING
+
+## V8 sandbox violation detected!
+

@@ -1,0 +1,16 @@
+is_debug = false
+dcheck_always_on = false
+symbol_level = 2
+use_dwarf5 = true
+enable_frame_pointers = true
+v8_enable_backtrace = true
+clang_use_chrome_plugins = false
+custom_toolchain = "//build/toolchain/linux/unbundle:default"
+host_toolchain = "//build/toolchain/linux/unbundle:default"
+is_asan = true
+v8_enable_sandbox = true
+v8_enable_memory_corruption_api = true
+v8_static_library = true
+v8_fuzzilli = false
+target_cpu = "x64"
+treat_warnings_as_errors = false

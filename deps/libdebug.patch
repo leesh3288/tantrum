@@ -1,0 +1,33 @@
+diff -urN a/debugger/internal_debugger.py b/debugger/internal_debugger.py
+--- a/debugger/internal_debugger.py	2025-04-02 18:00:24.167578300 -0400
++++ b/debugger/internal_debugger.py	2025-04-02 17:58:07.340225025 -0400
+@@ -605,7 +605,7 @@
+         if isinstance(position, str):
+             address = self.resolve_symbol(position, file)
+         else:
+-            address = self.resolve_address(position, file)
++            address = self.resolve_address(position, file, skip_absolute_address_validation=True)
+             position = hex(address)
+ 
+         if condition != "x" and not hardware:
+diff -urN a/debugger/internal_debugger.py b/debugger/internal_debugger.py
+--- a/utils/pprint_primitives.py	2025-04-02 18:00:24.174578727 -0400
++++ b/utils/pprint_primitives.py	2025-04-02 18:01:46.404598851 -0400
+@@ -11,7 +11,7 @@
+ from libdebug.data.symbol_list import SymbolList
+ from libdebug.snapshots.memory.memory_map_snapshot_list import MemoryMapSnapshotList
+ from libdebug.utils.ansi_escape_codes import ANSIColors
+-from libdebug.utils.debugging_utils import resolve_symbol_name_in_maps_util
++from libdebug.utils.debugging_utils import resolve_address_in_maps
+ 
+ 
+ def pprint_maps_util(maps: MemoryMapList | MemoryMapSnapshotList) -> None:
+@@ -47,7 +47,7 @@
+     """Pretty prints a return address for backtrace pprint."""
+     filtered_maps = maps.filter(return_address)
+ 
+-    return_address_symbol = resolve_symbol_name_in_maps_util(return_address, external_symbols)
++    return_address_symbol = resolve_address_in_maps(return_address, maps)
+ 
+     permissions = filtered_maps[0].permissions
+     if "rwx" in permissions:

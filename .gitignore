@@ -1,0 +1,31 @@
+# Locally unpacked targets and corpora
+backend/tantrum/builds/*/d8
+backend/tantrum/test/
+backend/preprocessor/pin/
+eval/discovery/tantrum-dev/test/
+eval/discovery/tantrum-dev/logs/
+eval/discovery/tantrum-dev/repro.txt
+eval/baselines/final-sbxbrk-comparison/SbxBrk/evaluation/js_files/eval_corpus/
+eval/baselines/final-v8sbxfuzzer/evaluation/js_files/eval_corpus/
+eval/baselines/final-v8sbxfuzzer/FuzzilliSbx/v8/
+eval/baselines/final-v8sbxfuzzer/results/
+eval/comparison/target/out/
+eval/comparison/target/test/
+eval/comparison/source/*/test/
+eval/comparison/source/*/preprocessor/pin/
+eval/comparison/source/*/logs/
+eval/comparison/source/*/*.pickle
+
+# Fuzzing outputs
+*.js.1.trace
+*.js.2.trace
+backend/tantrum/logs/
+backend/tantrum/*.pickle
+eval/**/storage/
+repro-results/
+
+# Local Python and editor files
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

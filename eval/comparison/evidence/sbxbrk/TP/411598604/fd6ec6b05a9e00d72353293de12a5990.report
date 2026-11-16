@@ -1,0 +1,52 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/fd6ec6b05a9e00d72353293de12a5990.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:16:25:159][v8fuzz_runtime][3779477][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:16:25:160][v8fuzz_runtime][3779477][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:16:25:160][v8fuzz_runtime][3779477][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:16:25:160][v8fuzz_runtime][3779477][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:16:25:160][v8fuzz_runtime][3779477][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/fd6ec6b05a9e00d72353293de12a5990.ron'
+[2026-03-21 04:16:25:160][v8fuzz_runtime][3779477][input.rs:175][INFO] Loaded 8299 bytes input
+[2026-03-21 04:16:25:160][v8fuzz_runtime][3779477][input.rs:68][TRACE] loaded js file is 231 bytes long
+[2026-03-21 04:16:25:161][v8fuzz_runtime][3779477][input.rs:70][TRACE] total_msk_len is Some(7952) bytes
+[2026-03-21 04:16:25:161][v8fuzz_runtime][3779477][input.rs:80][TRACE] Of the 7952 bytes, are 99.4341046277666% zeros (i.e., have no effect)
+[2026-03-21 04:16:25:161][v8fuzz_runtime][3779477][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(2)
+[2026-03-21 04:16:25:170][v8fuzz_runtime][3779477][sandbox.rs:23][INFO] Setting heap sandbox base to 0x794e00000000
+[2026-03-21 04:16:25:170][v8fuzz_runtime][3779477][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:16:25:406][v8fuzz_runtime][3779477][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:16:25:410][v8fuzz_runtime][3779477][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:16:25:410][v8fuzz_runtime][3779477][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:16:25:410][v8fuzz_runtime][3779477][runtime.rs:212][INFO] Reached delayed fork position after 2 injection points (not forking, because we are running without an attached fuzzer)
+
+## V8 sandbox violation detected!
+
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3779477==ERROR: AddressSanitizer: SEGV on unknown address 0x7efefffc0000 (pc 0x627c441ca6be bp 0x7ffd5d5a0dd0 sp 0x7ffd5d5a0d50 T0)
+==3779477==The signal is caused by a READ memory access.
+    #0 0x627c441ca6be in void v8::internal::MarkingVisitorBase<v8::internal::MainMarkingVisitor>::ProcessStrongHeapObject<v8::internal::OffHeapCompressedObjectSlot<v8::internal::V8HeapCompressionSchemeImpl<v8::internal::TrustedCage>>>(v8::internal::Tagged<v8::internal::HeapObject>, v8::internal::OffHeapCompressedObjectSlot<v8::internal::V8HeapCompressionSchemeImpl<v8::internal::TrustedCage>>, v8::internal::Tagged<v8::internal::HeapObject>) src/heap/memory-chunk.h:210:55
+    #1 0x627c4403d73c in v8::internal::MarkCompactCollector::ProcessMarkingWorklist(v8::base::TimeDelta, unsigned long, v8::internal::MarkCompactCollector::MarkingWorklistProcessingMode) src/heap/marking-visitor-inl.h:176:5
+    #2 0x627c43f216a2 in v8::internal::IncrementalMarking::Step(v8::base::TimeDelta, unsigned long, v8::internal::StepOrigin) src/heap/incremental-marking.cc:963:25
+    #3 0x627c43f1f01e in v8::internal::IncrementalMarking::AdvanceAndFinalizeIfComplete() src/heap/incremental-marking.cc:817:3
+    #4 0x627c43f0382b in v8::internal::IncrementalMarkingJob::Task::RunInternal() src/heap/incremental-marking-job.cc:135:34
+    #5 0x627c42791341 in v8::platform::DefaultPlatform::PumpMessageLoop(v8::Isolate*, v8::platform::MessageLoopBehavior) src/libplatform/default-platform.cc:173:9
+    #6 0x627c422dd797 in v8::(anonymous namespace)::ProcessMessages(v8::Isolate*, std::__Cr::function<v8::platform::MessageLoopBehavior ()> const&) src/d8/d8.cc:5935:9
+    #7 0x627c422ba6b3 in v8::Shell::FinishExecuting(v8::Isolate*, v8::Global<v8::Context> const&) src/d8/d8.cc:5991:10
+    #8 0x627c422dc973 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5903:8
+    #9 0x627c422dad16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #10 0x627c422e46bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #11 0x7e8f361011c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #12 0x7e8f3610128a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #13 0x627c420d1029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+==3779477==Register values:
+rax = 0x00000fdfdfff8000  rbx = 0x00007d9f351ef730  rcx = 0x0000000000000003  rdx = 0x0000794e00141a58  
+rdi = 0x00007b4f351fccc0  rsi = 0x0000010000000000  rbp = 0x00007ffd5d5a0dd0  rsp = 0x00007ffd5d5a0d50  
+ r8 = 0x0000000000000004   r9 = 0x00007ccf35472000  r10 = 0x00007fffffffff01  r11 = 0x0000000000000001  
+r12 = 0x00007b4f351fccc0  r13 = 0x00007efefffc0000  r14 = 0x0000794e00000000  r15 = 0x00007efeffffffff  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/heap/memory-chunk.h:210:55 in void v8::internal::MarkingVisitorBase<v8::internal::MainMarkingVisitor>::ProcessStrongHeapObject<v8::internal::OffHeapCompressedObjectSlot<v8::internal::V8HeapCompressionSchemeImpl<v8::internal::TrustedCage>>>(v8::internal::Tagged<v8::internal::HeapObject>, v8::internal::OffHeapCompressedObjectSlot<v8::internal::V8HeapCompressionSchemeImpl<v8::internal::TrustedCage>>, v8::internal::Tagged<v8::internal::HeapObject>)
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3779477==ABORTING

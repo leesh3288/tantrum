@@ -1,0 +1,12 @@
+# REPRO: python3 ./tantrum/tantrum-v0.py --d8 ./builds/0242cac/d8 repro 7469970209518584880433290390 2-16
+
+1-v8sbx-1739237971957443487-89238-7469970209518584880433290390-array-spread-call-tierup-inline-oob.txt
+CMD: builds/0242cac/d8 --sandbox-testing --single-threaded --expose-gc --allow-natives-syntax -e d8.file.execute("./test/mjsunit/mjsunit.js") test/mjsunit/es6/spread-call.js
+
+python3 tantrum-v0.py repro 7469970209518584880433290390 2-16
+
+try_offsets = random.sample(range(-0x100, 0x100, 4), random.randrange(0, 9))
+bits_to_flip = sorted(random.sample(range(-0x100*8, 0x100*8), random.randrange(0, 17)))
+
+# sha256sum tests.txt
+70cd8a050db1db5145697153fd33f1d5fe1f6853de14698641dd4e3596db5cab  tests.txt

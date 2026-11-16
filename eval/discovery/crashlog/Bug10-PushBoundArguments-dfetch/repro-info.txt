@@ -1,0 +1,3 @@
+# REPRO: (cd ../../../backend/tantrum; python3 tantrum_repro.py ../../eval/vuln-crashlog/crashlog/Bug10-PushBoundArguments-dfetch/v8sbx-prune-1915-0x55555bd34e00-1.txt)
+# NOTE: also discovered as part of 6.4 cov/baseline eval
+# NOTE: detected by augmented handler pc-control check

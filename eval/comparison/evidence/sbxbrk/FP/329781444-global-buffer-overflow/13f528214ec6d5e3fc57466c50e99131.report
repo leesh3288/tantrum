@@ -1,0 +1,97 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/13f528214ec6d5e3fc57466c50e99131.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:16:42:329][v8fuzz_runtime][3779908][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:16:42:329][v8fuzz_runtime][3779908][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:16:42:329][v8fuzz_runtime][3779908][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:16:42:330][v8fuzz_runtime][3779908][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:16:42:330][v8fuzz_runtime][3779908][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/13f528214ec6d5e3fc57466c50e99131.ron'
+[2026-03-21 04:16:42:330][v8fuzz_runtime][3779908][input.rs:175][INFO] Loaded 16524 bytes input
+[2026-03-21 04:16:42:331][v8fuzz_runtime][3779908][input.rs:68][TRACE] loaded js file is 611 bytes long
+[2026-03-21 04:16:42:331][v8fuzz_runtime][3779908][input.rs:70][TRACE] total_msk_len is Some(15797) bytes
+[2026-03-21 04:16:42:331][v8fuzz_runtime][3779908][input.rs:80][TRACE] Of the 15797 bytes, are 99.7467873646895% zeros (i.e., have no effect)
+[2026-03-21 04:16:42:331][v8fuzz_runtime][3779908][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(5)
+[2026-03-21 04:16:42:339][v8fuzz_runtime][3779908][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:16:42:339][v8fuzz_runtime][3779908][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:16:42:577][v8fuzz_runtime][3779908][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:16:42:581][v8fuzz_runtime][3779908][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:16:42:581][v8fuzz_runtime][3779908][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(6)
+[2026-03-21 04:16:42:581][v8fuzz_runtime][3779908][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:16:42:581][v8fuzz_runtime][3779908][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(3)
+[2026-03-21 04:16:42:660][v8fuzz_runtime][3779908][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(4)
+[2026-03-21 04:16:42:660][v8fuzz_runtime][3779908][runtime.rs:212][INFO] Reached delayed fork position after 5 injection points (not forking, because we are running without an attached fuzzer)
+=================================================================
+==3779908==ERROR: AddressSanitizer: global-buffer-overflow on address 0x60611dab1deb at pc 0x606120c12608 bp 0x7ffe6fcc4810 sp 0x7ffe6fcc4808
+READ of size 1 at 0x60611dab1deb thread T0
+    #0 0x606120c12607 in void v8::internal::JsonParser<unsigned short>::DecodeString<unsigned char>(unsigned char*, int, int) src/json/json-parser.cc:2159:27
+    #1 0x606120bb0b34 in v8::internal::Handle<v8::internal::String> v8::internal::JsonParser<unsigned short>::DecodeString<v8::internal::SeqOneByteString>(v8::internal::JsonString const&, v8::internal::Handle<v8::internal::SeqOneByteString>, v8::internal::Handle<v8::internal::String>) src/json/json-parser.cc:2100:5
+    #2 0x606120c01622 in v8::internal::Handle<v8::internal::JSObject> v8::internal::JSDataObjectBuilder::BuildFromIterator<v8::internal::JsonParser<unsigned short>::NamedPropertyIterator&>(v8::internal::JsonParser<unsigned short>::NamedPropertyIterator&, v8::internal::MaybeHandle<v8::internal::FixedArrayBase>) src/json/json-parser.cc:1267:20
+    #3 0x606120bcbcb0 in v8::internal::Handle<v8::internal::JSObject> v8::internal::JsonParser<unsigned short>::BuildJsonObject<false>(v8::internal::JsonParser<unsigned short>::JsonContinuation const&, v8::internal::Handle<v8::internal::Map>) src/json/json-parser.cc:1351:33
+    #4 0x606120bb6a31 in v8::internal::JsonParser<unsigned short>::ParseJsonObject(v8::internal::Handle<v8::internal::Map>) src/json/json-parser.cc:1509:27
+    #5 0x606120b94c70 in v8::internal::JsonParser<unsigned short>::ParseJson(v8::internal::DirectHandle<v8::internal::Object>) src/json/json-parser.cc:1458:14
+    #6 0x606120b93b92 in v8::internal::JsonParser<unsigned short>::Parse(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::Object>) src/json/json-parser.h:173:7
+    #7 0x60611ee639bc in v8::internal::Builtin_Impl_JsonParse(v8::internal::BuiltinArguments, v8::internal::Isolate*) src/builtins/builtins-json.cc:25:3
+    #8 0x60612bec3d75 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #9 0x60612be0c65d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x60612be0ce92 in Builtins_InterpreterPushArgsThenFastConstructFunction setup-isolate-deserialize.cc
+    #11 0x60612bfd9e48 in Builtins_ConstructHandler setup-isolate-deserialize.cc
+    #12 0x60612be0c65d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #13 0x60612be09f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #14 0x60612be09caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #15 0x60611f79734e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #16 0x60611f79d2a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #17 0x60611ea361bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #18 0x60611e400d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #19 0x60611e4916db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #20 0x60611e4b27d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #21 0x60611e4b0d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #22 0x60611e4ba6bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #23 0x77cbfea181c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #24 0x77cbfea1828a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #25 0x60611e2a7029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+0x60611dab1deb is located 53 bytes before global variable '.str.27' defined in '../../src/json/json-parser.cc' (0x60611dab1e20) of size 164
+  '.str.27' is ascii string '../../third_party/libc++/src/include/__ranges/iota_view.h:316: assertion bool(__value_ <= __bound_sentinel_) failed: iota_view: bound must be reachable from value
+'
+0x60611dab1deb is located 8 bytes after global variable '.str.25' defined in '../../src/json/json-parser.cc' (0x60611dab1d60) of size 131
+  '.str.25' is ascii string '../../third_party/libc++/src/include/__vector/vector.h:466: assertion !empty() failed: vector::pop_back called on an empty vector
+'
+SUMMARY: AddressSanitizer: global-buffer-overflow src/json/json-parser.cc:2159:27 in void v8::internal::JsonParser<unsigned short>::DecodeString<unsigned char>(unsigned char*, int, int)
+Shadow bytes around the buggy address:
+  0x60611dab1b00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x60611dab1b80: 00 05 f9 f9 f9 f9 f9 f9 00 00 00 00 00 00 00 00
+  0x60611dab1c00: 00 00 00 00 00 00 00 00 06 f9 f9 f9 f9 f9 f9 f9
+  0x60611dab1c80: 00 00 00 f9 f9 f9 f9 f9 00 00 00 00 00 00 00 00
+  0x60611dab1d00: 00 00 00 00 00 00 00 01 f9 f9 f9 f9 00 00 00 00
+=>0x60611dab1d80: 00 00 00 00 00 00 00 00 00 00 00 00 03[f9]f9 f9
+  0x60611dab1e00: f9 f9 f9 f9 00 00 00 00 00 00 00 00 00 00 00 00
+  0x60611dab1e80: 00 00 00 00 00 00 00 00 04 f9 f9 f9 f9 f9 f9 f9
+  0x60611dab1f00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x60611dab1f80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x60611dab2000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3779908==ABORTING
+
+## V8 sandbox violation detected!
+

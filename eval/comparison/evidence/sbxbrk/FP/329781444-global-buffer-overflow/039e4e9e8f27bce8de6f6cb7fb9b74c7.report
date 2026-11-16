@@ -1,0 +1,118 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/039e4e9e8f27bce8de6f6cb7fb9b74c7.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:19:10:527][v8fuzz_runtime][3783964][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:19:10:527][v8fuzz_runtime][3783964][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:19:10:527][v8fuzz_runtime][3783964][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:19:10:528][v8fuzz_runtime][3783964][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:19:10:528][v8fuzz_runtime][3783964][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/039e4e9e8f27bce8de6f6cb7fb9b74c7.ron'
+[2026-03-21 04:19:10:528][v8fuzz_runtime][3783964][input.rs:175][INFO] Loaded 6612 bytes input
+[2026-03-21 04:19:10:528][v8fuzz_runtime][3783964][input.rs:68][TRACE] loaded js file is 1036 bytes long
+[2026-03-21 04:19:10:528][v8fuzz_runtime][3783964][input.rs:70][TRACE] total_msk_len is Some(5459) bytes
+[2026-03-21 04:19:10:528][v8fuzz_runtime][3783964][input.rs:80][TRACE] Of the 5459 bytes, are 99.78017952005862% zeros (i.e., have no effect)
+[2026-03-21 04:19:10:528][v8fuzz_runtime][3783964][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(17)
+[2026-03-21 04:19:10:537][v8fuzz_runtime][3783964][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:19:10:537][v8fuzz_runtime][3783964][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:19:10:777][v8fuzz_runtime][3783964][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(16)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(3)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(4)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(7)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(8)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(9)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(12)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(13)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(5)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(3)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(4)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(7)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(8)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(9)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:212][INFO] Reached delayed fork position after 17 injection points (not forking, because we are running without an attached fuzzer)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(12)
+[2026-03-21 04:19:10:783][v8fuzz_runtime][3783964][runtime.rs:150][TRACE] Setting enable_fuzzing. Fuzzing can start now.
+=================================================================
+==3783964==ERROR: AddressSanitizer: global-buffer-overflow on address 0x5e55a908d7ee at pc 0x5e55ac1dfa15 bp 0x7ffc48611040 sp 0x7ffc48611038
+READ of size 1 at 0x5e55a908d7ee thread T0
+    #0 0x5e55ac1dfa14 in void v8::internal::JsonParser<unsigned short>::DecodeString<unsigned short>(unsigned short*, int, int) src/json/json-parser.cc:2159:27
+    #1 0x5e55ac17d2f7 in v8::internal::Handle<v8::internal::String> v8::internal::JsonParser<unsigned short>::DecodeString<v8::internal::SeqTwoByteString>(v8::internal::JsonString const&, v8::internal::Handle<v8::internal::SeqTwoByteString>, v8::internal::Handle<v8::internal::String>) src/json/json-parser.cc:2100:5
+    #2 0x5e55ac181b93 in v8::internal::JsonParser<unsigned short>::ParseJsonObject(v8::internal::Handle<v8::internal::Map>) src/json/json-parser.cc:1445:14
+    #3 0x5e55ac160c70 in v8::internal::JsonParser<unsigned short>::ParseJson(v8::internal::DirectHandle<v8::internal::Object>) src/json/json-parser.cc:1458:14
+    #4 0x5e55ac15fb92 in v8::internal::JsonParser<unsigned short>::Parse(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::Object>) src/json/json-parser.h:173:7
+    #5 0x5e55aa42f9bc in v8::internal::Builtin_Impl_JsonParse(v8::internal::BuiltinArguments, v8::internal::Isolate*) src/builtins/builtins-json.cc:25:3
+    #6 0x5e55b748fd75 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #7 0x5e55b73d865d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #8 0x5e55b73d865d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #9 0x5e55b73d5f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x5e55b73d5caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #11 0x5e55aad6334e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #12 0x5e55aad5f7dd in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #13 0x5e55ad5f9e21 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #14 0x5e55ad5f7ff4 in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #15 0x5e55ad5f6574 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #16 0x5e55ae1b0fdc in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #17 0x5e55ae1d408c in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #18 0x5e55b748fe35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #19 0x5e55b759a20e in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #20 0x5e55b73d865d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #21 0x5e55b73d865d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #22 0x5e55b73d5f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #23 0x5e55b73d5caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #24 0x5e55aad6334e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #25 0x5e55aad692a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #26 0x5e55aa0021bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #27 0x5e55a99ccd17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #28 0x5e55a9a5d6db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #29 0x5e55a9a7e7d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #30 0x5e55a9a7cd16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #31 0x5e55a9a866bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #32 0x71db2012f1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #33 0x71db2012f28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #34 0x5e55a9873029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+0x5e55a908d7ee is located 18 bytes before global variable '.str.219' defined in '../../src/logging/runtime-call-stats.cc' (0x5e55a908d800) of size 29
+  '.str.219' is ascii string 'Map_TransitionToDataProperty'
+0x5e55a908d7ee is located 45 bytes after global variable '.str.218' defined in '../../src/logging/runtime-call-stats.cc' (0x5e55a908d7a0) of size 33
+  '.str.218' is ascii string 'Map_TransitionToAccessorProperty'
+SUMMARY: AddressSanitizer: global-buffer-overflow src/json/json-parser.cc:2159:27 in void v8::internal::JsonParser<unsigned short>::DecodeString<unsigned short>(unsigned short*, int, int)
+Shadow bytes around the buggy address:
+  0x5e55a908d500: 00 00 05 f9 f9 f9 f9 f9 00 00 06 f9 f9 f9 f9 f9
+  0x5e55a908d580: 00 00 04 f9 f9 f9 f9 f9 00 00 02 f9 f9 f9 f9 f9
+  0x5e55a908d600: 07 f9 f9 f9 00 00 02 f9 f9 f9 f9 f9 00 00 00 04
+  0x5e55a908d680: f9 f9 f9 f9 00 00 05 f9 f9 f9 f9 f9 00 00 00 f9
+  0x5e55a908d700: f9 f9 f9 f9 00 06 f9 f9 00 05 f9 f9 00 00 01 f9
+=>0x5e55a908d780: f9 f9 f9 f9 00 00 00 00 01 f9 f9 f9 f9[f9]f9 f9
+  0x5e55a908d800: 00 00 00 05 f9 f9 f9 f9 00 00 00 f9 f9 f9 f9 f9
+  0x5e55a908d880: 00 00 05 f9 f9 f9 f9 f9 00 00 05 f9 f9 f9 f9 f9
+  0x5e55a908d900: 00 00 00 f9 f9 f9 f9 f9 00 00 00 f9 f9 f9 f9 f9
+  0x5e55a908d980: 00 00 04 f9 f9 f9 f9 f9 00 00 03 f9 f9 f9 f9 f9
+  0x5e55a908da00: 00 00 04 f9 f9 f9 f9 f9 00 05 f9 f9 00 00 06 f9
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3783964==ABORTING
+
+## V8 sandbox violation detected!
+

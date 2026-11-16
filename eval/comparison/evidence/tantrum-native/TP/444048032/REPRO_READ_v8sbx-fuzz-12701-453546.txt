@@ -1,0 +1,134 @@
+Input: /work/evaluation/js_files/eval_corpus/js/7812a28d9ddbf15b66807ffeb4702cecc35e77e7d899581c9076bf3017852ed3.js
+Fault: {93825088557647: [((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((b'\x95\xa9q\xa5\xf0\x18\x12\xd5', None), 189), ((None, None), 218), ((None, b'\x18\xe5\x8c;'), 214), ((b'\x01\x98\xfe\x99]r\x05\x87', b'\xee\xadh.\xfff\x92L'), 154), ((None, None), 204), ((b'\x17\xee<\xa5fk\x89)', b'\xb7v'), 161), ((None, b'\r3\xd6\xbc'), 23), ((b'\xb8', b'\xf2\x15\x04\xe7\xcc\xb7<\x85'), 214), ((None, None), 0), ((None, None), 0), ((None, None), 16), ((b'\xf5\xce\xf1<c\xabB\x12', b'\xbb\x97s\x92X\x9b\xfc<'), 219), ((None, None), 0), ((None, b'\xbc\x94\x0c\xf0'), 142), ((b'i\xab', None), 15), ((b'\xa4', None), 127), ((b'\x9d\x1f', b'\xa5k\x0e\x13'), 222), ((b'L\xcf\xf5C', b'E\x92c\n'), 110), ((None, b'\xb3\xc6\xfb\x9d'), 19), ((b'8\xae\x19W', b'5'), 249), ((None, b',q\xfd^'), 242), ((None, b'Ey\xda\xa7'), 71), ((None, None), 128), ((None, None), 241), ((None, None), 48), ((None, None), 76), ((None, b'Tm\xa8\xe2Q\xc98\xd3'), 73), ((None, None), 0), ((None, b'm\x83'), 64), ((b'Wc', b'\xd5T'), 10), ((None, b'x'), 10), ((b'\xac\x87\xe0^\xc5\xf1\xd8\xf0', None), 45), ((b'\xed', None), 52), ((None, None), 177), ((None, None), 151), ((b'|', None), 117), ((b'\xe9', None), 138), ((None, None), 35), ((None, b'\xdd\xc8'), 240), ((b'\xbd\xd2\xa9\x0b\xb10Z\x8b', b'\\W'), 175), ((None, None), 220), ((None, None), 244), ((None, None), 174), ((b'c\xf0', None), 94), ((None, None), 0), ((None, None), 116), ((None, None), 105), ((b'\xaf', b'{8'), 224), ((b'\xd9\x08\xd4\xa6', b'\xc6'), 8), ((b'\xccW', b'iy\x0eQ*\x02\x11-'), 29), ((None, b'\xaa\xfc'), 30), ((b'\xee', None), 60), ((None, None), 0), ((b'\xe1i', None), 105), ((b'\x0f\xe8\xacH\x8e?\xc6\xf3', b"\xcb'"), 114), ((b'\xf4', b'\xb6\xab?[J\x04\xc7\x1e'), 47), ((None, None), 237), ((b'8S\xc9n\x87d\x12/', None), 236), ((b'A\x83V<', b'\xd2\xe3'), 243), ((None, None), 239), ((None, None), 0), ((b'\xd1s\xc6U', None), 52), ((None, b'\x91'), 81), ((None, None), 210), ((b't\xf4\xde4\x0f\xb7^\xb7', b'\xaec\x04\xda'), 9), ((None, b']\xba'), 199), ((b'\xfd\x04', None), 160), ((None, None), 233), ((None, None), 12), ((None, b'&\x06'), 186), ((None, None), 148), ((None, None), 0), ((b'\x05\x92', b',\x85f]\xbef!M'), 40), ((b'\xf8~', b'%\xe3\xe6\xa3'), 1), ((None, None), 95), ((None, None), 155), ((b'\x11', None), 134), ((None, None), 9), ((b'\x8a', None), 223), ((None, None), 36), ((b'`\xdaR5', None), 174), ((None, b'@#\xeai'), 216), ((b'\x0f+', None), 40), ((None, b'\xc8Q\x15e\x94\xfd\x9b\x8e'), 187), ((None, None), 0), ((None, b'\xa1\x1f\x945'), 123), ((None, None), 0), ((None, b'\x95\x81\xc9b$\x99\xcba'), 36), ((None, None), 0), ((b'\xbaH', b'/\xb5'), 43), ((b'\xf0\xe5\xe6a\xc4\xcaC\xc1', None), 247), ((None, b'\x8a'), 18), ((b'\xbd', None), 14), ((b'$\x8e\xe10\xbaf}\x14', b'R&\x9d\x0f'), 125), ((b'\x06\xb8D\x8b\xad\xe5\x8f\x16', None), 188), ((b'4\xbc,\xa7u]\t\xbb', b'\xa2\xba'), 154), ((b':Y', None), 67), ((b'\x93F\x9c4\xc8\x8a\xb3\xeb', b'\xf5\x00'), 187), ((b'x', None), 119), ((None, None), 186), ((None, None), 81), ((b'\xa1\x8c\x9e3', b'\xb3.\xe9\x8f'), 91), ((b"'\xaaRX", b'\xe1\xca\x1c\xc6\xafb\xe4\\'), 166), ((b'\x84\xe6\x18\x1b\x7fK8)', b'\x17\x9e'), 202), ((b'\xb0', b'\xf5pwL:\x17\x05\x93'), 172), ((b'\xcdx', None), 44), ((None, b's'), 136), ((b'\xbc', None), 242), ((None, None), 188), ((None, None), 0), ((b'\xc1', b'P\x94\t\xdc\x13\xd3\xbd\xfc'), 162), ((b'\xff\xba{\x0c', None), 148), ((b'\xc5\xd0a\x19\xf8W\xa2\xd8', None), 95), ((b'\xdb', b'V\xa4\xad\xd5'), 154), ((None, None), 232), ((b'\xdc', None), 195), ((b'~\x0b\xbf\x1e', None), 188), ((None, b'\x08'), 6), ((b'G', b'r'), 184), ((None, None), 215), ((None, b'\xfaM*\xd7\xae\x9d[ '), 40), ((None, None), 209), ((b'\xaa\xac', b'?\t\xf4\xd5\x99\xd9\x1d\xba'), 85), ((b'\x8a\xfd', b'\xe9\x81\xd0\x06'), 196), ((b'"\x0b\xfd?', None), 28), ((None, b'4'), 99), ((None, b'\xe33'), 102), ((b'\xef\x01', b'\xcfu;\xe3EU\xff\x86'), 255), ((None, None), 120), ((None, None), 147), ((None, None), 170), ((None, None), 224), ((None, b'\xc5@\x1e\x93M\xd6\xd7\x06'), 167), ((None, None), 0), ((None, b'\xb1\xab\xae\x83'), 156), ((b'p\x88', b'\x13\xfa\xd3\x8b'), 145), ((None, None), 0), ((None, None), 178), ((b'\xd4.', b'\xb8Z46\xf2\x1e\x98\xf0'), 139), ((b'\xa8', None), 151), ((b'\x8b', None), 231), ((b'B\xc1\xbeA', b'\xa1s'), 245), ((None, None), 185), ((b'\x10\xae2O', None), 224), ((None, b'\xcc\xa2\xb1\x8a'), 44), ((None, b',X\xef_\xbc\x80\xc9k'), 212), ((None, b'\xdf'), 34), ((b'\x94<7\x9a8\xc1\xc2\x1f', b'tn\xb4V'), 142)], 93825046297811: [((b'\x1b', None), 194), ((b'\x18', None), 193), ((b'\x88', None), 129), ((b'\xb9', None), 129), ((b'\xb9', None), 193), ((b'\x8b', None), 193), ((b'\xa5', None), 130), ((b'9', None), 193), ((b'\xb0', None), 130), ((b'J', None), 130), ((b'\x87', None), 130), ((b'`', None), 129), ((b'\xdd', None), 193), ((b'\xcd', None), 193), ((b'\xab', None), 193), ((b'\xf6', None), 130), ((b'\xf4', None), 194), ((b'\xfd', None), 130), ((b'\xff', None), 194), ((b'\xe6', None), 194), ((b'\xde', None), 193), ((b'J', None), 129), ((b'D', None), 129), ((b'(', None), 194), ((b'\x1e', None), 130), ((b'\xa7', None), 129)], 93825046298402: [((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((None, None), 0), ((b'\xdf', None), 174), ((b'\x14\xd6', None), 130), ((b'm\x8c', None), 194), ((b'<>', None), 129), ((b'_', b'g'), 215), ((b'\xc0\x0e', None), 129), ((None, None), 0), ((None, None), 52), ((b'e\x94', None), 194), ((b'P', b'\x7f'), 241), ((None, b'\x98\x12'), 152), ((None, None), 211), ((b'\xf4\x19', None), 129), ((b'\xff\xef', None), 129), ((b'x', b'\xae\x9bQ\xff'), 245), ((None, b'\xdd\x8d6\t'), 170), ((b'\x7f\x0c\x1a\x80', None), 122), ((b'\xd6<', None), 130), ((b'j', b'\xfa\xbb'), 44), ((b'\x15\x96', None), 130), ((None, b'C\xe2\xf7"'), 180)]}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/d8 --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded /work/evaluation/js_files/eval_corpus/js/7812a28d9ddbf15b66807ffeb4702cecc35e77e7d899581c9076bf3017852ed3.js
+Hook Logs (Max 0x1000):
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+=================================================================
+[1m[31m==2999816==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x7e6ff6de6930 at pc 0x55555b139538 bp 0x7fffffffda30 sp 0x7fffffffda28
+[1m[0m[1m[34mREAD of size 8 at 0x7e6ff6de6930 thread T0[1m[0m
+    #0 0x55555b139537 in v8::bigint::AddAndReturnOverflow(v8::bigint::RWDigits, v8::bigint::Digits) src/bigint/bigint.h:168:7
+    #1 0x55555b14d159 in v8::bigint::ProcessorImpl::Toom3Main(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/mul-toom.cc:200:3
+    #2 0x55555b14d9c1 in v8::bigint::ProcessorImpl::MultiplyToomCook(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/mul-toom.cc:216:7
+    #3 0x55555b11381e in v8::bigint::ProcessorImpl::Multiply(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/bigint-internal.cc:47:39
+    #4 0x55555b11642c in v8::bigint::Processor::Multiply(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/bigint-internal.cc:128:9
+    #5 0x5555588e3f3e in v8::internal::BigInt::Multiply(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::BigInt>, v8::internal::DirectHandle<v8::internal::BigInt>) src/objects/bigint.cc:443:56
+    #6 0x5555588e363f in v8::internal::BigInt::Exponentiate(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::BigInt>, v8::internal::DirectHandle<v8::internal::BigInt>) src/objects/bigint.cc:424:24
+    #7 0x5555597cd1e2 in v8::internal::Runtime_BigIntExponentiate(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-bigint.cc:110:3
+    #8 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #9 0x55555df7ec98 in Builtins_ExpHandler setup-isolate-deserialize.cc
+    #10 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #11 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #12 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #13 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #14 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #15 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #16 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #17 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #18 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #19 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #20 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #21 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #22 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #23 0x5555572a9029 in _start (/work/v8-build/out/fair-build/d8+0x1d55029) (BuildId: fcce9d6441377209)
+
+[1m[32m0x7e6ff6de6930 is located 0 bytes after 12336-byte region [0x7e6ff6de3900,0x7e6ff6de6930)
+[1m[0m[1m[35mallocated by thread T0 here:[1m[0m
+    #0 0x555557386771 in operator new[](unsigned long) (/work/v8-build/out/fair-build/d8+0x1e32771) (BuildId: fcce9d6441377209)
+    #1 0x55555b14d91d in v8::bigint::ProcessorImpl::MultiplyToomCook(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/bigint-internal.h:134:38
+    #2 0x55555b11381e in v8::bigint::ProcessorImpl::Multiply(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/bigint-internal.cc:47:39
+    #3 0x55555b11642c in v8::bigint::Processor::Multiply(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/bigint-internal.cc:128:9
+    #4 0x5555588e3f3e in v8::internal::BigInt::Multiply(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::BigInt>, v8::internal::DirectHandle<v8::internal::BigInt>) src/objects/bigint.cc:443:56
+    #5 0x5555588e363f in v8::internal::BigInt::Exponentiate(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::BigInt>, v8::internal::DirectHandle<v8::internal::BigInt>) src/objects/bigint.cc:424:24
+    #6 0x5555597cd1e2 in v8::internal::Runtime_BigIntExponentiate(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-bigint.cc:110:3
+    #7 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #8 0x55555df7ec98 in Builtins_ExpHandler setup-isolate-deserialize.cc
+    #9 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #11 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #12 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #13 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #14 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #15 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #16 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #17 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #18 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #19 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #20 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #21 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #22 0x5555572a9029 in _start (/work/v8-build/out/fair-build/d8+0x1d55029) (BuildId: fcce9d6441377209)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow src/bigint/bigint.h:168:7 in v8::bigint::AddAndReturnOverflow(v8::bigint::RWDigits, v8::bigint::Digits)
+Shadow bytes around the buggy address:
+  0x7e6ff6de6680: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7e6ff6de6700: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7e6ff6de6780: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7e6ff6de6800: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x7e6ff6de6880: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+=>0x7e6ff6de6900: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m[[1m[31mfa[1m[0m][1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m
+  0x7e6ff6de6980: [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m
+  0x7e6ff6de6a00: [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m
+  0x7e6ff6de6a80: [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m
+  0x7e6ff6de6b00: [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m
+  0x7e6ff6de6b80: [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m [1m[31mfa[1m[0m
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           [1m[0m00[1m[0m
+  Partially addressable: [1m[0m01[1m[0m [1m[0m02[1m[0m [1m[0m03[1m[0m [1m[0m04[1m[0m [1m[0m05[1m[0m [1m[0m06[1m[0m [1m[0m07[1m[0m 
+  Heap left redzone:       [1m[31mfa[1m[0m
+  Freed heap region:       [1m[35mfd[1m[0m
+  Stack left redzone:      [1m[31mf1[1m[0m
+  Stack mid redzone:       [1m[31mf2[1m[0m
+  Stack right redzone:     [1m[31mf3[1m[0m
+  Stack after return:      [1m[35mf5[1m[0m
+  Stack use after scope:   [1m[35mf8[1m[0m
+  Global redzone:          [1m[31mf9[1m[0m
+  Global init order:       [1m[36mf6[1m[0m
+  Poisoned by user:        [1m[34mf7[1m[0m
+  Container overflow:      [1m[34mfc[1m[0m
+  Array cookie:            [1m[31mac[1m[0m
+  Intra object redzone:    [1m[33mbb[1m[0m
+  ASan internal:           [1m[33mfe[1m[0m
+  Left alloca redzone:     [1m[34mca[1m[0m
+  Right alloca redzone:    [1m[34mcb[1m[0m
+==2999816==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/d8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/d8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/d8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/d8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/d8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/d8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/d8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/d8(__asan_report_load_n+0x37)[0x5555573561d7]
+/work/v8-build/out/fair-build/d8(_ZN2v86bigint20AddAndReturnOverflowENS0_8RWDigitsENS0_6DigitsE+0x5e8)[0x55555b139538]
+/work/v8-build/out/fair-build/d8(_ZN2v86bigint13ProcessorImpl9Toom3MainENS0_8RWDigitsENS0_6DigitsES3_+0x19fa)[0x55555b14d15a]
+/work/v8-build/out/fair-build/d8(_ZN2v86bigint13ProcessorImpl16MultiplyToomCookENS0_8RWDigitsENS0_6DigitsES3_+0x292)[0x55555b14d9c2]
+/work/v8-build/out/fair-build/d8(_ZN2v86bigint13ProcessorImpl8MultiplyENS0_8RWDigitsENS0_6DigitsES3_+0x7bf)[0x55555b11381f]
+/work/v8-build/out/fair-build/d8(_ZN2v86bigint9Processor8MultiplyENS0_8RWDigitsENS0_6DigitsES3_+0x12d)[0x55555b11642d]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal6BigInt8MultiplyEPNS0_7IsolateENS0_12DirectHandleIS1_EES5_+0x33f)[0x5555588e3f3f]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal6BigInt12ExponentiateEPNS0_7IsolateENS0_12DirectHandleIS1_EES5_+0x7b0)[0x5555588e3640]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal26Runtime_BigIntExponentiateEiPmPNS0_7IsolateE+0x313)[0x5555597cd1e3]
+/work/v8-build/out/fair-build/d8(+0x89303b6)[0x55555de843b6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

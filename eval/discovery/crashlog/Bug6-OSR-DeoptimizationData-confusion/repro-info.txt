@@ -1,0 +1,12 @@
+# REPRO: python3 ./tantrum/tantrum-v0.py --d8 ./builds/0242cac/d8 repro 7469622056177038801794077642 0-45,47-191,193-530
+
+1-v8sbx-1739156911190841068-365514-7469622056177038801794077642-osr-deoptdata-confusion-ace.txt
+CMD: builds/0242cac/d8 --single-threaded --allow-natives-syntax --expose-gc --sandbox-testing -e d8.file.execute("./test/mjsunit/mjsunit.js") test/mjsunit/compiler/regress-crbug-1520697.js
+
+python3 tantrum-v0.py repro 7469622056177038801794077642 0-45,47-191,193-530
+
+try_offsets = random.sample(range(-0x100, 0x100, 4), random.randrange(0, 9))
+bits_to_flip = sorted(random.sample(range(-0x100*8, 0x100*8), random.randrange(0, 17)))
+
+# sha256sum tests.txt
+70cd8a050db1db5145697153fd33f1d5fe1f6853de14698641dd4e3596db5cab  tests.txt

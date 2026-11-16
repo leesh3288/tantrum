@@ -1,0 +1,379 @@
+diff --git a/Sources/Fuzzilli/Base/ProgramBuilder.swift b/Sources/Fuzzilli/Base/ProgramBuilder.swift
+index 0df465c..b6e3649 100644
+--- a/Sources/Fuzzilli/Base/ProgramBuilder.swift
++++ b/Sources/Fuzzilli/Base/ProgramBuilder.swift
+@@ -1612,6 +1612,7 @@ public class ProgramBuilder {
+         // Unless we are only splicing, find all generators that have the required context. We must always have at least one suitable code generator.
+         let origContext = context
+         var availableGenerators = WeightedList<CodeGenerator>()
++        let availableHeapCorruptionGenerators = HeapCorruptionGenerators.filter({ $0.requiredContext.isSubset(of: origContext) })
+         if state.mode != .splicing {
+             availableGenerators = fuzzer.codeGenerators.filter({ $0.requiredContext.isSubset(of: origContext) })
+             assert(!availableGenerators.isEmpty)
+@@ -1674,7 +1675,17 @@ public class ProgramBuilder {
+                 state.totalRecursiveBlocksOfCurrentGenerator = nil
+ 
+                 // Select a random generator and run it.
+-                let generator = availableGenerators.randomElement()
++                let generator: CodeGenerator
++                if fuzzer.corruptingHeap {
++                    if let corruptionGenerator = availableHeapCorruptionGenerators.randomElement() {
++                        generator = corruptionGenerator
++                    } else {
++                        generator = availableGenerators.randomElement()
++                    }
++                } else {
++                    // If heap corruption is not possible we just use the regular generators. This is just the hacky, non-invasive solution.
++                    generator = availableGenerators.randomElement()
++                }
+                 buildLog?.startAction(generator.name)
+                 run(generator)
+ 
+diff --git a/Sources/Fuzzilli/CodeGen/CodeGenerators.swift b/Sources/Fuzzilli/CodeGen/CodeGenerators.swift
+index fdb9bc3..a152701 100644
+--- a/Sources/Fuzzilli/CodeGen/CodeGenerators.swift
++++ b/Sources/Fuzzilli/CodeGen/CodeGenerators.swift
+@@ -1868,6 +1868,80 @@ public let CodeGenerators: [CodeGenerator] = [
+     },
+ ]
+ 
++public let HeapCorruptionGenerators: [CodeGenerator] = [
++    CodeGenerator("SandboxCorruptObjGenerator", inputs: .required(.interestingHeapObject)) { b, randomHeapObject in
++        let usingXorInsteadOfSet = Bool.random()
++        let offsetInnerInsteadOfOuter = Bool.random()
++
++        let sandbox = b.createNamedVariable(forBuiltin: "Sandbox")
++        let memoryView = b.construct(
++            b.getProperty("MemoryView", of: sandbox),
++            withArgs: [b.loadInt(0), b.loadInt(0x100000000)]
++        )
++
++        let addrOfRandomHeapObject = b.callMethod("getAddressOf", on: sandbox, withArgs: [randomHeapObject])
++        let objSize = b.callMethod("getSizeOf", on: sandbox, withArgs: [randomHeapObject])
++        // Generate a random number on the swift side bound by the size of the object that is only known on the JS side.
++        let randomNumber =  Int32.random(in: 0...Int32.max) // Avoid using bigints in JS.
++        var addrOfTargetByte: Variable
++        if offsetInnerInsteadOfOuter {
++            // Find one byte within the object.
++            let offsetWithinObject = b.binary(b.loadInt(Int64(randomNumber)), objSize, with: .Mod)
++            addrOfTargetByte = b.binary(addrOfRandomHeapObject, offsetWithinObject, with: .Add)
++        } else {
++            // If the following is true, we will target a byte that is not part of the object itself but instead in its vicinity.
++            let beforeObjectInsteadOfAfter = Bool.random()
++            if beforeObjectInsteadOfAfter {
++                let offsetBeforeObject = b.binary(b.loadInt(Int64(-randomNumber)), objSize, with: .Mod)
++                addrOfTargetByte = b.binary(addrOfRandomHeapObject, offsetBeforeObject, with: .Add)
++            } else {
++                let offset = b.binary(b.loadInt(Int64(randomNumber)), objSize, with: .Mod)
++                let offsetAfterObject = b.binary(offset, objSize, with: .Add)
++                addrOfTargetByte = b.binary(addrOfRandomHeapObject, offsetAfterObject, with: .Add)
++            }
++        }
++
++        if usingXorInsteadOfSet {
++            // xor with random byte
++            let randomByte = Int64.random(in: 0...255)
++            let currentValue = b.callMethod("getUint8", on: memoryView, withArgs: [addrOfTargetByte])
++            let xorResult = b.binary(currentValue, b.loadInt(randomByte), with: .Xor)
++            b.callMethod("setUint8", on: memoryView, withArgs: [addrOfTargetByte, xorResult])
++        } else {
++            // set with random byte
++            let randomByte = Int64.random(in: 0...255)
++            b.callMethod("setUint8", on: memoryView, withArgs: [addrOfTargetByte, b.loadInt(randomByte)])
++        }
++
++    },
++
++    CodeGenerator("SandboxCorruptMapGenerator", inputs: .required(.interestingHeapObject)) { b, randomHeapObject in
++        let usingXorInsteadOfSet = Bool.random()
++
++        let sandbox = b.createNamedVariable(forBuiltin: "Sandbox")
++        let memoryView = b.construct(
++            b.getProperty("MemoryView", of: sandbox),
++            withArgs: [b.loadInt(0), b.loadInt(0x100000000)]
++        )
++
++        let addrOfRandomHeapObject = b.callMethod("getAddressOf", on: sandbox, withArgs: [randomHeapObject])
++        let addrOfRandomHeapObjectMap = b.callMethod("getUint32", on: memoryView, withArgs: [addrOfRandomHeapObject, b.loadBool(true)])
++        // Calculate the random offset on the Swift side because otherwise the program will become inherently non-deterministic.
++        let randomOffset = Int64.random(in: 0...0x100)
++        let addrOfTargetByte = b.binary(addrOfRandomHeapObjectMap, b.loadInt(randomOffset), with: .Add)
++
++        if usingXorInsteadOfSet {
++            let randomByte = Int64.random(in: 0...255)
++            let currentValue = b.callMethod("getUint8", on: memoryView, withArgs: [addrOfTargetByte])
++            let xorResult = b.binary(currentValue, b.loadInt(randomByte), with: .Xor)
++            b.callMethod("setUint8", on: memoryView, withArgs: [addrOfTargetByte, xorResult])
++        } else {
++            let randomByte = Int64.random(in: 0...255)
++            b.callMethod("setUint8", on: memoryView, withArgs: [addrOfTargetByte, b.loadInt(randomByte)])
++        }
++    }
++]
++
+ extension Array where Element == CodeGenerator {
+     public func get(_ name: String) -> CodeGenerator {
+         for generator in self {
+diff --git a/Sources/Fuzzilli/Engines/MutationEngine.swift b/Sources/Fuzzilli/Engines/MutationEngine.swift
+index a02176b..7e374b4 100644
+--- a/Sources/Fuzzilli/Engines/MutationEngine.swift
++++ b/Sources/Fuzzilli/Engines/MutationEngine.swift
+@@ -18,9 +18,17 @@ import Foundation
+ public class MutationEngine: FuzzEngine {
+     // The number of consecutive mutations to apply to a sample.
+     private let numConsecutiveMutations: Int
++    private let shareOfHeapCorruptions: Double
++
++    public init(numConsecutiveMutations: Int, shareOfHeapCorruptions: Double) {
++        self.numConsecutiveMutations = numConsecutiveMutations
++        self.shareOfHeapCorruptions = shareOfHeapCorruptions
++        super.init(name: "MutationEngine")
++    }
+ 
+     public init(numConsecutiveMutations: Int) {
+         self.numConsecutiveMutations = numConsecutiveMutations
++        self.shareOfHeapCorruptions = 0.0
+         super.init(name: "MutationEngine")
+     }
+ 
+@@ -49,7 +57,15 @@ public class MutationEngine: FuzzEngine {
+         parent = prepareForMutating(parent)
+         for _ in 0..<numConsecutiveMutations {
+             // TODO: factor out code shared with the HybridEngine?
+-            var mutator = fuzzer.mutators.randomElement()
++            var mutator: Mutator
++            if (drand48() < shareOfHeapCorruptions){
++                mutator = fuzzer.mutators.first(where: { $0 is CodeGenMutator })! as Mutator
++                fuzzer.corruptingHeap = true
++            } else {
++                mutator = fuzzer.mutators.randomElement()
++                fuzzer.corruptingHeap = false
++            }
++            //logger.info("Chose mutator \(mutator.name)")
+             let maxAttempts = 10
+             var mutatedProgram: Program? = nil
+             for _ in 0..<maxAttempts {
+@@ -62,7 +78,13 @@ public class MutationEngine: FuzzEngine {
+                 } else {
+                     // Try a different mutator.
+                     mutator.failedToGenerate()
+-                    mutator = fuzzer.mutators.randomElement()
++                    if (drand48() < shareOfHeapCorruptions){
++                        mutator = fuzzer.mutators.first(where: { $0 is CodeGenMutator })! as Mutator
++                        fuzzer.corruptingHeap = true
++                    } else {
++                        mutator = fuzzer.mutators.randomElement()
++                        fuzzer.corruptingHeap = false
++                    }
+                 }
+             }
+ 
+diff --git a/Sources/Fuzzilli/FuzzIL/TypeSystem.swift b/Sources/Fuzzilli/FuzzIL/TypeSystem.swift
+index ddd030d..a3b9290 100644
+--- a/Sources/Fuzzilli/FuzzIL/TypeSystem.swift
++++ b/Sources/Fuzzilli/FuzzIL/TypeSystem.swift
+@@ -216,6 +216,17 @@ public struct ILType: Hashable {
+ 
+     public static let wasmNumericalPrimitive = .wasmi32 | .wasmi64 | .wasmf32 | .wasmf64
+ 
++    // In general most JS variables are heap objects, even boolean literals are heap objects. However, not all heap objects are interesting.
++    // We define interesting heap objects as those that have been shown to cause a heap sandbox bug in the past. As of now the order of interestingness
++    // is: object (13), func (11), string (10), array (5), bigint (2)
++    // definitelyInterestingHeapObject are heap objects where bugs exists in test/mjsunit
++    public static let definitelyInterestingHeapObject = ILType.object() | .iterable | .function()  | .string | .bigint
++    // possiblyInterestingHeapObject are heap objects with no bugs in test/mjsunit (yet)
++    public static let possiblyInterestingHeapObject = .float | .boolean | .regexp | .constructor()
++     // We go for a liberal approach here. Almost everything is a heap object, even null/undefined/bools, surprisingly not int though, but float and bigint are (IIUC).
++    public static let interestingHeapObject = definitelyInterestingHeapObject | possiblyInterestingHeapObject
++    // TODO: Are wasm types interesting heap objects?
++
+     //
+     // Type testing
+     //
+diff --git a/Sources/Fuzzilli/Fuzzer.swift b/Sources/Fuzzilli/Fuzzer.swift
+index 141cc08..3fd5fe4 100644
+--- a/Sources/Fuzzilli/Fuzzer.swift
++++ b/Sources/Fuzzilli/Fuzzer.swift
+@@ -15,6 +15,9 @@
+ import Foundation
+ 
+ public class Fuzzer {
++    // Refactor if necessary. Just a hacky way to control the frequency of heap corruption.
++    public var corruptingHeap: Bool = false
++
+     /// Id of this fuzzer.
+     public let id: UUID
+ 
+diff --git a/Sources/FuzzilliCli/Profiles/V8Profile.swift b/Sources/FuzzilliCli/Profiles/V8Profile.swift
+index da2037f..a79754c 100644
+--- a/Sources/FuzzilliCli/Profiles/V8Profile.swift
++++ b/Sources/FuzzilliCli/Profiles/V8Profile.swift
+@@ -426,6 +426,26 @@ public extension ILType {
+ 
+     static let gcTypeEnum = ILType.enumeration(ofName: "gcType", withValues: ["minor", "major"])
+     static let gcExecutionEnum = ILType.enumeration(ofName: "gcExecution", withValues: ["async", "sync"])
++
++    static let sandbox = ILType.object(ofGroup: "Sandbox", withProperties: ["MemoryView"], withMethods: [
++        //"base",
++        //"byteLength",
++        "getAddressOf",
++        "getObjectAt",
++        "isValidObjectAt",
++        "isWritable",
++        "isWritableObjectAt",
++        "getSizeOf",
++        "getSizeOfObjectAt",
++        "getInstanceTypeOf",
++        "getInstanceTypeOfObjectAt",
++        "getInstanceTypeIdOf",
++        "getInstanceTypeIdOfObjectAt",
++        "getInstanceTypeIdFor",
++        "getFieldOffset"
++    ])
++    static let sandboxMemoryViewConstructor = ILType.constructor(Signature(expects: [.integer, .integer], returns: .object(ofGroup: "Sandbox.MemoryView", withProperties: [], withMethods: [])))
++
+ }
+ 
+ let jsD8 = ObjectGroup(name: "D8", instanceType: .jsD8, properties: ["test" : .jsD8Test], methods: [:])
+@@ -444,6 +464,25 @@ let gcOptions = ObjectGroup(
+                  "execution": .gcExecutionEnum],
+     methods: [:])
+ 
++// Define the Sandbox object group with detailed method signatures.
++let sandbox = ObjectGroup(name: "Sandbox", instanceType: .sandbox, properties: ["MemoryView": .sandboxMemoryViewConstructor], methods: [
++    //"base": Signature(expects: [], returns: ILType.integer), // TODO: Registers as getters if we need them
++    //"byteLength": Signature(expects: [], returns: ILType.integer),
++    "getAddressOf": Signature(expects: [Parameter.plain(ILType.interestingHeapObject)], returns: ILType.integer),
++    "getObjectAt": Signature(expects: [Parameter.plain(ILType.integer)], returns: ILType.interestingHeapObject),
++    "isValidObjectAt": Signature(expects: [Parameter.plain(ILType.integer)], returns: ILType.boolean),
++    "isWritable": Signature(expects: [Parameter.plain(ILType.interestingHeapObject)], returns: ILType.boolean),
++    "isWritableObjectAt": Signature(expects: [Parameter.plain(ILType.integer)], returns: ILType.boolean),
++    "getSizeOf": Signature(expects: [Parameter.plain(ILType.interestingHeapObject)], returns: ILType.integer),
++    "getSizeOfObjectAt": Signature(expects: [Parameter.plain(ILType.integer)], returns: ILType.integer),
++    "getInstanceTypeOf": Signature(expects: [Parameter.plain(ILType.interestingHeapObject)], returns: ILType.string),
++    "getInstanceTypeOfObjectAt": Signature(expects: [Parameter.plain(ILType.integer)], returns: ILType.string),
++    "getInstanceTypeIdOf": Signature(expects: [Parameter.plain(ILType.interestingHeapObject)], returns: ILType.integer),
++    "getInstanceTypeIdOfObjectAt": Signature(expects: [Parameter.plain(ILType.integer)], returns: ILType.integer),
++    "getInstanceTypeIdFor": Signature(expects: [Parameter.plain(ILType.string)], returns: ILType.integer),
++    "getFieldOffset": Signature(expects: [Parameter.plain(ILType.integer), Parameter.plain(ILType.string)], returns: ILType.integer)
++])
++
+ let fastCallables : [(group: ILType, method: String)] = [
+     (group: .jsD8FastCAPI, method: "throw_no_fallback"),
+     (group: .jsD8FastCAPI, method: "add_32bit_int"),
+@@ -519,19 +558,11 @@ fileprivate let FastApiCallFuzzer = ProgramTemplate("FastApiCallFuzzer") { b in
+ let v8Profile = Profile(
+     processArgs: { randomize in
+         var args = [
++	    "--single-threaded",
+             "--expose-gc",
+-            "--expose-externalize-string",
+-            "--omit-quit",
+             "--allow-natives-syntax",
+             "--fuzzing",
+-            "--jit-fuzzing",
+-            "--future",
+-            "--harmony",
+-            "--js-staging",
+-            "--wasm-staging",
+-            "--wasm-fast-api",
+-            "--expose-fast-api",
+-            "--experimental-wasm-memory64",
++            "--sandbox-fuzzing"
+         ]
+ 
+         guard randomize else { return args }
+@@ -680,7 +711,8 @@ let v8Profile = Profile(
+     },
+ 
+     // We typically fuzz without any sanitizer instrumentation, but if any sanitizers are active, "abort_on_error=1" must probably be set so that sanitizer errors can be detected.
+-    processEnv: [:],
++    processEnv: ["ASAN_OPTIONS": "symbolize=0,abort_on_error=true,exitcode=138,detect_stack_use_after_return=false,detect_leaks=0,malloc_context_size=0,allocator_may_return_null=1,handle_sigill=1"],
++
+ 
+     maxExecsBeforeRespawn: 1000,
+ 
+@@ -700,15 +732,15 @@ let v8Profile = Profile(
+ 
+         // Check that common crash types are detected.
+         // IMMEDIATE_CRASH()
+-        ("fuzzilli('FUZZILLI_CRASH', 0)", .shouldCrash),
++        //("fuzzilli('FUZZILLI_CRASH', 0)", .shouldCrash),
+         // CHECK failure
+-        ("fuzzilli('FUZZILLI_CRASH', 1)", .shouldCrash),
++        //("fuzzilli('FUZZILLI_CRASH', 1)", .shouldCrash),
+         // DCHECK failure
+-        ("fuzzilli('FUZZILLI_CRASH', 2)", .shouldCrash),
++        //("fuzzilli('FUZZILLI_CRASH', 2)", .shouldCrash),
+         // Wild-write
+         ("fuzzilli('FUZZILLI_CRASH', 3)", .shouldCrash),
+         // Check that DEBUG is defined.
+-        ("fuzzilli('FUZZILLI_CRASH', 8)", .shouldCrash),
++        //("fuzzilli('FUZZILLI_CRASH', 8)", .shouldCrash),
+ 
+         // TODO we could try to check that OOM crashes are ignored here ( with.shouldNotCrash).
+     ],
+@@ -744,7 +776,7 @@ let v8Profile = Profile(
+         "Worker"                                        : .constructor([.anything, .object()] => .object(withMethods: ["postMessage","getMessage"])),
+     ],
+ 
+-    additionalObjectGroups: [jsD8, jsD8Test, jsD8FastCAPI, gcOptions],
++    additionalObjectGroups: [jsD8, jsD8Test, jsD8FastCAPI, gcOptions, sandbox],
+ 
+     optionalPostProcessor: nil
+ )
+diff --git a/Sources/FuzzilliCli/main.swift b/Sources/FuzzilliCli/main.swift
+index 5fa4d26..bc74810 100644
+--- a/Sources/FuzzilliCli/main.swift
++++ b/Sources/FuzzilliCli/main.swift
+@@ -14,7 +14,7 @@
+ 
+ import Foundation
+ import Fuzzilli
+-
++public var shareOfHeapCorruptions: Double = 0.0
+ //
+ // Process commandline arguments.
+ //
+@@ -98,6 +98,7 @@ Options:
+     --tag=tag                    : Optional string tag associated with this instance which will be stored in the settings.json file as well as in crashing samples.
+                                    This can for example be used to remember the target revision that is being fuzzed.
+     --wasm                       : Enable Wasm CodeGenerators (see WasmCodeGenerators.swift).
++    --shareOfHeapCorruptions=p   : (New flag) A number between 0 and 1 representing the share of heap corruptions.
+ 
+ """)
+     exit(0)
+@@ -156,6 +157,15 @@ let additionalArguments = args["--additionalArguments"] ?? ""
+ let tag = args["--tag"]
+ let enableWasm = args.has("--wasm")
+ 
++if let shareValue = args.double(for: "--shareOfHeapCorruptions") {
++    if shareValue < 0 || shareValue > 1 {
++        configError("Invalid value for --shareOfHeapCorruptions. Must be between 0 and 1.")
++    }
++    shareOfHeapCorruptions = shareValue
++} else {
++    configError("Please provide a value between 0 and 1 for --shareOfHeapCorruptions.")
++}
++
+ guard numJobs >= 1 else {
+     configError("Must have at least 1 job")
+ }
+@@ -415,7 +425,7 @@ func makeFuzzer(with configuration: Configuration) -> Fuzzer {
+     case "hybrid":
+         engine = HybridEngine(numConsecutiveMutations: consecutiveMutations)
+     case "multi":
+-        let mutationEngine = MutationEngine(numConsecutiveMutations: consecutiveMutations)
++        let mutationEngine = MutationEngine(numConsecutiveMutations: consecutiveMutations, shareOfHeapCorruptions: shareOfHeapCorruptions)
+         let hybridEngine = HybridEngine(numConsecutiveMutations: consecutiveMutations)
+         let engines = WeightedList<FuzzEngine>([
+             (mutationEngine, 1),
+@@ -429,7 +439,7 @@ func makeFuzzer(with configuration: Configuration) -> Fuzzer {
+         // the MutationEngine can already find most "low-hanging fruits" in its first run.
+         engine = MultiEngine(engines: engines, initialActive: mutationEngine, iterationsPerEngine: 10000)
+     default:
+-        engine = MutationEngine(numConsecutiveMutations: consecutiveMutations)
++        engine = MutationEngine(numConsecutiveMutations: consecutiveMutations, shareOfHeapCorruptions: shareOfHeapCorruptions)
+     }
+ 
+     // Add a post-processor if the profile defines one.

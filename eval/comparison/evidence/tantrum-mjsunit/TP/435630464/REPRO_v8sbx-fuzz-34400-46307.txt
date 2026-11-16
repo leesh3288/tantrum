@@ -1,0 +1,73 @@
+Input: test/mjsunit/shared-memory/shared-struct-type-registry.js
+Fault: {93825052605411: (((b'r5\xd0o', None), 193), ((b'\xeb\x05 \xd3', None), 194), ((b'ZI\xc5\x0f', None), 130)), 93825052601043: (((b'\xd2r', None), 130), ((b'3\x80', None), 129))}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/x8 --no-abort-on-contradictory-flags --trace-turbo-path=nonexistent --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded --harmony-struct --allow-natives-syntax test/mjsunit/mjsunit.js test/mjsunit/shared-memory/shared-struct-type-registry.js
+Hook Logs (Max 0x1000):
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+V8 is running with experimental features enabled. Stability and security will suffer.
+=================================================================
+[1m[31m==1761896==ERROR: AddressSanitizer: unknown-crash on address 0x0f83fedbd70c at pc 0x555558ee7706 bp 0x7fffffffdc10 sp 0x7fffffffdc08
+[1m[0m[1m[34mWRITE of size 8 at 0x0f83fedbd70c thread T0[1m[0m
+    #0 0x555558ee7705 in v8::internal::SharedStructTypeRegistry::CheckIfEntryMatches(v8::internal::Isolate*, v8::internal::InternalIndex, v8::internal::DirectHandle<v8::internal::String>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Name> const>, std::__Cr::set<unsigned int, std::__Cr::less<unsigned int>, std::__Cr::allocator<unsigned int>> const&) src/handles/handles-inl.h:295:11
+    #1 0x555558ee84a1 in v8::internal::SharedStructTypeRegistry::RegisterNoThrow(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Name> const>, std::__Cr::set<unsigned int, std::__Cr::less<unsigned int>, std::__Cr::allocator<unsigned int>> const&) src/objects/js-struct.cc
+    #2 0x555558ee922b in v8::internal::SharedStructTypeRegistry::Register(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Name> const>, std::__Cr::set<unsigned int, std::__Cr::less<unsigned int>, std::__Cr::allocator<unsigned int>> const&) src/objects/js-struct.cc:488:7
+    #3 0x555557925c32 in v8::internal::Builtin_Impl_SharedStructTypeConstructor(v8::internal::BuiltinArguments, v8::internal::Isolate*) src/builtins/builtins-struct.cc:160:7
+    #4 0x55555de842f5 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #5 0x55555ddd93f2 in Builtins_InterpreterPushArgsThenFastConstructFunction setup-isolate-deserialize.cc
+    #6 0x55555df87766 in Builtins_ConstructHandler setup-isolate-deserialize.cc
+    #7 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #8 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #9 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #11 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #12 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #13 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #14 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #15 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #16 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #17 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #18 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #19 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #20 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #21 0x5555572a9029 in _start (/work/v8-build/out/fair-build/x8+0x1d55029) (BuildId: fcce9d6441377209)
+
+Address 0x0f83fedbd70c is located in the high shadow area.
+SUMMARY: AddressSanitizer: unknown-crash src/handles/handles-inl.h:295:11 in v8::internal::SharedStructTypeRegistry::CheckIfEntryMatches(v8::internal::Isolate*, v8::internal::InternalIndex, v8::internal::DirectHandle<v8::internal::String>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Name> const>, std::__Cr::set<unsigned int, std::__Cr::less<unsigned int>, std::__Cr::allocator<unsigned int>> const&)
+==1761896==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/x8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/x8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/x8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/x8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/x8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/x8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/x8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/x8(__asan_report_store8+0x3d)[0x555557355ffd]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal24SharedStructTypeRegistry19CheckIfEntryMatchesEPNS0_7IsolateENS0_13InternalIndexENS0_12DirectHandleINS0_6StringEEENS_4base6VectorIKNS5_INS0_4NameEEEEERKNSt4__Cr3setIjNSE_4lessIjEENSE_9allocatorIjEEEE+0xf16)[0x555558ee7706]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal24SharedStructTypeRegistry15RegisterNoThrowEPNS0_7IsolateENS0_6HandleINS0_6StringEEENS_4base6VectorIKNS0_12DirectHandleINS0_4NameEEEEERKNSt4__Cr3setIjNSE_4lessIjEENSE_9allocatorIjEEEE+0xd02)[0x555558ee84a2]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal24SharedStructTypeRegistry8RegisterEPNS0_7IsolateENS0_6HandleINS0_6StringEEENS_4base6VectorIKNS0_12DirectHandleINS0_4NameEEEEERKNSt4__Cr3setIjNSE_4lessIjEENSE_9allocatorIjEEEE+0xfc)[0x555558ee922c]
+/work/v8-build/out/fair-build/x8(+0x23d1c33)[0x555557925c33]
+/work/v8-build/out/fair-build/x8(+0x89302f6)[0x55555de842f6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

@@ -1,0 +1,8 @@
+# REPRO: python3 tantrum/tantrum-pre.py --d8 builds/3ea3463/d8 repro test/mjsunit/regress/regress-1200351.js 0x88a98,0xe15d0,0xfd278,0x1b6b10 0x41e6685a9bce4c09,0x25ed4538bea0b2f9,0x1aeeafd225c69f5,0xe939e10c20ecd6a,0xae172cce7715d69d,0x388bb29d6daa3733,0x2c34610dd2506a03,0xe3da9a122e859dda,0x5a40fcd07523723a,0x42d38fbc45a8e522,0x963d8fc33e45bb0d,0xa8d2d223c83b4562
+./builds/3ea3463/d8
+
+old_v = u64(d.memory[b.address, 8])
+new_v = old_v ^ random.randrange(0, 1<<64)
+
+$ sha256sum tantrum/tests.txt 
+70cd8a050db1db5145697153fd33f1d5fe1f6853de14698641dd4e3596db5cab  tantrum/tests.txt

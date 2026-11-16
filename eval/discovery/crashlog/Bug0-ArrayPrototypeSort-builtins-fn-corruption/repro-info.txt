@@ -1,0 +1,16 @@
+# REPRO: python3 ./tantrum/tantrum-v0.py --d8 ./builds/cf5fa99/d8 repro 7464751039551060810718501785 0-13 --try_offsets=0,0,0,0,0 --bits_to_flip=-512,512,1,0,9
+# NOTE: also discovered as part of 6.4 cov/baseline eval
+# NOTE: target binary non-asan, otherwise requires augmented handler pc-control check
+
+=====
+
+1-v8sbx-1738022789254565912-2087833-7464751039551060810718501785-arraysort.txt
+CMD: builds/cf5fa99/d8 --expose-gc --single-threaded --sandbox-testing --allow-natives-syntax -e d8.file.execute("./test/mjsunit/mjsunit.js") test/mjsunit/es6/array-iterator.js
+
+python3 tantrum-v0.py repro 7464751039551060810718501785 0-13
+
+try_offsets = []
+bits_to_flip = sorted(random.sample(range(-0x40*8, 0x40*8), random.randrange(0, 9)))
+
+$ sha256sum tantrum/tests.txt 
+70cd8a050db1db5145697153fd33f1d5fe1f6853de14698641dd4e3596db5cab  tantrum/tests.txt

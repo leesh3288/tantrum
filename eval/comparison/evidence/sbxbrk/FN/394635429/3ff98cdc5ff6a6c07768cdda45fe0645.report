@@ -1,0 +1,137 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/3ff98cdc5ff6a6c07768cdda45fe0645.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:50:12:462][v8fuzz_runtime][3787379][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:50:12:462][v8fuzz_runtime][3787379][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:50:12:462][v8fuzz_runtime][3787379][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:50:12:462][v8fuzz_runtime][3787379][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:50:12:462][v8fuzz_runtime][3787379][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/3ff98cdc5ff6a6c07768cdda45fe0645.ron'
+[2026-03-21 04:50:12:463][v8fuzz_runtime][3787379][input.rs:175][INFO] Loaded 2178 bytes input
+[2026-03-21 04:50:12:463][v8fuzz_runtime][3787379][input.rs:68][TRACE] loaded js file is 226 bytes long
+[2026-03-21 04:50:12:463][v8fuzz_runtime][3787379][input.rs:70][TRACE] total_msk_len is Some(1837) bytes
+[2026-03-21 04:50:12:463][v8fuzz_runtime][3787379][input.rs:80][TRACE] Of the 1837 bytes, are 99.4556341861731% zeros (i.e., have no effect)
+[2026-03-21 04:50:12:463][v8fuzz_runtime][3787379][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: None
+[2026-03-21 04:50:12:471][v8fuzz_runtime][3787379][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:50:12:471][v8fuzz_runtime][3787379][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:50:12:709][v8fuzz_runtime][3787379][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:50:12:713][v8fuzz_runtime][3787379][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:50:12:713][v8fuzz_runtime][3787379][runtime.rs:150][TRACE] Setting enable_fuzzing. Fuzzing can start now.
+=================================================================
+==3787379==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x74c8ad5cfe10 at pc 0x621360d9d734 bp 0x7ffeaa85fc00 sp 0x7ffeaa85fbf8
+WRITE of size 8 at 0x74c8ad5cfe10 thread T0
+    #0 0x621360d9d733 in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::GetCapture(int) src/zone/zone-list.h:177:6
+    #1 0x621360d8899a in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::ParseDisjunction() src/regexp/regexp-parser.cc:1087:42
+    #2 0x621360d51d43 in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::Parse(v8::internal::RegExpCompileData*) src/regexp/regexp-parser.cc:899:24
+    #3 0x621360d74253 in v8::internal::RegExpParser::ParseRegExpFromHeapString(v8::internal::Isolate*, v8::internal::Zone*, v8::internal::DirectHandle<v8::internal::String>, v8::base::Flags<v8::internal::RegExpFlag, int, int>, v8::internal::RegExpCompileData*) src/regexp/regexp-parser.cc:3260:10
+    #4 0x621360e47e58 in v8::internal::RegExp::Compile(v8::internal::Isolate*, v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::RegExpFlag, int, int>, unsigned int) src/regexp/regexp.cc:228:8
+    #5 0x62135ff50366 in v8::internal::JSRegExp::Initialize(v8::internal::Handle<v8::internal::JSRegExp>, v8::internal::Handle<v8::internal::String>, v8::base::Flags<v8::internal::JSRegExp::Flag, int, int>, unsigned int) src/objects/js-regexp.cc:337:3
+    #6 0x6213612ea7b9 in v8::internal::Runtime_CreateRegExpLiteral(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-literals.cc:613:5
+    #7 0x62136a225e35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #8 0x62136a33ff85 in Builtins_CreateRegExpLiteralHandler setup-isolate-deserialize.cc
+    #9 0x62136a16e65d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x62136a16bf62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #11 0x62136a16bcaa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #12 0x62135daf934e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #13 0x62135daff2a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #14 0x62135cd981bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #15 0x62135c762d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #16 0x62135c7f36db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #17 0x62135c8147d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #18 0x62135c812d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #19 0x62135c81c6bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #20 0x7678addd51c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #21 0x7678addd528a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #22 0x62135c609029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+0x74c8ad5cfe10 is located 1296 bytes after 8192-byte region [0x74c8ad5cd900,0x74c8ad5cf900)
+freed by thread T0 here:
+    #0 0x62135c6ac66a in free (/work/v8-build/out/fuzzing-build/d8+0x1d3266a) (BuildId: 8baf296317236785)
+    #1 0x621361790d9f in v8::internal::Zone::~Zone() src/zone/zone.cc:143:15
+    #2 0x62135ecb41c3 in v8::internal::interpreter::InterpreterCompilationJob::~InterpreterCompilationJob() src/interpreter/interpreter.cc:31:7
+    #3 0x62135d5cd72c in v8::internal::Compiler::CollectSourcePositions(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::SharedFunctionInfo>) third_party/libc++/src/include/__memory/unique_ptr.h:78:5
+    #4 0x6213604963eb in v8::internal::SharedFunctionInfo::EnsureSourcePositionsAvailable(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::SharedFunctionInfo>) src/objects/shared-function-info.cc:828:5
+    #5 0x62135d5c5a51 in v8::internal::(anonymous namespace)::FinalizeUnoptimizedCompilation(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Script>, v8::internal::UnoptimizedCompileFlags const&, v8::internal::UnoptimizedCompileState const*, std::__Cr::vector<v8::internal::FinalizeUnoptimizedCompilationData, std::__Cr::allocator<v8::internal::FinalizeUnoptimizedCompilationData>> const&) src/codegen/compiler.cc:1488:7
+    #6 0x62135d5e5bab in v8::internal::(anonymous namespace)::CompileToplevel(v8::internal::ParseInfo*, v8::internal::Handle<v8::internal::Script>, v8::internal::MaybeDirectHandle<v8::internal::ScopeInfo>, v8::internal::Isolate*, v8::internal::IsCompiledScope*) src/codegen/compiler.cc:1519:3
+    #7 0x62135d63ee62 in v8::internal::(anonymous namespace)::CompileScriptOnMainThread(v8::internal::UnoptimizedCompileFlags, v8::internal::Handle<v8::internal::String>, v8::internal::ScriptDetails const&, v8::internal::NativesFlag, v8::Extension*, v8::internal::Isolate*, v8::internal::MaybeHandle<v8::internal::Script>, v8::internal::IsCompiledScope*, bool (*)(int, void*), void*) src/codegen/compiler.cc:3117:10
+    #8 0x62135d5f3cfb in v8::internal::(anonymous namespace)::GetSharedFunctionInfoForScriptImpl(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::ScriptDetails const&, v8::Extension*, v8::internal::AlignedCachedData*, v8::internal::BackgroundDeserializeTask*, bool (*)(int, void*), void*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason, v8::internal::NativesFlag, v8::ScriptCompiler::CompilationDetails*) src/codegen/compiler.cc:3988:22
+    #9 0x62135d5f1458 in v8::internal::Compiler::GetSharedFunctionInfoForScript(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::ScriptDetails const&, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason, v8::internal::NativesFlag, v8::ScriptCompiler::CompilationDetails*) src/codegen/compiler.cc:4020:10
+    #10 0x62135cdb22af in v8::ScriptCompiler::CompileUnboundInternal(v8::Isolate*, v8::ScriptCompiler::Source*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason) src/api/api.cc:2632:27
+    #11 0x62135cdb4804 in v8::ScriptCompiler::Compile(v8::Local<v8::Context>, v8::ScriptCompiler::Source*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason) src/api/api.cc:2662:7
+    #12 0x62135c764a55 in v8::MaybeLocal<v8::Script> v8::Shell::CompileString<v8::Script>(v8::Isolate*, v8::Local<v8::Context>, v8::Local<v8::String>, v8::ScriptOrigin const&) src/d8/d8.cc:665:10
+    #13 0x62135c7623cf in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:993:8
+    #14 0x62135c7f36db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #15 0x62135c8147d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #16 0x62135c812d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #17 0x62135c81c6bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #18 0x7678addd51c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #19 0x7678addd528a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #20 0x62135c609029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+previously allocated by thread T0 here:
+    #0 0x62135c6ac908 in malloc (/work/v8-build/out/fuzzing-build/d8+0x1d32908) (BuildId: 8baf296317236785)
+    #1 0x62136176d2e8 in v8::internal::AllocAtLeastWithRetry(unsigned long) src/base/platform/memory.h:44:10
+    #2 0x62136178fbf3 in v8::internal::AccountingAllocator::AllocateSegment(unsigned long, bool) src/zone/accounting-allocator.cc:89:19
+    #3 0x6213617922a0 in v8::internal::Zone::Expand(unsigned long) src/zone/zone.cc:179:19
+    #4 0x621361791edb in v8::internal::Zone::AsanNew(unsigned long) src/zone/zone.cc:55:5
+    #5 0x62135ecb8fcc in v8::internal::ZoneVector<v8::internal::FeedbackSlotKind>::Grow(unsigned long) src/zone/zone.h:63:12
+    #6 0x62135ecb85c2 in v8::internal::UnoptimizedCompilationInfo::UnoptimizedCompilationInfo(v8::internal::Zone*, v8::internal::ParseInfo*, v8::internal::FunctionLiteral*) src/zone/zone-containers.h:400:5
+    #7 0x62135ecab4e0 in v8::internal::interpreter::InterpreterCompilationJob::InterpreterCompilationJob(v8::internal::ParseInfo*, v8::internal::FunctionLiteral*, v8::internal::Handle<v8::internal::Script>, v8::internal::AccountingAllocator*, std::__Cr::vector<v8::internal::FunctionLiteral*, std::__Cr::allocator<v8::internal::FunctionLiteral*>>*, v8::internal::LocalIsolate*) src/interpreter/interpreter.cc:178:7
+    #8 0x62135ecb2138 in v8::internal::interpreter::Interpreter::NewSourcePositionCollectionJob(v8::internal::ParseInfo*, v8::internal::FunctionLiteral*, v8::internal::Handle<v8::internal::BytecodeArray>, v8::internal::AccountingAllocator*, v8::internal::LocalIsolate*) third_party/libc++/src/include/__memory/unique_ptr.h:765:30
+    #9 0x62135d5cc82e in v8::internal::Compiler::CollectSourcePositions(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::SharedFunctionInfo>) src/codegen/compiler.cc:2837:11
+    #10 0x6213604963eb in v8::internal::SharedFunctionInfo::EnsureSourcePositionsAvailable(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::SharedFunctionInfo>) src/objects/shared-function-info.cc:828:5
+    #11 0x62135d5c5a51 in v8::internal::(anonymous namespace)::FinalizeUnoptimizedCompilation(v8::internal::Isolate*, v8::internal::Handle<v8::internal::Script>, v8::internal::UnoptimizedCompileFlags const&, v8::internal::UnoptimizedCompileState const*, std::__Cr::vector<v8::internal::FinalizeUnoptimizedCompilationData, std::__Cr::allocator<v8::internal::FinalizeUnoptimizedCompilationData>> const&) src/codegen/compiler.cc:1488:7
+    #12 0x62135d5e5bab in v8::internal::(anonymous namespace)::CompileToplevel(v8::internal::ParseInfo*, v8::internal::Handle<v8::internal::Script>, v8::internal::MaybeDirectHandle<v8::internal::ScopeInfo>, v8::internal::Isolate*, v8::internal::IsCompiledScope*) src/codegen/compiler.cc:1519:3
+    #13 0x62135d63ee62 in v8::internal::(anonymous namespace)::CompileScriptOnMainThread(v8::internal::UnoptimizedCompileFlags, v8::internal::Handle<v8::internal::String>, v8::internal::ScriptDetails const&, v8::internal::NativesFlag, v8::Extension*, v8::internal::Isolate*, v8::internal::MaybeHandle<v8::internal::Script>, v8::internal::IsCompiledScope*, bool (*)(int, void*), void*) src/codegen/compiler.cc:3117:10
+    #14 0x62135d5f3cfb in v8::internal::(anonymous namespace)::GetSharedFunctionInfoForScriptImpl(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::ScriptDetails const&, v8::Extension*, v8::internal::AlignedCachedData*, v8::internal::BackgroundDeserializeTask*, bool (*)(int, void*), void*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason, v8::internal::NativesFlag, v8::ScriptCompiler::CompilationDetails*) src/codegen/compiler.cc:3988:22
+    #15 0x62135d5f1458 in v8::internal::Compiler::GetSharedFunctionInfoForScript(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::ScriptDetails const&, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason, v8::internal::NativesFlag, v8::ScriptCompiler::CompilationDetails*) src/codegen/compiler.cc:4020:10
+    #16 0x62135cdb22af in v8::ScriptCompiler::CompileUnboundInternal(v8::Isolate*, v8::ScriptCompiler::Source*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason) src/api/api.cc:2632:27
+    #17 0x62135cdb4804 in v8::ScriptCompiler::Compile(v8::Local<v8::Context>, v8::ScriptCompiler::Source*, v8::ScriptCompiler::CompileOptions, v8::ScriptCompiler::NoCacheReason) src/api/api.cc:2662:7
+    #18 0x62135c764a55 in v8::MaybeLocal<v8::Script> v8::Shell::CompileString<v8::Script>(v8::Isolate*, v8::Local<v8::Context>, v8::Local<v8::String>, v8::ScriptOrigin const&) src/d8/d8.cc:665:10
+    #19 0x62135c7623cf in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:993:8
+    #20 0x62135c7f36db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #21 0x62135c8147d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #22 0x62135c812d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #23 0x62135c81c6bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #24 0x7678addd51c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #25 0x7678addd528a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #26 0x62135c609029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow src/zone/zone-list.h:177:6 in v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::GetCapture(int)
+Shadow bytes around the buggy address:
+  0x74c8ad5cfb80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5cfc00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5cfc80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5cfd00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5cfd80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x74c8ad5cfe00: fa fa[fa]fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5cfe80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5cff00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5cff80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5d0000: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x74c8ad5d0080: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3787379==ABORTING
+
+## V8 sandbox violation detected!
+

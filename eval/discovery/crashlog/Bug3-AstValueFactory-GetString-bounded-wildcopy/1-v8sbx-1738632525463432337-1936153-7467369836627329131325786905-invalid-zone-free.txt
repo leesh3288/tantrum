@@ -1,0 +1,273 @@
+[*] ===== testcase =====
+CMD: builds/1d515cf/d8 --sandbox-testing --expose-gc --single-threaded --allow-natives-syntax -e d8.file.execute("./test/mjsunit/mjsunit.js") test/mjsunit/wasm/imported-dataview.js
+Hook Logs (Max 0x1000):
+- [*] watching 0x9f840, 0xa6b60, 0xf4c28, 0x196ee8
+- [*] mprotect(0x2ab800000000, 0x100000, 0b11)
+- [*] watching 0xb9eb0, 0xd0838, 0x103bd0, 0x12f4c0
+- [*] mprotect(0x7fffefca0000, 0x10000, 0b11)
+- [*] watching 0x5d778, 0x724c8, 0xc38f0, 0x19e4d8
+- [*] mprotect(0x7fffdfc80000, 0x10000, 0b11)
+- [*] watching 0x57068, 0xd8148, 0x11c438, 0x1b9558
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0xb2
+- [+] => addr 0x2ab700057051 : 0x69 -> 0x29
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0x1ad, -0x15d, 0x13b
+- [+] => addr 0x2ab700057032 : 0x61 -> 0x69
+- [+] => addr 0x2ab70005703c : 0x31 -> 0x39
+- [+] => addr 0x2ab70005708f : 0x69 -> 0x61
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits 0x1cb
+- [+] => addr 0x2ab7000570a1 : 0x65 -> 0x6d
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits 0x3d, 0x84, 0xaf
+- [+] => addr 0x2ab70005706f : 0x72 -> 0x52
+- [+] => addr 0x2ab700057078 : 0x73 -> 0x63
+- [+] => addr 0x2ab70005707d : 0x71 -> 0xf1
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0x180, -0x12e, -0x104
+- [+] => addr 0x2ab700057038 : 0x3d -> 0x3c
+- [+] => addr 0x2ab700057042 : 0x37 -> 0x33
+- [+] => addr 0x2ab700057047 : 0x20 -> 0x30
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits 
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits 
+- [+] hit @ 0x555555fea9a2 on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits 
+- [+] hit @ 0x555555ac1b3e on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0x14d, -0x4b, 0x29, 0x9c
+- [+] => addr 0x2ab70005703e : 0x33 -> 0x3b
+- [+] => addr 0x2ab70005705e : 0x61 -> 0x41
+- [+] => addr 0x2ab70005706d : 0x66 -> 0x64
+- [+] => addr 0x2ab70005707b : 0x74 -> 0x64
+- [+] hit @ 0x555555ac1b3e on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0x1ba, -0x73, 0x19a
+- [+] => addr 0x2ab700057030 : 0x72 -> 0x32
+- [+] => addr 0x2ab700057059 : 0x77 -> 0x57
+- [+] => addr 0x2ab70005709b : 0x6f -> 0x6b
+- [+] hit @ 0x555555ac1b3e on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0x2f
+- [+] => addr 0x2ab700057062 : 0x77 -> 0x75
+- [+] hit @ 0x555555ac1b3e on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0x10f
+- [+] => addr 0x2ab700057046 : 0x20 -> 0x22
+- [+] hit @ 0x555555ac1b3e on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits -0x1db, -0x192, 0x1a
+- [+] => addr 0x2ab70005702c : 0xa -> 0x2a
+- [+] => addr 0x2ab700057035 : 0x31 -> 0x71
+- [+] => addr 0x2ab70005706b : 0x75 -> 0x71
+- [+] hit @ 0x555555ac1b3e on accessing address 0x2ab700057068 - targeting addresses 0x2ab700057068
+-     [*] 0x2ab700057068 - flipping bits 0x37
+- [+] => addr 0x2ab70005706e : 0x65 -> 0xe5
+- [+] hit @ 0x555555fd8d0f on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558
+-     [*] 0x2ab7001b9558 - flipping bits 0x40
+- [+] => addr 0x2ab7001b9560 : 0x0 -> 0x1
+- [+] hit @ 0x555555fd8d28 on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558, 0x2ab7001b947c
+-     [*] 0x2ab7001b9558 - flipping bits 
+-     [*] 0x2ab7001b947c - flipping bits -0x190, 0x14d, 0x1b3
+- [+] => addr 0x2ab7001b944a : 0x0 -> 0x1
+- [+] => addr 0x2ab7001b94a5 : 0xdb -> 0xfb
+- [+] => addr 0x2ab7001b94b2 : 0x19 -> 0x11
+- [+] hit @ 0x555555fd8d31 on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558
+-     [*] 0x2ab7001b9558 - flipping bits -0x45, 0x1bd
+- [+] => addr 0x2ab7001b954f : 0x0 -> 0x8
+- [+] => addr 0x2ab7001b958f : 0x0 -> 0x20
+- [+] hit @ 0x555555c9dfa3 on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558
+-     [*] 0x2ab7001b9558 - flipping bits -0x13a, -0x74, 0x40, 0x10e
+- [+] => addr 0x2ab7001b9530 : 0x0 -> 0x40
+- [+] => addr 0x2ab7001b9549 : 0x0 -> 0x10
+- [+] => addr 0x2ab7001b9560 : 0x0 -> 0x1
+- [+] => addr 0x2ab7001b9579 : 0x0 -> 0x40
+- [+] hit @ 0x555555c9dfa8 on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558, 0x2ab70019d2f4
+-     [*] 0x2ab7001b9558 - flipping bits -0x136
+- [+] => addr 0x2ab7001b9531 : 0x0 -> 0x4
+-     [*] 0x2ab70019d2f4 - flipping bits 0x1d2
+- [+] => addr 0x2ab70019d32e : 0x0 -> 0x4
+- [+] hit @ 0x555555fd7f1b on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558
+-     [*] 0x2ab7001b9558 - flipping bits 0x1f
+- [+] => addr 0x2ab7001b955b : 0x0 -> 0x80
+- [+] hit @ 0x555555fd815f on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558
+-     [*] 0x2ab7001b9558 - flipping bits -0xd2
+- [+] => addr 0x2ab7001b953d : 0x4 -> 0x44
+- [+] hit @ 0x555555fd94a7 on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558
+-     [*] 0x2ab7001b9558 - flipping bits -0x157, -0x73, -0x63, -0x4e
+- [+] => addr 0x2ab7001b952d : 0x0 -> 0x2
+- [+] => addr 0x2ab7001b9549 : 0xc2 -> 0xe2
+- [+] => addr 0x2ab7001b954b : 0x0 -> 0x20
+- [+] => addr 0x2ab7001b954e : 0xff -> 0xfb
+- [+] hit @ 0x555555fd97c5 on accessing address 0x2ab7001b9558 - targeting addresses 0x2ab7001b9558
+-     [*] 0x2ab7001b9558 - flipping bits -0xf0
+- [+] => addr 0x2ab7001b953a : 0x0 -> 0x1
+- [*] sigaction(11, 93825021372872, 0)
+- [*] sigaction(6, 93825021359056, 0)
+[*] ===== stderr log =====
+## V8 sandbox violation detected!
+
+Received signal 11 SEGV_MAPERR 555554000000
+
+==== C stack trace ===============================
+
+builds/1d515cf/d8(+0x196b397)[0x555556ebf397]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45320)[0x7ffff7cd1320]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_free+0x71)[0x7ffff7d39d91]
+builds/1d515cf/d8(+0xc4ffdb)[0x5555561a3fdb]
+builds/1d515cf/d8(+0x632c58)[0x555555b86c58]
+builds/1d515cf/d8(+0xa87de7)[0x555555fdbde7]
+builds/1d515cf/d8(+0x93013f)[0x555555e8413f]
+builds/1d515cf/d8(+0x92cd58)[0x555555e80d58]
+builds/1d515cf/d8(+0x93357e)[0x555555e8757e]
+builds/1d515cf/d8(+0x932ae5)[0x555555e86ae5]
+builds/1d515cf/d8(+0x6ff240)[0x555555c53240]
+builds/1d515cf/d8(+0x70253d)[0x555555c5653d]
+builds/1d515cf/d8(+0x58966c)[0x555555add66c]
+builds/1d515cf/d8(+0x1721a40)[0x555556c75a40]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+TestDataViewOutOfBounds
+TestDataViewSharedArrayBuffer
+
+
+[*] ===== memory map =====
+MemoryMap(start=0x10000, end=0x100000000, permissions=---p, size=0xffff0000, offset=0x0, backing_file=anon_10000)
+MemoryMap(start=0x24b3fb71000, end=0x24b3fb7e000, permissions=rwxp, size=0xd000, offset=0x0, backing_file=anon_24b3fb71000)
+MemoryMap(start=0x2aae00000000, end=0x2ab700000000, permissions=---p, size=0x900000000, offset=0x0, backing_file=anon_2aae00000000)
+MemoryMap(start=0x2ab700000000, end=0x2ab700010000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_2ab700000000)
+MemoryMap(start=0x2ab700010000, end=0x2ab700020000, permissions=---p, size=0x10000, offset=0x0, backing_file=anon_2ab700010000)
+MemoryMap(start=0x2ab700020000, end=0x2ab700040000, permissions=r--p, size=0x20000, offset=0x0, backing_file=anon_2ab700020000)
+MemoryMap(start=0x2ab700040000, end=0x2ab700143000, permissions=rw-p, size=0x103000, offset=0x0, backing_file=anon_2ab700040000)
+MemoryMap(start=0x2ab700143000, end=0x2ab700180000, permissions=---p, size=0x3d000, offset=0x0, backing_file=anon_2ab700143000)
+MemoryMap(start=0x2ab700180000, end=0x2ab7001c0000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_2ab700180000)
+MemoryMap(start=0x2ab7001c0000, end=0x2ab700280000, permissions=---p, size=0xc0000, offset=0x0, backing_file=anon_2ab7001c0000)
+MemoryMap(start=0x2ab700280000, end=0x2ab700299000, permissions=r--p, size=0x19000, offset=0x0, backing_file=anon_2ab700280000)
+MemoryMap(start=0x2ab700299000, end=0x2ab7002c0000, permissions=---p, size=0x27000, offset=0x0, backing_file=anon_2ab700299000)
+MemoryMap(start=0x2ab7002c0000, end=0x2ab800000000, permissions=---p, size=0xffd40000, offset=0x0, backing_file=anon_2ab7002c0000)
+MemoryMap(start=0x2ab800000000, end=0x2ab800100000, permissions=rw-p, size=0x100000, offset=0x0, backing_file=anon_2ab800000000)
+MemoryMap(start=0x2ab800100000, end=0x2bf800000000, permissions=---p, size=0x13ffff00000, offset=0x0, backing_file=anon_2ab800100000)
+MemoryMap(start=0x396300000000, end=0x396300100000, permissions=---p, size=0x100000, offset=0x0, backing_file=anon_396300000000)
+MemoryMap(start=0x396300100000, end=0x396300101000, permissions=rw-p, size=0x1000, offset=0x0, backing_file=anon_396300100000)
+MemoryMap(start=0x396300101000, end=0x396300140000, permissions=---p, size=0x3f000, offset=0x0, backing_file=anon_396300101000)
+MemoryMap(start=0x396300140000, end=0x396300180000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_396300140000)
+MemoryMap(start=0x396300180000, end=0x396340000000, permissions=---p, size=0x3fe80000, offset=0x0, backing_file=anon_396300180000)
+MemoryMap(start=0x555555554000, end=0x555555a61000, permissions=r--p, size=0x50d000, offset=0x0, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x555555a62000, end=0x55555704c000, permissions=r-xp, size=0x15ea000, offset=0x50d000, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x55555704c000, end=0x5555570ac000, permissions=r--p, size=0x60000, offset=0x1af6000, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x5555570ad000, end=0x5555570b7000, permissions=rw-p, size=0xa000, offset=0x1b56000, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x5555570b7000, end=0x5555570b8000, permissions=r--p, size=0x1000, offset=0x1b60000, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x5555570b8000, end=0x5555570b9000, permissions=rw-p, size=0x1000, offset=0x1b61000, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x5555570b9000, end=0x5555570ba000, permissions=r--p, size=0x1000, offset=0x1b62000, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x5555570ba000, end=0x5555570c9000, permissions=rw-p, size=0xf000, offset=0x1b63000, backing_file=/tantrum/builds/1d515cf/d8)
+MemoryMap(start=0x5555570c9000, end=0x55555713d000, permissions=rw-p, size=0x74000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x55555713d000, end=0x55555726c000, permissions=rw-p, size=0x12f000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x5555b6c40000, end=0x5555d6c40000, permissions=rwxp, size=0x20000000, offset=0x0, backing_file=anon_5555b6c40000)
+MemoryMap(start=0x7fff77c20000, end=0x7fff77c30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff77c20000)
+MemoryMap(start=0x7fff77c30000, end=0x7fff7bc20000, permissions=---p, size=0x3ff0000, offset=0x0, backing_file=anon_7fff77c30000)
+MemoryMap(start=0x7fff7bc20000, end=0x7fff7bc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff7bc20000)
+MemoryMap(start=0x7fff7bc30000, end=0x7fff7bc40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff7bc30000)
+MemoryMap(start=0x7fff7bc40000, end=0x7fff9bc20000, permissions=---p, size=0x1ffe0000, offset=0x0, backing_file=anon_7fff7bc40000)
+MemoryMap(start=0x7fff9bc20000, end=0x7fff9bc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff9bc20000)
+MemoryMap(start=0x7fff9bc30000, end=0x7fff9bc40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff9bc30000)
+MemoryMap(start=0x7fff9bc40000, end=0x7fff9fc20000, permissions=---p, size=0x3fe0000, offset=0x0, backing_file=anon_7fff9bc40000)
+MemoryMap(start=0x7fff9fc20000, end=0x7fff9fc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff9fc20000)
+MemoryMap(start=0x7fff9fc30000, end=0x7fffbfc20000, permissions=---p, size=0x1fff0000, offset=0x0, backing_file=anon_7fff9fc30000)
+MemoryMap(start=0x7fffbfc20000, end=0x7fffbfc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffbfc20000)
+MemoryMap(start=0x7fffbfc30000, end=0x7fffbfc50000, permissions=rw-p, size=0x20000, offset=0x0, backing_file=anon_7fffbfc30000)
+MemoryMap(start=0x7fffbfc50000, end=0x7fffdfc20000, permissions=---p, size=0x1ffd0000, offset=0x0, backing_file=anon_7fffbfc50000)
+MemoryMap(start=0x7fffdfc2e000, end=0x7fffdfc80000, permissions=rw-p, size=0x52000, offset=0x0, backing_file=anon_7fffdfc2e000)
+MemoryMap(start=0x7fffdfc80000, end=0x7fffdfc90000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffdfc80000)
+MemoryMap(start=0x7fffdfc90000, end=0x7fffe7c80000, permissions=---p, size=0x7ff0000, offset=0x0, backing_file=anon_7fffdfc90000)
+MemoryMap(start=0x7fffe7c80000, end=0x7fffe7c90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffe7c80000)
+MemoryMap(start=0x7fffe7c90000, end=0x7fffe7ca0000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffe7c90000)
+MemoryMap(start=0x7fffe7ca0000, end=0x7fffefc80000, permissions=---p, size=0x7fe0000, offset=0x0, backing_file=anon_7fffe7ca0000)
+MemoryMap(start=0x7fffefc80000, end=0x7fffefc90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffefc80000)
+MemoryMap(start=0x7fffefc90000, end=0x7fffefcb0000, permissions=rw-p, size=0x20000, offset=0x0, backing_file=anon_7fffefc90000)
+MemoryMap(start=0x7fffefcb0000, end=0x7ffff7c80000, permissions=---p, size=0x7fd0000, offset=0x0, backing_file=anon_7fffefcb0000)
+MemoryMap(start=0x7ffff7c8a000, end=0x7ffff7c8c000, permissions=rw-p, size=0x2000, offset=0x0, backing_file=anon_7ffff7c8a000)
+MemoryMap(start=0x7ffff7c8c000, end=0x7ffff7cb4000, permissions=r--p, size=0x28000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7cb4000, end=0x7ffff7e3c000, permissions=r-xp, size=0x188000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e3c000, end=0x7ffff7e8b000, permissions=r--p, size=0x4f000, offset=0x1b0000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8b000, end=0x7ffff7e8f000, permissions=r--p, size=0x4000, offset=0x1fe000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8f000, end=0x7ffff7e91000, permissions=rw-p, size=0x2000, offset=0x202000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e91000, end=0x7ffff7e9e000, permissions=rw-p, size=0xd000, offset=0x0, backing_file=anon_7ffff7e91000)
+MemoryMap(start=0x7ffff7e9e000, end=0x7ffff7ea2000, permissions=r--p, size=0x4000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ea2000, end=0x7ffff7ec6000, permissions=r-xp, size=0x24000, offset=0x4000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ec6000, end=0x7ffff7eca000, permissions=r--p, size=0x4000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7eca000, end=0x7ffff7ecb000, permissions=r--p, size=0x1000, offset=0x2b000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecb000, end=0x7ffff7ecc000, permissions=rw-p, size=0x1000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecc000, end=0x7ffff7edc000, permissions=r--p, size=0x10000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7edc000, end=0x7ffff7f5b000, permissions=r-xp, size=0x7f000, offset=0x10000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7f5b000, end=0x7ffff7fb3000, permissions=r--p, size=0x58000, offset=0x8f000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb3000, end=0x7ffff7fb4000, permissions=r--p, size=0x1000, offset=0xe7000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb4000, end=0x7ffff7fb5000, permissions=rw-p, size=0x1000, offset=0xe8000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb5000, end=0x7ffff7fb6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb6000, end=0x7ffff7fb7000, permissions=r-xp, size=0x1000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb7000, end=0x7ffff7fb8000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb8000, end=0x7ffff7fb9000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb9000, end=0x7ffff7fba000, permissions=rw-p, size=0x1000, offset=0x3000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fbb000, end=0x7ffff7fbf000, permissions=rw-p, size=0x4000, offset=0x0, backing_file=anon_7ffff7fbb000)
+MemoryMap(start=0x7ffff7fbf000, end=0x7ffff7fc3000, permissions=r--p, size=0x4000, offset=0x0, backing_file=[vvar])
+MemoryMap(start=0x7ffff7fc3000, end=0x7ffff7fc5000, permissions=r-xp, size=0x2000, offset=0x0, backing_file=[vdso])
+MemoryMap(start=0x7ffff7fc5000, end=0x7ffff7fc6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7fc6000, end=0x7ffff7ff1000, permissions=r-xp, size=0x2b000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ff1000, end=0x7ffff7ffb000, permissions=r--p, size=0xa000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffb000, end=0x7ffff7ffd000, permissions=r--p, size=0x2000, offset=0x36000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffd000, end=0x7ffff7fff000, permissions=rw-p, size=0x2000, offset=0x38000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffffffde000, end=0x7ffffffff000, permissions=rw-p, size=0x21000, offset=0x0, backing_file=[stack])
+
+[*] ===== crash state =====
+--------------------------------------------------------
+[91mrax[0m	0x555554000000
+[91mrbx[0m	0xfffffffffffffed8
+[91mrcx[0m	0x0
+[91mrdx[0m	0xfffffffffc000000
+[91mrdi[0m	[33m0x7ffff7e8fac0[0m
+[91mrsi[0m	[33m0x5555571e8800[0m
+[91mr8[0m	[33m0x55555713d010[0m
+[91mr9[0m	0x1
+[91mr10[0m	0x0
+[91mr11[0m	[33m0x5555571fb1d0[0m
+[91mr12[0m	0x2
+[91mr13[0m	[33m0x5555571e87f0[0m
+[91mr14[0m	[33m0x5555571e8800[0m
+[91mr15[0m	0x20000053d
+[91mrbp[0m	[33m0x7fffffffd5d0[0m
+[91mrsp[0m	[33m0x7fffffffd5a0[0m
+[91mrip[0m	[91m0x7ffff7d39d91[0m
+--------------------------------------------------------
+Instructions: 00 00 48 8d 3d 56 5d 15 00 a8 04 74 26 48 8b 15 3b 54 15 00 48 8d 04 95 00 00 00 00 48 f7 d8 48 85 d2 48 c7 c2 00 00 00 fc 48 0f 44 c2 4c 21 e8 <48> 8b 38 4c 89 ee 31 d2 e8 c2 d3 ff ff 64 44 89 23 48 83 c4 18 5b 41 5c 41 5d 5d c3 0f 1f 00 8b 15 12 54 15 00 85 d2 75 28 48 39 05 cf 53 15 00 73
+[91m0x7ffff7d39d91 <cfree+71> [0m
+[91m0x5555561a3fdb <v8::internal::Zone::~Zone()+6b> [0m
+[91m0x555555b86c58 <v8::internal::Compiler::CollectSourcePositions(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::SharedFunctionInfo>)+6c8> [0m
+[91m0x555555fdbde7 <v8::internal::SharedFunctionInfo::EnsureSourcePositionsAvailable(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::SharedFunctionInfo>)+47> [0m
+[91m0x555555e8413f <v8::internal::CallSiteInfo::ComputeSourcePosition(v8::internal::DirectHandle<v8::internal::CallSiteInfo>, int)+af> [0m
+[91m0x555555e80d58 <v8::internal::CallSiteInfo::GetLineNumber(v8::internal::DirectHandle<v8::internal::CallSiteInfo>)+c8> [0m
+[91m0x555555e8757e <v8::internal::(anonymous namespace)::AppendFileLocation(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::CallSiteInfo>, v8::internal::IncrementalStringBuilder*)+3ae> [0m
+[91m0x555555e86ae5 <v8::internal::SerializeCallSiteInfo(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::CallSiteInfo>, v8::internal::IncrementalStringBuilder*)+23f5> [0m
+[91m0x555555c53240 <v8::internal::ErrorUtils::FormatStackTrace(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSObject>, v8::internal::DirectHandle<v8::internal::Object>)+460> [0m
+[91m0x555555c5653d <v8::internal::ErrorUtils::GetFormattedStack(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSObject>)+24d> [0m
+[91m0x555555add66c <v8::internal::Accessors::ErrorStackGetter(v8::FunctionCallbackInfo<v8::Value> const&)+5c> [0m
+[91m0x555556c75a40 <Builtins_CallApiCallbackGeneric+c0> [0m
+[91m0x555556c840a0 <Builtins_LoadIC_NoFeedback+7a0> [0m
+[91m0x555556e11cc4 <Builtins_GetNamedPropertyHandler+1284> [0m
+[91m0x555556c73c75 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556c73c75 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556c73c75 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556c73c75 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556c7175c <Builtins_JSEntryTrampoline+5c> [0m
+[91m0x555556c714ab <Builtins_JSEntry+ab> [0m
+[91m0x555555c2c01d <v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&)+9cd> [0m
+[91m0x555555c2c787 <v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>)+b7> [0m
+[91m0x555555a9fd31 <v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>)+3c1> [0m
+[91m0x555555a7178f <v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*)+4ff> [0m
+[91m0x555555a87329 <v8::SourceGroup::Execute(v8::Isolate*)+289> [0m
+[91m0x555555a8b01a <v8::Shell::RunMainIsolate(v8::Isolate*, bool)+13a> [0m
+[91m0x555555a8ad49 <v8::Shell::RunMain(v8::Isolate*, bool)+129> [0m
+[91m0x555555a8c3bb <v8::Shell::Main(int, char**)+bdb> [0m
+[91m0x7ffff7cb61ca <__libc_start_call_main+7a> [0m
+[91m0x7ffff7cb628b <__libc_start_main+8b> [0m
+[91m0x555555a6202a <_start+2a> [0m
+--------------------------------------------------------
+
+

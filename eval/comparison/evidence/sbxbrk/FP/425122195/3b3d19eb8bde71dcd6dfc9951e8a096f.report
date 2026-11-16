@@ -1,0 +1,212 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/3b3d19eb8bde71dcd6dfc9951e8a096f.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:17:51:312][v8fuzz_runtime][3781796][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:17:51:312][v8fuzz_runtime][3781796][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:17:51:312][v8fuzz_runtime][3781796][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:17:51:313][v8fuzz_runtime][3781796][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:17:51:313][v8fuzz_runtime][3781796][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/3b3d19eb8bde71dcd6dfc9951e8a096f.ron'
+[2026-03-21 04:17:51:313][v8fuzz_runtime][3781796][input.rs:175][INFO] Loaded 10883 bytes input
+[2026-03-21 04:17:51:314][v8fuzz_runtime][3781796][input.rs:68][TRACE] loaded js file is 2591 bytes long
+[2026-03-21 04:17:51:314][v8fuzz_runtime][3781796][input.rs:70][TRACE] total_msk_len is Some(8175) bytes
+[2026-03-21 04:17:51:314][v8fuzz_runtime][3781796][input.rs:80][TRACE] Of the 8175 bytes, are 99.76758409785933% zeros (i.e., have no effect)
+[2026-03-21 04:17:51:314][v8fuzz_runtime][3781796][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(22)
+[2026-03-21 04:17:51:322][v8fuzz_runtime][3781796][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:17:51:322][v8fuzz_runtime][3781796][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:17:51:566][v8fuzz_runtime][3781796][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:17:51:574][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:17:51:574][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:17:51:574][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(3)
+[2026-03-21 04:17:51:574][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(5)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(6)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(7)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(8)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(9)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(15)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(10)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(11)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(12)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(13)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(14)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(16)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(10)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(11)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(12)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(13)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(14)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(17)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(10)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:212][INFO] Reached delayed fork position after 22 injection points (not forking, because we are running without an attached fuzzer)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(11)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:150][TRACE] Setting enable_fuzzing. Fuzzing can start now.
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(12)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(13)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(14)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(18)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(43)
+[2026-03-21 04:17:51:575][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(19)
+[2026-03-21 04:17:51:576][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(20)
+[2026-03-21 04:17:51:576][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(22)
+[2026-03-21 04:17:51:576][v8fuzz_runtime][3781796][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(23)
+=================================================================
+==3781796==ERROR: AddressSanitizer: heap-use-after-free on address 0x783cf45e14e0 at pc 0x6167b5ad612b bp 0x7ffe13d09e90 sp 0x7ffe13d09e88
+READ of size 8 at 0x783cf45e14e0 thread T0
+    #0 0x6167b5ad612a in v8::bigint::ProcessorImpl::MultiplySchoolbook(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/bigint.h:130:7
+    #1 0x6167b5acfbb5 in v8::bigint::ProcessorImpl::KaratsubaMain(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits, v8::bigint::RWDigits, int) src/bigint/mul-karatsuba.cc:159:14
+    #2 0x6167b5acdff7 in v8::bigint::ProcessorImpl::KaratsubaMain(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits, v8::bigint::RWDigits, int) src/bigint/mul-karatsuba.cc:171:3
+    #3 0x6167b5acdff7 in v8::bigint::ProcessorImpl::KaratsubaMain(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits, v8::bigint::RWDigits, int) src/bigint/mul-karatsuba.cc:171:3
+    #4 0x6167b5acce5f in v8::bigint::ProcessorImpl::KaratsubaStart(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits, v8::bigint::RWDigits, int) src/bigint/mul-karatsuba.cc:105:3
+    #5 0x6167b5acca28 in v8::bigint::ProcessorImpl::MultiplyKaratsuba(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/mul-karatsuba.cc:98:3
+    #6 0x6167b5a9dd9a in v8::bigint::ProcessorImpl::Multiply(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits) src/bigint/bigint-internal.cc:46:40
+    #7 0x6167b5aee926 in v8::bigint::ProcessorImpl::DivideBarrett(v8::bigint::RWDigits, v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits, v8::bigint::Digits, v8::bigint::RWDigits) src/bigint/div-barrett.cc:236:3
+    #8 0x6167b5ae036f in v8::bigint::(anonymous namespace)::ToStringFormatter::ProcessLevel(v8::bigint::(anonymous namespace)::RecursionLevel*, v8::bigint::Digits, char*, bool) src/bigint/tostring.cc:521:17
+    #9 0x6167b5adc872 in v8::bigint::(anonymous namespace)::ToStringFormatter::ProcessLevel(v8::bigint::(anonymous namespace)::RecursionLevel*, v8::bigint::Digits, char*, bool) src/bigint/tostring.cc:463:11
+    #10 0x6167b5adc872 in v8::bigint::(anonymous namespace)::ToStringFormatter::ProcessLevel(v8::bigint::(anonymous namespace)::RecursionLevel*, v8::bigint::Digits, char*, bool) src/bigint/tostring.cc:463:11
+    #11 0x6167b5adc872 in v8::bigint::(anonymous namespace)::ToStringFormatter::ProcessLevel(v8::bigint::(anonymous namespace)::RecursionLevel*, v8::bigint::Digits, char*, bool) src/bigint/tostring.cc:463:11
+    #12 0x6167b5ada2f7 in v8::bigint::ProcessorImpl::ToStringImpl(char*, unsigned int*, v8::bigint::Digits, int, bool, bool) src/bigint/tostring.cc:425:10
+    #13 0x6167b5adbba5 in v8::bigint::Processor::ToString(char*, unsigned int*, v8::bigint::Digits, int, bool) src/bigint/tostring.cc:552:3
+    #14 0x6167b090836f in v8::internal::BigInt::ToString(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::BigInt>, int, v8::internal::ShouldThrow) src/objects/bigint.cc:898:58
+    #15 0x6167b2535c2b in v8::internal::Runtime_ToString(int, unsigned long*, v8::internal::Isolate*) src/objects/objects-inl.h:868:10
+    #16 0x6167bb7b0e35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #17 0x6167bb8caa2a in Builtins_ToNameHandler setup-isolate-deserialize.cc
+    #18 0x6167bb6f965d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #19 0x6167bb6f965d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #20 0x6167bb6f6f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #21 0x6167bb6f6caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #22 0x6167af08434e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #23 0x6167af08a2a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #24 0x6167ae3231bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #25 0x6167adcedd17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #26 0x6167add7e6db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #27 0x6167add9f7d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #28 0x6167add9dd16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #29 0x6167adda76bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #30 0x7bccf53d71c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #31 0x7bccf53d728a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #32 0x6167adb94029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+0x783cf45e14e0 is located 48 bytes inside of 66-byte region [0x783cf45e14b0,0x783cf45e14f2)
+freed by thread T0 here:
+    #0 0x6167adc3766a in free (/work/v8-build/out/fuzzing-build/d8+0x1d3266a) (BuildId: 8baf296317236785)
+    #1 0x7bccf56d9874 in alloc::alloc::dealloc::hdeb36f688fe4d58d /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/alloc.rs:117:14
+    #2 0x7bccf56d9874 in _$LT$alloc..alloc..Global$u20$as$u20$core..alloc..Allocator$GT$::deallocate::hdaf272c14aedbd1b /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/alloc.rs:254:22
+    #3 0x7bccf56d9874 in alloc::raw_vec::RawVecInner$LT$A$GT$::deallocate::h8756c600e446f173 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/raw_vec.rs:751:17
+    #4 0x7bccf56d9874 in _$LT$alloc..raw_vec..RawVec$LT$T$C$A$GT$$u20$as$u20$core..ops..drop..Drop$GT$::drop::h73f96acfa485db40 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/raw_vec.rs:409:18
+    #5 0x7bccf56d9874 in core::ptr::drop_in_place$LT$alloc..raw_vec..RawVec$LT$u8$GT$$GT$::hecf7e0eeb52d0533 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/ptr/mod.rs:536:1
+    #6 0x7bccf56d9874 in core::ptr::drop_in_place$LT$alloc..vec..Vec$LT$u8$GT$$GT$::h9ee8b8acba07a4c3 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/ptr/mod.rs:536:1
+    #7 0x7bccf56d9874 in core::ptr::drop_in_place$LT$alloc..string..String$GT$::hf4f0e85efe7d2b45 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/ptr/mod.rs:536:1
+    #8 0x7bccf56d9874 in shared::logging::setup_logger::_$u7b$$u7b$closure$u7d$$u7d$::h939038e04b23c447 /work/fuzzer/shared/src/logging.rs:62:9
+    #9 0x7bccf56ea6ec in _$LT$alloc..boxed..Box$LT$F$C$A$GT$$u20$as$u20$core..ops..function..Fn$LT$Args$GT$$GT$::call::habac0e9c547f3761 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/boxed.rs:2164:9
+    #10 0x7bccf56ea6ec in _$LT$fern..log_impl..Dispatch$u20$as$u20$log..Log$GT$::log::hf7e1432877296294 /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fern-0.6.2/src/log_impl.rs:433:21
+    #11 0x7bccf58014d5 in log::__private_api::log_impl::h7a4709f82b72fa79 /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.22/src/__private_api.rs:61:5
+    #12 0x7bccf56ca018 in log::__private_api::log::h88965e128008d89b /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.22/src/__private_api.rs:72:5
+    #13 0x7bccf56ca018 in __fuzzer_injection_point_builtin /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.22/src/macros.rs:49:13
+    #14 0x6167aeaf26d4 in v8::internal::Builtin_Impl_GlobalFuzzerInjectionPoint(v8::internal::BuiltinArguments, v8::internal::Isolate*) src/builtins/builtins-fuzz.cc:107:5
+    #15 0x6167bb7b0d75 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #16 0x6167bb6f965d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #17 0x6167bb6f965d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #18 0x6167bb6f6f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #19 0x6167bb6f6caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #20 0x6167af08434e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #21 0x6167af08a2a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #22 0x6167ae3231bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #23 0x6167adcedd17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #24 0x6167add7e6db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #25 0x6167add9f7d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #26 0x6167add9dd16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #27 0x6167adda76bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #28 0x7bccf53d71c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #29 0x7bccf53d728a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #30 0x6167adb94029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+previously allocated by thread T0 here:
+    #0 0x6167adc37d10 in realloc (/work/v8-build/out/fuzzing-build/d8+0x1d32d10) (BuildId: 8baf296317236785)
+    #1 0x7bccf5841df1 in alloc::alloc::realloc::h53abb8951345b299 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/alloc.rs:136:14
+    #2 0x7bccf5841df1 in alloc::alloc::Global::grow_impl::hce19ac70f5bd1c46 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/alloc.rs:213:31
+    #3 0x7bccf5841df1 in _$LT$alloc..alloc..Global$u20$as$u20$core..alloc..Allocator$GT$::grow::h5ff7ffa8b4f369d6 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/alloc.rs:266:18
+    #4 0x7bccf5841df1 in alloc::raw_vec::finish_grow::h09f1e86c4931435c /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/raw_vec.rs:773:13
+    #5 0x7bccf5841d86 in alloc::raw_vec::RawVecInner$LT$A$GT$::grow_amortized::hcd2647c434193f64 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/raw_vec.rs:658:19
+    #6 0x7bccf5841d86 in alloc::raw_vec::RawVecInner$LT$A$GT$::reserve::do_reserve_and_handle::h7939623e5637b505 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/raw_vec.rs:554:31
+    #7 0x7bccf5842a42 in alloc::raw_vec::RawVecInner$LT$A$GT$::reserve::h4dc2ae65ee8c0138 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/raw_vec.rs:560:13
+    #8 0x7bccf5842a42 in alloc::raw_vec::RawVec$LT$T$C$A$GT$::reserve::he919013b7d40ce5c /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/raw_vec.rs:341:20
+    #9 0x7bccf5842a42 in alloc::vec::Vec$LT$T$C$A$GT$::reserve::hdfd4925b08c5c7b4 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/vec/mod.rs:973:18
+    #10 0x7bccf5842a42 in alloc::vec::Vec$LT$T$C$A$GT$::append_elements::h9c4df853a702711d /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/vec/mod.rs:2156:9
+    #11 0x7bccf5842a42 in _$LT$alloc..vec..Vec$LT$T$C$A$GT$$u20$as$u20$alloc..vec..spec_extend..SpecExtend$LT$$RF$T$C$core..slice..iter..Iter$LT$T$GT$$GT$$GT$::spec_extend::h83a266d85d1b82cc /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/vec/spec_extend.rs:55:18
+    #12 0x7bccf5842a42 in alloc::vec::Vec$LT$T$C$A$GT$::extend_from_slice::h15ff321b2bb648ef /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/vec/mod.rs:2607:14
+    #13 0x7bccf5842a42 in alloc::string::String::push_str::hb1489178e970d560 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/string.rs:1064:18
+    #14 0x7bccf5842a42 in _$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$::write_str::hddcb475b51a930e3 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/string.rs:2964:9
+    #15 0x7bccf584f992 in core::fmt::num::imp::fmt_u64::h4c1628f684e86362 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/num.rs:275:13
+    #16 0x7bccf584f992 in core::fmt::num::imp::_$LT$impl$u20$core..fmt..Display$u20$for$u20$u16$GT$::fmt::ha805bf27e858019f /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/num.rs:321:17
+    #17 0x7bccf58492da in core::fmt::rt::Argument::fmt::h4520209e294e7a1a /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/rt.rs:173:76
+    #18 0x7bccf58492da in core::fmt::write::hcdd22493dd2fff52 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/mod.rs:1178:21
+    #19 0x7bccf58492da in core::fmt::rt::Argument::fmt::h4520209e294e7a1a /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/rt.rs:173:76
+    #20 0x7bccf58492da in core::fmt::write::hcdd22493dd2fff52 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/mod.rs:1178:21
+    #21 0x7bccf584236a in _$LT$$RF$mut$u20$W$u20$as$u20$core..fmt..Write..write_fmt..SpecWriteFmt$GT$::spec_write_fmt::haa757e0f6b9d0bef /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/mod.rs:226:21
+    #22 0x7bccf584236a in core::fmt::Write::write_fmt::h32506da9751c83d2 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/fmt/mod.rs:231:9
+    #23 0x7bccf584236a in alloc::fmt::format::format_inner::hffd2ce532dcb0495 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/fmt.rs:637:14
+    #24 0x7bccf56d8cb4 in alloc::fmt::format::_$u7b$$u7b$closure$u7d$$u7d$::h405bb865b56712bd /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/fmt.rs:642:34
+    #25 0x7bccf56d8cb4 in core::option::Option$LT$T$GT$::map_or_else::hf23a23ae1f754350 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/core/src/option.rs:1211:21
+    #26 0x7bccf56d8cb4 in alloc::fmt::format::h462bcd7af3cd1ea4 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/fmt.rs:642:5
+    #27 0x7bccf56d8cb4 in shared::logging::setup_logger::_$u7b$$u7b$closure$u7d$$u7d$::h939038e04b23c447 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/macros.rs:128:23
+    #28 0x7bccf56ea6ec in _$LT$alloc..boxed..Box$LT$F$C$A$GT$$u20$as$u20$core..ops..function..Fn$LT$Args$GT$$GT$::call::habac0e9c547f3761 /rustc/eff09483c67e6fc96c8098ba46dce476162754c5/library/alloc/src/boxed.rs:2164:9
+    #29 0x7bccf56ea6ec in _$LT$fern..log_impl..Dispatch$u20$as$u20$log..Log$GT$::log::hf7e1432877296294 /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/fern-0.6.2/src/log_impl.rs:433:21
+    #30 0x7bccf58014d5 in log::__private_api::log_impl::h7a4709f82b72fa79 /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.22/src/__private_api.rs:61:5
+    #31 0x7bccf56ca018 in log::__private_api::log::h88965e128008d89b /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.22/src/__private_api.rs:72:5
+    #32 0x7bccf56ca018 in __fuzzer_injection_point_builtin /home/user/.cargo/registry/src/index.crates.io-6f17d22bba15001f/log-0.4.22/src/macros.rs:49:13
+    #33 0x6167aeaf26d4 in v8::internal::Builtin_Impl_GlobalFuzzerInjectionPoint(v8::internal::BuiltinArguments, v8::internal::Isolate*) src/builtins/builtins-fuzz.cc:107:5
+    #34 0x6167bb7b0d75 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #35 0x6167bb6f965d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #36 0x6167bb6f965d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #37 0x6167bb6f6f62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #38 0x6167bb6f6caa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #39 0x6167af08434e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #40 0x6167af08a2a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #41 0x6167ae3231bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #42 0x6167adcedd17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #43 0x6167add7e6db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #44 0x6167add9f7d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #45 0x6167add9dd16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #46 0x6167adda76bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #47 0x7bccf53d71c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #48 0x7bccf53d728a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #49 0x6167adb94029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+SUMMARY: AddressSanitizer: heap-use-after-free src/bigint/bigint.h:130:7 in v8::bigint::ProcessorImpl::MultiplySchoolbook(v8::bigint::RWDigits, v8::bigint::Digits, v8::bigint::Digits)
+Shadow bytes around the buggy address:
+  0x783cf45e1200: fa fa fd fd fd fd fd fd fd fd fd fa fa fa fa fa
+  0x783cf45e1280: fd fd fd fd fd fd fd fd fd fa fa fa fa fa fd fd
+  0x783cf45e1300: fd fd fd fd fd fd fd fa fa fa fa fa fd fd fd fd
+  0x783cf45e1380: fd fd fd fd fd fa fa fa fa fa fd fd fd fd fd fd
+  0x783cf45e1400: fd fd fd fa fa fa fa fa fd fd fd fd fd fd fd fd
+=>0x783cf45e1480: fd fa fa fa fa fa fd fd fd fd fd fd[fd]fd fd fa
+  0x783cf45e1500: fa fa fa fa 00 00 00 00 00 00 00 00 00 fa fa fa
+  0x783cf45e1580: fa fa 00 00 00 00 00 00 00 00 00 fa fa fa fa fa
+  0x783cf45e1600: 00 00 00 00 00 00 00 00 00 fa fa fa fa fa 00 00
+  0x783cf45e1680: 00 00 00 00 00 00 00 fa fa fa fa fa fd fd fd fd
+  0x783cf45e1700: fd fd fd fd fd fa fa fa fa fa 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3781796==ABORTING
+
+## V8 sandbox violation detected!
+

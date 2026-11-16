@@ -1,0 +1,446 @@
+[*] ===== testcase =====
+CMD: builds/0242cac/d8 --expose-gc --allow-natives-syntax --single-threaded --sandbox-testing ./test/mjsunit/mjsunit.js test/mjsunit/compiler/regress-crbug-1520697.js
+Hook Logs (Max 0x1000):
+- [*] watching 0xd8528, 0x18f368, 0x1a87d8, 0x1ae1b0
+- [*] mprotect(0x7fffefca0000, 0x10000, 0b11)
+- [*] watching 0x54450, 0x7acd0, 0x140890, 0x18b348
+- [+] hit @ 0x555556d75f9f on accessing address 0xffb0007acd0 - targeting addresses 0xffb0007acd0
+-     [*] 0xffb0007acd0 - flipping bits -0x3aa, -0x245, 0x149, 0x25e
+-     [+] => addr 0xffb0007ac5a : 0x0 -> 0x40
+-     [+] => addr 0xffb0007ac87 : 0x0 -> 0x8
+-     [+] => addr 0xffb0007acf9 : 0x0 -> 0x2
+-     [+] => addr 0xffb0007ad1b : 0x0 -> 0x40
+- [+] hit @ 0x555556d75fa2 on accessing address 0xffb0007acd0 - targeting addresses 0xffb0007acd0
+-     [*] 0xffb0007acd0 - flipping bits -0x7f9, -0x6cb, -0x5a2, -0x3a9, 0x71, 0x2d2, 0x342, 0x38e, 0x460, 0x48c, 0x5c8
+-     [+] => addr 0xffb0007abd0 : 0x15 -> 0x95
+-     [+] => addr 0xffb0007abf6 : 0x7 -> 0x27
+-     [+] => addr 0xffb0007ac1b : 0x0 -> 0x40
+-     [+] => addr 0xffb0007ac5a : 0x40 -> 0xc0
+-     [+] => addr 0xffb0007acde : 0x0 -> 0x2
+-     [+] => addr 0xffb0007ad2a : 0x0 -> 0x4
+-     [+] => addr 0xffb0007ad38 : 0x0 -> 0x4
+-     [+] => addr 0xffb0007ad41 : 0x0 -> 0x40
+-     [+] => addr 0xffb0007ad5c : 0x0 -> 0x1
+-     [+] => addr 0xffb0007ad61 : 0x0 -> 0x10
+-     [+] => addr 0xffb0007ad89 : 0x0 -> 0x1
+- [*] mprotect(0xffb001c0000, 0x40000, 0b11)
+- [*] watching 0x6df08, 0x9c3c0, 0xf8e10, 0x11e3e8
+- [*] mprotect(0xffb00200000, 0x40000, 0b11)
+- [*] watching 0xc9500, 0x19d670, 0x1dc888, 0x208f50
+- [*] mprotect(0xffb00240000, 0x40000, 0b11)
+- [*] watching 0xdbad8, 0x12c2a0, 0x1a7768, 0x2766e8
+- [*] mprotect(0xffb002c0000, 0x40000, 0b11)
+- [*] watching 0xbe530, 0xe68b0, 0x18a818, 0x1c7b68
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x3ea, -0x13c, 0x129, 0x31b, 0x348, 0x401, 0x4a8, 0x70b
+-     [+] => addr 0xffb001c7aea : 0x73 -> 0x33
+-     [+] => addr 0xffb001c7b40 : 0x70 -> 0x60
+-     [+] => addr 0xffb001c7b8d : 0x0 -> 0x2
+-     [+] => addr 0xffb001c7bcb : 0x0 -> 0x8
+-     [+] => addr 0xffb001c7bd1 : 0x0 -> 0x1
+-     [+] => addr 0xffb001c7be8 : 0x0 -> 0x2
+-     [+] => addr 0xffb001c7bfd : 0x0 -> 0x1
+-     [+] => addr 0xffb001c7c49 : 0x0 -> 0x8
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x78f, -0x4ab, -0xa7, 0x432, 0x596
+-     [+] => addr 0xffb001c7a76 : 0x6f -> 0x6d
+-     [+] => addr 0xffb001c7ad2 : 0x20 -> 0x0
+-     [+] => addr 0xffb001c7b53 : 0x61 -> 0x63
+-     [+] => addr 0xffb001c7bee : 0x0 -> 0x4
+-     [+] => addr 0xffb001c7c1a : 0x0 -> 0x40
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits 0x21f, 0x305, 0x418, 0x77a
+-     [+] => addr 0xffb001c7bab : 0x0 -> 0x80
+-     [+] => addr 0xffb001c7bc8 : 0x0 -> 0x20
+-     [+] => addr 0xffb001c7beb : 0x0 -> 0x1
+-     [+] => addr 0xffb001c7c57 : 0x0 -> 0x4
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x55f, -0x347, -0xfd, -0xf3, -0x61, -0x4, 0x511, 0x6ee
+-     [+] => addr 0xffb001c7abc : 0x20 -> 0x22
+-     [+] => addr 0xffb001c7aff : 0x63 -> 0x61
+-     [+] => addr 0xffb001c7b48 : 0x20 -> 0x28
+-     [+] => addr 0xffb001c7b49 : 0x63 -> 0x43
+-     [+] => addr 0xffb001c7b5b : 0x74 -> 0xf4
+-     [+] => addr 0xffb001c7b67 : 0x6f -> 0x7f
+-     [+] => addr 0xffb001c7c0a : 0x0 -> 0x2
+-     [+] => addr 0xffb001c7c45 : 0x0 -> 0x40
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x723, -0x57b, -0x2c1, -0x22d, 0xa9, 0xaa, 0x122, 0x1b6, 0x202, 0x20c, 0x42a, 0x441, 0x45b, 0x474, 0x5f0
+-     [+] => addr 0xffb001c7a83 : 0x74 -> 0x54
+-     [+] => addr 0xffb001c7ab8 : 0x74 -> 0x54
+-     [+] => addr 0xffb001c7b0f : 0x20 -> 0xa0
+-     [+] => addr 0xffb001c7b22 : 0x72 -> 0x7a
+-     [+] => addr 0xffb001c7b7d : 0x0 -> 0x2
+-     [+] => addr 0xffb001c7b7d : 0x2 -> 0x6
+-     [+] => addr 0xffb001c7b8c : 0x0 -> 0x4
+-     [+] => addr 0xffb001c7b9e : 0x0 -> 0x40
+-     [+] => addr 0xffb001c7ba8 : 0x0 -> 0x4
+-     [+] => addr 0xffb001c7ba9 : 0x0 -> 0x10
+-     [+] => addr 0xffb001c7bed : 0x0 -> 0x4
+-     [+] => addr 0xffb001c7bf0 : 0x0 -> 0x2
+-     [+] => addr 0xffb001c7bf3 : 0x0 -> 0x8
+-     [+] => addr 0xffb001c7bf6 : 0x0 -> 0x10
+-     [+] => addr 0xffb001c7c26 : 0x0 -> 0x1
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x59f, -0x280, -0x127, 0x18d, 0x7b4, 0x7dc
+-     [+] => addr 0xffb001c7ab4 : 0x78 -> 0x7a
+-     [+] => addr 0xffb001c7b18 : 0x74 -> 0x75
+-     [+] => addr 0xffb001c7b43 : 0x6f -> 0x6d
+-     [+] => addr 0xffb001c7b99 : 0x0 -> 0x20
+-     [+] => addr 0xffb001c7c5e : 0x0 -> 0x10
+-     [+] => addr 0xffb001c7c63 : 0x0 -> 0x10
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x7fa, -0x302, -0x21b, -0x82, -0x22, 0x117, 0x3e3, 0x55c
+-     [+] => addr 0xffb001c7a68 : 0x74 -> 0x34
+-     [+] => addr 0xffb001c7b07 : 0x75 -> 0x35
+-     [+] => addr 0xffb001c7b24 : 0x63 -> 0x43
+-     [+] => addr 0xffb001c7b57 : 0x74 -> 0x34
+-     [+] => addr 0xffb001c7b63 : 0x61 -> 0x21
+-     [+] => addr 0xffb001c7b8a : 0x0 -> 0x80
+-     [+] => addr 0xffb001c7be4 : 0x0 -> 0x8
+-     [+] => addr 0xffb001c7c13 : 0x0 -> 0x10
+- [+] hit @ 0x7ffff7e2d5ff on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits 0xc2, 0x168, 0x409
+-     [+] => addr 0xffb001c7b80 : 0x0 -> 0x4
+-     [+] => addr 0xffb001c7b95 : 0x0 -> 0x1
+-     [+] => addr 0xffb001c7be9 : 0x0 -> 0x2
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x59f, -0x598, -0x486, -0x2dc, 0x136, 0x1b7, 0x35e, 0x72a
+-     [+] => addr 0xffb001c7ab4 : 0x7a -> 0x78
+-     [+] => addr 0xffb001c7ab5 : 0x63 -> 0x62
+-     [+] => addr 0xffb001c7ad7 : 0x65 -> 0x61
+-     [+] => addr 0xffb001c7b0c : 0x20 -> 0x30
+-     [+] => addr 0xffb001c7b8e : 0x61 -> 0x21
+-     [+] => addr 0xffb001c7b9e : 0x74 -> 0xf4
+-     [+] => addr 0xffb001c7bd3 : 0x73 -> 0x33
+-     [+] => addr 0xffb001c7c4d : 0x6f -> 0x6b
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x52e, 0x3c2
+-     [+] => addr 0xffb001c7ac2 : 0x65 -> 0x61
+-     [+] => addr 0xffb001c7be0 : 0x68 -> 0x6c
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x336, 0x292, 0x4f0, 0x691
+-     [+] => addr 0xffb001c7b01 : 0x6e -> 0x6a
+-     [+] => addr 0xffb001c7bba : 0x69 -> 0x6d
+-     [+] => addr 0xffb001c7c06 : 0xa -> 0xb
+-     [+] => addr 0xffb001c7c3a : 0x69 -> 0x6b
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x794, 0xfb, 0x142, 0x224, 0x227, 0x308, 0x3c3, 0x552
+-     [+] => addr 0xffb001c7a75 : 0x69 -> 0x79
+-     [+] => addr 0xffb001c7b87 : 0x65 -> 0x6d
+-     [+] => addr 0xffb001c7b90 : 0x6d -> 0x69
+-     [+] => addr 0xffb001c7bac : 0x70 -> 0x60
+-     [+] => addr 0xffb001c7bac : 0x60 -> 0xe0
+-     [+] => addr 0xffb001c7bc9 : 0x74 -> 0x75
+-     [+] => addr 0xffb001c7be0 : 0x6c -> 0x64
+-     [+] => addr 0xffb001c7c12 : 0x68 -> 0x6c
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x67f, -0x675, -0x506, -0x429, -0x39e, -0x37d, 0x28b, 0x2e7, 0x483, 0x521, 0x5dd, 0x7af
+-     [+] => addr 0xffb001c7a98 : 0x74 -> 0x76
+-     [+] => addr 0xffb001c7a99 : 0x68 -> 0x60
+-     [+] => addr 0xffb001c7ac7 : 0x63 -> 0x67
+-     [+] => addr 0xffb001c7ae2 : 0x72 -> 0xf2
+-     [+] => addr 0xffb001c7af4 : 0x6f -> 0x6b
+-     [+] => addr 0xffb001c7af8 : 0x6f -> 0x67
+-     [+] => addr 0xffb001c7bb9 : 0x20 -> 0x28
+-     [+] => addr 0xffb001c7bc4 : 0x64 -> 0xe4
+-     [+] => addr 0xffb001c7bf8 : 0x65 -> 0x6d
+-     [+] => addr 0xffb001c7c0c : 0x73 -> 0x71
+-     [+] => addr 0xffb001c7c23 : 0x6e -> 0x4e
+-     [+] => addr 0xffb001c7c5d : 0x61 -> 0xe1
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x7c3, -0x753, -0x6f8, -0x61f, -0x4ed, -0x4c6, -0x1c5, -0x1c2, -0x17e, 0x66, 0xdf, 0x183, 0x1ae, 0x220, 0x6b4, 0x724
+-     [+] => addr 0xffb001c7a6f : 0x65 -> 0x45
+-     [+] => addr 0xffb001c7a7d : 0x20 -> 0x0
+-     [+] => addr 0xffb001c7a89 : 0x73 -> 0x72
+-     [+] => addr 0xffb001c7aa4 : 0x6e -> 0x6c
+-     [+] => addr 0xffb001c7aca : 0x79 -> 0x71
+-     [+] => addr 0xffb001c7acf : 0x69 -> 0x6d
+-     [+] => addr 0xffb001c7b2f : 0x2f -> 0x27
+-     [+] => addr 0xffb001c7b2f : 0x27 -> 0x67
+-     [+] => addr 0xffb001c7b38 : 0x6f -> 0x6b
+-     [+] => addr 0xffb001c7b74 : 0x6f -> 0x2f
+-     [+] => addr 0xffb001c7b83 : 0x72 -> 0xf2
+-     [+] => addr 0xffb001c7b98 : 0x74 -> 0x7c
+-     [+] => addr 0xffb001c7b9d : 0x73 -> 0x33
+-     [+] => addr 0xffb001c7bac : 0xe0 -> 0xe1
+-     [+] => addr 0xffb001c7c3e : 0xa -> 0x1a
+-     [+] => addr 0xffb001c7c4c : 0x69 -> 0x79
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x6c6, -0x662, -0x3d7, -0x1e2, -0x1dc, -0x1ce, 0x11e, 0x2f1, 0x308, 0x3b2, 0x498, 0x52d, 0x5b7, 0x65b
+-     [+] => addr 0xffb001c7a8f : 0x20 -> 0x24
+-     [+] => addr 0xffb001c7a9b : 0x74 -> 0x34
+-     [+] => addr 0xffb001c7aed : 0x65 -> 0x67
+-     [+] => addr 0xffb001c7b2b : 0x61 -> 0x21
+-     [+] => addr 0xffb001c7b2c : 0x74 -> 0x64
+-     [+] => addr 0xffb001c7b2e : 0x2f -> 0x2b
+-     [+] => addr 0xffb001c7b8b : 0x69 -> 0x29
+-     [+] => addr 0xffb001c7bc6 : 0x74 -> 0x76
+-     [+] => addr 0xffb001c7bc9 : 0x75 -> 0x74
+-     [+] => addr 0xffb001c7bde : 0x20 -> 0x24
+-     [+] => addr 0xffb001c7bfb : 0x45 -> 0x44
+-     [+] => addr 0xffb001c7c0d : 0x65 -> 0x45
+-     [+] => addr 0xffb001c7c1e : 0x65 -> 0xe5
+-     [+] => addr 0xffb001c7c33 : 0x20 -> 0x28
+- [+] hit @ 0x7ffff7e2d652 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x6ee, -0x680, -0x5f7, 0x12e, 0x1cb, 0x396, 0x5ff
+-     [+] => addr 0xffb001c7a8a : 0x3b -> 0x3f
+-     [+] => addr 0xffb001c7a98 : 0x76 -> 0x77
+-     [+] => addr 0xffb001c7aa9 : 0x6c -> 0x6e
+-     [+] => addr 0xffb001c7b8d : 0x20 -> 0x60
+-     [+] => addr 0xffb001c7ba1 : 0x6e -> 0x66
+-     [+] => addr 0xffb001c7bda : 0x20 -> 0x60
+-     [+] => addr 0xffb001c7c27 : 0x6f -> 0xef
+- [+] hit @ 0x5555b6c4134f on accessing address 0xffb000be530 - targeting addresses 0xffb000be530
+-     [*] 0xffb000be530 - flipping bits 
+- [+] hit @ 0x5555b6c4148e on accessing address 0xffb000be530 - targeting addresses 0xffb000be530, 0xffb0019dc6c
+-     [*] 0xffb000be530 - flipping bits -0x447, -0x3c1, -0x395, -0x33f, -0x2f2, -0x228, 0xa5, 0xad, 0xbb, 0x122, 0x325, 0x34f, 0x566, 0x74f, 0x7b2
+-     [+] => addr 0xffb000be4a7 : 0x0 -> 0x2
+-     [+] => addr 0xffb000be4b7 : 0x0 -> 0x80
+-     [+] => addr 0xffb000be4bd : 0xe4 -> 0xec
+-     [+] => addr 0xffb000be4c8 : 0x12 -> 0x10
+-     [+] => addr 0xffb000be4d1 : 0x0 -> 0x40
+-     [+] => addr 0xffb000be4eb : 0x0 -> 0x1
+-     [+] => addr 0xffb000be544 : 0x6d -> 0x4d
+-     [+] => addr 0xffb000be545 : 0xdc -> 0xfc
+-     [+] => addr 0xffb000be547 : 0x0 -> 0x8
+-     [+] => addr 0xffb000be554 : 0x15 -> 0x11
+-     [+] => addr 0xffb000be594 : 0x8e -> 0xae
+-     [+] => addr 0xffb000be599 : 0xe -> 0x8e
+-     [+] => addr 0xffb000be5dc : 0x9a -> 0xda
+-     [+] => addr 0xffb000be619 : 0x10 -> 0x90
+-     [+] => addr 0xffb000be626 : 0x0 -> 0x4
+-     [*] 0xffb0019dc6c - flipping bits -0x7d3, -0x764, -0x64d, -0x5f5, -0x4e6, -0x139, 0x7c, 0x93, 0x246, 0x27f, 0x28b, 0x2fb, 0x368, 0x3b1, 0x492, 0x50b
+-     [+] => addr 0xffb0019db71 : 0x0 -> 0x20
+-     [+] => addr 0xffb0019db7f : 0x0 -> 0x10
+-     [+] => addr 0xffb0019dba2 : 0xca -> 0xc2
+-     [+] => addr 0xffb0019dbad : 0x0 -> 0x8
+-     [+] => addr 0xffb0019dbcf : 0x0 -> 0x4
+-     [+] => addr 0xffb0019dc44 : 0xa9 -> 0x29
+-     [+] => addr 0xffb0019dc7b : 0x0 -> 0x10
+-     [+] => addr 0xffb0019dc7e : 0x0 -> 0x8
+-     [+] => addr 0xffb0019dcb4 : 0x1 -> 0x41
+-     [+] => addr 0xffb0019dcbb : 0x0 -> 0x80
+-     [+] => addr 0xffb0019dcbd : 0xc -> 0x4
+-     [+] => addr 0xffb0019dccb : 0x0 -> 0x8
+-     [+] => addr 0xffb0019dcd9 : 0xb5 -> 0xb4
+-     [+] => addr 0xffb0019dce2 : 0x0 -> 0x2
+-     [+] => addr 0xffb0019dcfe : 0x0 -> 0x4
+-     [+] => addr 0xffb0019dd0d : 0x0 -> 0x8
+- [+] hit @ 0x5555b6c40d96 on accessing address 0xffb000be530 - targeting addresses 0xffb000be530
+-     [*] 0xffb000be530 - flipping bits -0x5a7, -0x569, -0x52a, -0x327, 0x43, 0x254, 0x272, 0x302, 0x3b9, 0x477, 0x5d7, 0x606, 0x76a, 0x77b
+-     [+] => addr 0xffb000be47b : 0x0 -> 0x2
+-     [+] => addr 0xffb000be482 : 0x1 -> 0x81
+-     [+] => addr 0xffb000be48a : 0xb -> 0x4b
+-     [+] => addr 0xffb000be4cb : 0xff -> 0xfd
+-     [+] => addr 0xffb000be538 : 0x5a -> 0x52
+-     [+] => addr 0xffb000be57a : 0x0 -> 0x10
+-     [+] => addr 0xffb000be57e : 0x55 -> 0x51
+-     [+] => addr 0xffb000be590 : 0xb0 -> 0xb4
+-     [+] => addr 0xffb000be5a7 : 0xff -> 0xfd
+-     [+] => addr 0xffb000be5be : 0xac -> 0x2c
+-     [+] => addr 0xffb000be5ea : 0xaa -> 0x2a
+-     [+] => addr 0xffb000be5f0 : 0xa9 -> 0xe9
+-     [+] => addr 0xffb000be61d : 0xdc -> 0xd8
+-     [+] => addr 0xffb000be61f : 0x0 -> 0x8
+- [+] hit @ 0x5555b6c412fb on accessing address 0xffb000be530 - targeting addresses 0xffb000be530
+-     [*] 0xffb000be530 - flipping bits -0x747, -0x551, -0x549, -0x180, -0x36, -0x16, 0x245, 0x246, 0x2d0, 0x7bb
+-     [+] => addr 0xffb000be447 : 0x0 -> 0x2
+-     [+] => addr 0xffb000be485 : 0x97 -> 0x17
+-     [+] => addr 0xffb000be486 : 0x0 -> 0x80
+-     [+] => addr 0xffb000be500 : 0x15 -> 0x14
+-     [+] => addr 0xffb000be529 : 0x3c -> 0x38
+-     [+] => addr 0xffb000be52d : 0xcd -> 0xc9
+-     [+] => addr 0xffb000be578 : 0x15 -> 0x35
+-     [+] => addr 0xffb000be578 : 0x35 -> 0x75
+-     [+] => addr 0xffb000be58a : 0x0 -> 0x1
+-     [+] => addr 0xffb000be627 : 0x0 -> 0x8
+- [+] hit @ 0x5555b6c41343 on accessing address 0xffb000e68b0 - targeting addresses 0xffb000e68b0
+-     [*] 0xffb000e68b0 - flipping bits -0x7d8, -0x686, -0x23d, -0x1ec, -0xfe
+-     [+] => addr 0xffb000e67b5 : 0xc9 -> 0xc8
+-     [+] => addr 0xffb000e67df : 0x0 -> 0x4
+-     [+] => addr 0xffb000e6868 : 0x45 -> 0x4d
+-     [+] => addr 0xffb000e6872 : 0x3 -> 0x13
+-     [+] => addr 0xffb000e6890 : 0xff -> 0xfb
+- [+] hit @ 0x5555b6c41347 on accessing address 0xffb000e68b0 - targeting addresses 0xffb000e68b0
+-     [*] 0xffb000e68b0 - flipping bits -0x6aa, -0x662, 0x90, 0x318, 0x521, 0x6f0
+-     [+] => addr 0xffb000e67da : 0x1 -> 0x41
+-     [+] => addr 0xffb000e67e3 : 0x0 -> 0x40
+-     [+] => addr 0xffb000e68c2 : 0x0 -> 0x1
+-     [+] => addr 0xffb000e6913 : 0xc0 -> 0xc1
+-     [+] => addr 0xffb000e6954 : 0x55 -> 0x57
+-     [+] => addr 0xffb000e698e : 0x0 -> 0x1
+- [+] hit @ 0x5555b6c413fc on accessing address 0xffb000e68b0 - targeting addresses 0xffb000e68b0
+-     [*] 0xffb000e68b0 - flipping bits 
+- [+] hit @ 0x5555b6c41443 on accessing address 0xffb000e68b0 - targeting addresses 0xffb000e68b0
+-     [*] 0xffb000e68b0 - flipping bits 
+- [+] hit @ 0x5555b6c40d83 on accessing address 0xffb000e68b0 - targeting addresses 0xffb000e68b0
+-     [*] 0xffb000e68b0 - flipping bits -0x502, -0x37c, -0x2b6, -0x216, 0x92, 0x1d5, 0x515, 0x64c
+-     [+] => addr 0xffb000e680f : 0x0 -> 0x40
+-     [+] => addr 0xffb000e6840 : 0xac -> 0xbc
+-     [+] => addr 0xffb000e6859 : 0x5 -> 0x1
+-     [+] => addr 0xffb000e686d : 0x7 -> 0x3
+-     [+] => addr 0xffb000e68c2 : 0x1 -> 0x5
+-     [+] => addr 0xffb000e68ea : 0x0 -> 0x20
+-     [+] => addr 0xffb000e6952 : 0x0 -> 0x20
+-     [+] => addr 0xffb000e6979 : 0x8 -> 0x18
+- [+] hit @ 0x5555b6c40d8e on accessing address 0xffb000e68b0 - targeting addresses 0xffb000e68b0
+-     [*] 0xffb000e68b0 - flipping bits -0x19e, 0x29c
+-     [+] => addr 0xffb000e687c : 0x59 -> 0x5d
+-     [+] => addr 0xffb000e6903 : 0x0 -> 0x10
+- [+] hit @ 0x5555b6c4131d on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x751, -0x277, 0xdc, 0x27b, 0x2b9, 0x2ea, 0x458, 0x625
+-     [+] => addr 0xffb001c7a7d : 0x7a -> 0xfa
+-     [+] => addr 0xffb001c7b19 : 0x7a -> 0x78
+-     [+] => addr 0xffb001c7b83 : 0xf2 -> 0xe2
+-     [+] => addr 0xffb001c7bb7 : 0x61 -> 0x69
+-     [+] => addr 0xffb001c7bbf : 0x6d -> 0x6f
+-     [+] => addr 0xffb001c7bc5 : 0x20 -> 0x24
+-     [+] => addr 0xffb001c7bf3 : 0x72 -> 0x73
+-     [+] => addr 0xffb001c7c2c : 0x72 -> 0x52
+- [+] hit @ 0x5555b6c41328 on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits 
+- [+] hit @ 0x5555b6c40d6e on accessing address 0xffb001c7b68 - targeting addresses 0xffb001c7b68
+-     [*] 0xffb001c7b68 - flipping bits -0x5d4, -0x3f9, -0x1ee, 0x87, 0x2cf, 0x3d2, 0x599, 0x7c2, 0x7d3
+-     [+] => addr 0xffb001c7aad : 0xc1 -> 0xd1
+-     [+] => addr 0xffb001c7ae8 : 0x96 -> 0x16
+-     [+] => addr 0xffb001c7b2a : 0x0 -> 0x4
+-     [+] => addr 0xffb001c7b78 : 0x78 -> 0xf8
+-     [+] => addr 0xffb001c7bc1 : 0x61 -> 0xe1
+-     [+] => addr 0xffb001c7be2 : 0x6f -> 0x6b
+-     [+] => addr 0xffb001c7c1b : 0x61 -> 0x63
+-     [+] => addr 0xffb001c7c60 : 0x73 -> 0x77
+-     [+] => addr 0xffb001c7c62 : 0x20 -> 0x28
+- [*] sigaction(11, 93825021401560, 0)
+- [*] sigaction(6, 93825021387744, 0)
+[*] ===== stderr log =====
+## V8 sandbox violation detected!
+
+Received signal 11 <unknown> 5555b6c40460
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+MemoryMap(start=0x10000, end=0x100000000, permissions=---p, size=0xffff0000, offset=0x0, backing_file=anon_10000)
+MemoryMap(start=0x1d800000000, end=0x1d800100000, permissions=---p, size=0x100000, offset=0x0, backing_file=anon_1d800000000)
+MemoryMap(start=0x1d800100000, end=0x1d800101000, permissions=rw-p, size=0x1000, offset=0x0, backing_file=anon_1d800100000)
+MemoryMap(start=0x1d800101000, end=0x1d800140000, permissions=---p, size=0x3f000, offset=0x0, backing_file=anon_1d800101000)
+MemoryMap(start=0x1d800140000, end=0x1d800180000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_1d800140000)
+MemoryMap(start=0x1d800180000, end=0x1d840000000, permissions=---p, size=0x3fe80000, offset=0x0, backing_file=anon_1d800180000)
+MemoryMap(start=0xff200000000, end=0xffb00000000, permissions=---p, size=0x900000000, offset=0x0, backing_file=anon_ff200000000)
+MemoryMap(start=0xffb00000000, end=0xffb00010000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_ffb00000000)
+MemoryMap(start=0xffb00010000, end=0xffb00020000, permissions=---p, size=0x10000, offset=0x0, backing_file=anon_ffb00010000)
+MemoryMap(start=0xffb00020000, end=0xffb00040000, permissions=r--p, size=0x20000, offset=0x0, backing_file=anon_ffb00020000)
+MemoryMap(start=0xffb00040000, end=0xffb00143000, permissions=rw-p, size=0x103000, offset=0x0, backing_file=anon_ffb00040000)
+MemoryMap(start=0xffb00143000, end=0xffb00180000, permissions=---p, size=0x3d000, offset=0x0, backing_file=anon_ffb00143000)
+MemoryMap(start=0xffb00180000, end=0xffb00280000, permissions=rw-p, size=0x100000, offset=0x0, backing_file=anon_ffb00180000)
+MemoryMap(start=0xffb00280000, end=0xffb00299000, permissions=r--p, size=0x19000, offset=0x0, backing_file=anon_ffb00280000)
+MemoryMap(start=0xffb00299000, end=0xffb002c0000, permissions=---p, size=0x27000, offset=0x0, backing_file=anon_ffb00299000)
+MemoryMap(start=0xffb002c0000, end=0xffb00300000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_ffb002c0000)
+MemoryMap(start=0xffb00300000, end=0x113c00000000, permissions=---p, size=0x140ffd00000, offset=0x0, backing_file=anon_ffb00300000)
+MemoryMap(start=0x555555554000, end=0x555555a62000, permissions=r--p, size=0x50e000, offset=0x0, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x555555a63000, end=0x555557053000, permissions=r-xp, size=0x15f0000, offset=0x50e000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x555557053000, end=0x5555570b3000, permissions=r--p, size=0x60000, offset=0x1afd000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570b4000, end=0x5555570be000, permissions=rw-p, size=0xa000, offset=0x1b5d000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570be000, end=0x5555570bf000, permissions=r--p, size=0x1000, offset=0x1b67000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570bf000, end=0x5555570c0000, permissions=rw-p, size=0x1000, offset=0x1b68000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570c0000, end=0x5555570c1000, permissions=r--p, size=0x1000, offset=0x1b69000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570c1000, end=0x5555570d0000, permissions=rw-p, size=0xf000, offset=0x1b6a000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570d0000, end=0x555557144000, permissions=rw-p, size=0x74000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x555557144000, end=0x55555722c000, permissions=rw-p, size=0xe8000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x5555b6c40000, end=0x5555d6c40000, permissions=rwxp, size=0x20000000, offset=0x0, backing_file=anon_5555b6c40000)
+MemoryMap(start=0x7fff77c20000, end=0x7fff77c30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff77c20000)
+MemoryMap(start=0x7fff77c30000, end=0x7fff7bc20000, permissions=---p, size=0x3ff0000, offset=0x0, backing_file=anon_7fff77c30000)
+MemoryMap(start=0x7fff7bc20000, end=0x7fff7bc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff7bc20000)
+MemoryMap(start=0x7fff7bc30000, end=0x7fff7bc40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff7bc30000)
+MemoryMap(start=0x7fff7bc40000, end=0x7fff9bc20000, permissions=---p, size=0x1ffe0000, offset=0x0, backing_file=anon_7fff7bc40000)
+MemoryMap(start=0x7fff9bc20000, end=0x7fff9bc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff9bc20000)
+MemoryMap(start=0x7fff9bc30000, end=0x7fff9bc40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff9bc30000)
+MemoryMap(start=0x7fff9bc40000, end=0x7fff9fc20000, permissions=---p, size=0x3fe0000, offset=0x0, backing_file=anon_7fff9bc40000)
+MemoryMap(start=0x7fff9fc20000, end=0x7fff9fc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff9fc20000)
+MemoryMap(start=0x7fff9fc30000, end=0x7fffbfc20000, permissions=---p, size=0x1fff0000, offset=0x0, backing_file=anon_7fff9fc30000)
+MemoryMap(start=0x7fffbfc20000, end=0x7fffbfc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffbfc20000)
+MemoryMap(start=0x7fffbfc30000, end=0x7fffbfc40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffbfc30000)
+MemoryMap(start=0x7fffbfc40000, end=0x7fffbfc50000, permissions=---p, size=0x10000, offset=0x0, backing_file=anon_7fffbfc40000)
+MemoryMap(start=0x7fffbfc50000, end=0x7fffdfc20000, permissions=---p, size=0x1ffd0000, offset=0x0, backing_file=anon_7fffbfc50000)
+MemoryMap(start=0x7fffdfc2e000, end=0x7fffdfc80000, permissions=rw-p, size=0x52000, offset=0x0, backing_file=anon_7fffdfc2e000)
+MemoryMap(start=0x7fffdfc80000, end=0x7fffe7c80000, permissions=---p, size=0x8000000, offset=0x0, backing_file=anon_7fffdfc80000)
+MemoryMap(start=0x7fffe7c80000, end=0x7fffe7c90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffe7c80000)
+MemoryMap(start=0x7fffe7c90000, end=0x7fffe7ca0000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffe7c90000)
+MemoryMap(start=0x7fffe7ca0000, end=0x7fffefc80000, permissions=---p, size=0x7fe0000, offset=0x0, backing_file=anon_7fffe7ca0000)
+MemoryMap(start=0x7fffefc80000, end=0x7fffefc90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffefc80000)
+MemoryMap(start=0x7fffefc90000, end=0x7fffefcb0000, permissions=rw-p, size=0x20000, offset=0x0, backing_file=anon_7fffefc90000)
+MemoryMap(start=0x7fffefcb0000, end=0x7ffff7c80000, permissions=---p, size=0x7fd0000, offset=0x0, backing_file=anon_7fffefcb0000)
+MemoryMap(start=0x7ffff7c8a000, end=0x7ffff7c8c000, permissions=rw-p, size=0x2000, offset=0x0, backing_file=anon_7ffff7c8a000)
+MemoryMap(start=0x7ffff7c8c000, end=0x7ffff7cb4000, permissions=r--p, size=0x28000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7cb4000, end=0x7ffff7e3c000, permissions=r-xp, size=0x188000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e3c000, end=0x7ffff7e8b000, permissions=r--p, size=0x4f000, offset=0x1b0000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8b000, end=0x7ffff7e8f000, permissions=r--p, size=0x4000, offset=0x1fe000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8f000, end=0x7ffff7e91000, permissions=rw-p, size=0x2000, offset=0x202000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e91000, end=0x7ffff7e9e000, permissions=rw-p, size=0xd000, offset=0x0, backing_file=anon_7ffff7e91000)
+MemoryMap(start=0x7ffff7e9e000, end=0x7ffff7ea2000, permissions=r--p, size=0x4000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ea2000, end=0x7ffff7ec6000, permissions=r-xp, size=0x24000, offset=0x4000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ec6000, end=0x7ffff7eca000, permissions=r--p, size=0x4000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7eca000, end=0x7ffff7ecb000, permissions=r--p, size=0x1000, offset=0x2b000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecb000, end=0x7ffff7ecc000, permissions=rw-p, size=0x1000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecc000, end=0x7ffff7edc000, permissions=r--p, size=0x10000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7edc000, end=0x7ffff7f5b000, permissions=r-xp, size=0x7f000, offset=0x10000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7f5b000, end=0x7ffff7fb3000, permissions=r--p, size=0x58000, offset=0x8f000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb3000, end=0x7ffff7fb4000, permissions=r--p, size=0x1000, offset=0xe7000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb4000, end=0x7ffff7fb5000, permissions=rw-p, size=0x1000, offset=0xe8000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb5000, end=0x7ffff7fb6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb6000, end=0x7ffff7fb7000, permissions=r-xp, size=0x1000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb7000, end=0x7ffff7fb8000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb8000, end=0x7ffff7fb9000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb9000, end=0x7ffff7fba000, permissions=rw-p, size=0x1000, offset=0x3000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fbb000, end=0x7ffff7fbf000, permissions=rw-p, size=0x4000, offset=0x0, backing_file=anon_7ffff7fbb000)
+MemoryMap(start=0x7ffff7fbf000, end=0x7ffff7fc3000, permissions=r--p, size=0x4000, offset=0x0, backing_file=[vvar])
+MemoryMap(start=0x7ffff7fc3000, end=0x7ffff7fc5000, permissions=r-xp, size=0x2000, offset=0x0, backing_file=[vdso])
+MemoryMap(start=0x7ffff7fc5000, end=0x7ffff7fc6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7fc6000, end=0x7ffff7ff1000, permissions=r-xp, size=0x2b000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ff1000, end=0x7ffff7ffb000, permissions=r--p, size=0xa000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffb000, end=0x7ffff7ffd000, permissions=r--p, size=0x2000, offset=0x36000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffd000, end=0x7ffff7fff000, permissions=rw-p, size=0x2000, offset=0x38000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffffffde000, end=0x7ffffffff000, permissions=rw-p, size=0x21000, offset=0x0, backing_file=[stack])
+
+[*] ===== crash state =====
+--------------------------------------------------------
+[91mrax[0m	[91m[4m0x5555b6c40460[0m
+[91mrbx[0m	0x1
+[91mrcx[0m	0x20
+[91mrdx[0m	[33m0x7fffffffdfd8[0m
+[91mrdi[0m	0xdc
+[91mrsi[0m	[33m0xffb0019e31d[0m
+[91mr8[0m	0xf4
+[91mr9[0m	0x115
+[91mr10[0m	[92m0x7fffefc80000[0m
+[91mr11[0m	0x115
+[91mr12[0m	[33m0x1d800140b75[0m
+[91mr13[0m	[33m0x555557151080[0m
+[91mr14[0m	[92m0xffb00000000[0m
+[91mr15[0m	[33m0x5555571878d0[0m
+[91mrbp[0m	[33m0x7fffffffdfd8[0m
+[91mrsp[0m	[33m0x7fffffffdf68[0m
+[91mrip[0m	[91m[4m0x5555b6c40460[0m
+--------------------------------------------------------
+[*] Instructions: 31 0a 00 00 a9 11 14 00 21 11 14 00 6c 05 00 00 bb 48 00 00 00 49 bc 75 0b 14 00 d8 01 00 00 e8 6c b5 03 a0 50 50 50 50 50 50 50 50 48 b8 35 d6 <19> 00 fb 0f 00 00 bb 01 00 00 00 48 8b 75 f8 e8 0c 4b 13 a0 4c 8b 45 f8 48 89 45 f8 4c 89 45 a8 48 8b 5d d0 8b 5b 13 49 03 de 8b 5b 07 49 03 de 48
+[4m[91m0x5555b6c40460 [0m
+[91m0x555556c7ac75 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556c7875c <Builtins_JSEntryTrampoline+5c> [0m
+[91m0x555556c784ab <Builtins_JSEntry+ab> [0m
+[91m0x555555c2d76d <v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&)+9cd> [0m
+[91m0x555555c2ded7 <v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>)+b7> [0m
+[91m0x555555aa0f81 <v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>)+3c1> [0m
+[91m0x555555a7279f <v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*)+4ff> [0m
+[91m0x555555a884e9 <v8::SourceGroup::Execute(v8::Isolate*)+289> [0m
+[91m0x555555a8c24a <v8::Shell::RunMainIsolate(v8::Isolate*, bool)+13a> [0m
+[91m0x555555a8bf79 <v8::Shell::RunMain(v8::Isolate*, bool)+129> [0m
+[91m0x555555a8d5eb <v8::Shell::Main(int, char**)+bdb> [0m
+[91m0x7ffff7cb61ca <__libc_start_call_main+7a> [0m
+[91m0x7ffff7cb628b <__libc_start_main+8b> [0m
+[91m0x555555a6302a <_start+2a> [0m
+--------------------------------------------------------
+
+

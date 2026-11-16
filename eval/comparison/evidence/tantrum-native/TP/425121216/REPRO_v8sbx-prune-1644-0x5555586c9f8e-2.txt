@@ -1,0 +1,372 @@
+Input: /work/evaluation/js_files/eval_corpus/js/0f576f2a4eed78968becf1bb79fb4cbeb90a451465c83cb3ef6ff549f58f5878.js
+Fault: {93825044094862: (((b'\x02:', None), 194), ((b'\x95F', None), 194), ((b'\x19A', None), 193), ((b'\xba]', None), 193), ((b'\xfa\x8e', None), 129), ((b'7\\', None), 129), ((b're', None), 129), ((b't\xb9', None), 193), ((b'\xbf\xd0', None), 130), ((b'\x01=', None), 193), ((b'z"', None), 193), ((b'\xb31', None), 130), ((b'5p', None), 194), ((b'\xcbP', None), 194), ((b'\\\xd5', None), 193), ((b'7\xb3', None), 193), ((b']V', None), 130), ((b'k8', None), 194), ((b'\x19p', None), 130), ((b'\x9eM', None), 194), ((b'\xd1\xd9', None), 194), ((b'\xce\x89', None), 194), ((b'I ', None), 129), ((b'z6', None), 194), ((b'\xd1\xde', None), 193), ((b'5\x95', None), 193), ((b'\x1e\xa0', None), 194), ((b'xI', None), 194), ((b'\xf0\x83', None), 193), ((b'\xd2\xc2', None), 130), ((b'a\xd9', None), 193), ((b'y\xd1', None), 129), ((b'Q\xa6', None), 194), ((b'\xee`', None), 193), ((b'\xebb', None), 129), ((b'\xcd\xd7', None), 194), ((b'\xc7\xbc', None), 130), ((b'I\x8e', None), 194), ((b'\xdf\xf9', None), 194), ((b'\xa7\x87', None), 129), ((b'\xf2\xcb', None), 194), ((b'c\xe1', None), 193), ((b'\x95\xcb', None), 193), ((b'\xf5\x1b', None), 129), ((b'~\xf1', None), 194), ((b'\xe7B', None), 129), ((b'IL', None), 130), ((b'\x9d\xcb', None), 129), ((b'!\xb5', None), 194), ((b'\x98\xd3', None), 194), ((b'\x90\x14', None), 194), ((b';\xd0', None), 193), ((b'\xa8z', None), 130), ((b'\xb9/', None), 130), ((b'pV', None), 130), ((b'7\xac', None), 193), ((b'\xac5', None), 193), ((b'2\xd0', None), 194), ((b'\x18\r', None), 129), ((b'\x0c\xa2', None), 194), ((b'a\x11', None), 193), ((b'\xd9\xb6', None), 194), ((b'`\x9b', None), 130), ((b'C\x05', None), 129), ((b'v\xf9', None), 194), ((b'Q(', None), 129), ((b'^\x80', None), 130), ((b'\x14\xc0', None), 130), ((b"\xa7'", None), 193), ((b'e\xc2', None), 129), ((b';\x97', None), 194), ((b'\xcc\xa1', None), 193), ((b';\x08', None), 194), ((b'NP', None), 130), ((b'\xaa\xf7', None), 194), ((b'\x05\xcf', None), 130), ((b'\xaa\x1e', None), 194), ((b'Hk', None), 129), ((b'\x99"', None), 129), ((b'\xecj', None), 194), ((b'\xe7k', None), 193), ((b'W\x04', None), 194), ((b'\xb5\xcb', None), 194), ((b'\x7f\xbd', None), 193), ((b'\xb5\x8f', None), 193), ((b'\xc3\xff', None), 193), ((b'l\r', None), 193), ((b'2#', None), 194), ((b'pt', None), 193), ((b'Gc', None), 194), ((b'\xa7\\', None), 193), ((b'\xf7\xe2', None), 194), ((b'\x9a\xf8', None), 194), ((b'\xbbN', None), 129), ((b'\x04E', None), 129), ((b'\xc3\xbf', None), 194), ((b'Kh', None), 193), ((b'~\x81', None), 193), ((b'3\xe1', None), 194), ((b'\x0b\x86', None), 130), ((b'\x96\x1b', None), 129), ((b'\xfd\xd4', None), 194), ((b'\x85\xf6', None), 194), ((b'9\t', None), 130), ((b'\xe3\x1f', None), 130), ((b'\xe7\x1c', None), 194), ((b'\xaa,', None), 194), ((b'\xd0\x04', None), 129), ((b'\xb8\xd7', None), 129), ((b"C'", None), 193), ((b'\xb7\x89', None), 130), ((b'\xba\xe9', None), 130), ((b'j\xb5', None), 194), ((b'\x16\xc3', None), 193), ((b'ZH', None), 130), ((b'-c', None), 130), ((b'\xf2\xf4', None), 130), ((b'K\xb3', None), 194), ((b'\xf5R', None), 193), ((b'\x86[', None), 193), ((b'\x08\xa3', None), 130), ((b'h\xad', None), 193), ((b'\xbd\xbf', None), 129), ((b'\xa5Q', None), 193), ((b'en', None), 130), ((b'7\x84', None), 193), ((b'\x9c\x94', None), 194), ((b'-\xff', None), 194), ((b'\xe5-', None), 193), ((b'o\xc2', None), 129), ((b'\xa5\xb0', None), 194), ((b'\xdb\x99', None), 194), ((b';7', None), 193), ((b'\xea\x87', None), 130), ((b'^\xd7', None), 130), ((b'\xed\xb0', None), 129), ((b'Ov', None), 129), ((b'L\x87', None), 193), ((b'\x17\x13', None), 129), ((b'\xfb\x85', None), 193), ((b'\xe6\\', None), 193), ((b'p\x93', None), 194), ((b'\x808', None), 194), ((b'\xdb\xb4', None), 129), ((b'\xf1\x0c', None), 130), ((b'\xc5\xd8', None), 130), ((b'\xc9\xf4', None), 194), ((b'\x9c\xe1', None), 194), ((b'_/', None), 129), ((b'\xba:', None), 129), ((b'\xb8\xb9', None), 194), ((b'\n\x8a', None), 130), ((b'\xf9?', None), 194), ((b'Q\xc5', None), 129), ((b'\xc0>', None), 194), ((b'\x10O', None), 129), ((b'\xd5R', None), 130), ((b'\x0f\xce', None), 129), ((b'\xf9(', None), 129), ((b'3b', None), 194), ((b'~\x0e', None), 130), ((b'#C', None), 193), ((b'TJ', None), 193), ((b'\xe5\x13', None), 130), ((b'\xe6{', None), 129), ((b'C\x04', None), 129), ((b'\xac\xf6', None), 130), ((b'\x1f\xca', None), 193), ((b'@\xf4', None), 130), ((b'\xd5\x9f', None), 193), ((b'M\xce', None), 130), ((b'0T', None), 194), ((b'7\xc2', None), 130), ((b'gI', None), 130), ((b'H\xb2', None), 193), ((b'\xf6\xf4', None), 130), ((b'=\x0e', None), 130), ((b'c\xfc', None), 193), ((b'\x85!', None), 130), ((b'c?', None), 193), ((b'\xad!', None), 193), ((b'y\xe3', None), 194), ((b'\t\xfc', None), 194), ((b'\x9dt', None), 193), ((b'\x96\x8f', None), 194), ((b'\xd9\xfd', None), 193), ((b'\xbf!', None), 193), ((b'\xd8\xa4', None), 129), ((b'\xb6\xf5', None), 129), ((b'\xd34', None), 193), ((b'\xbf\x9b', None), 130), ((b'\xa8D', None), 194), ((b'3C', None), 130), ((b'\xce\xec', None), 129), ((b'\xe4\x82', None), 130), ((b'+\xed', None), 194), ((b'\x88\xb8', None), 194), ((b'?\xa4', None), 130), ((b'{\xd7', None), 193), ((b'\xa9\xe7', None), 129), ((b'J9', None), 130), ((b'I\xc3', None), 129), ((b']u', None), 194), ((b'\xf3\xa9', None), 130), ((b'\xe8\x9e', None), 194), ((b'\xc1\xec', None), 193), ((b'VC', None), 193), ((b'\x08[', None), 193), ((b'\x1cG', None), 193), ((b'\x9b\x1a', None), 129), ((b'0\xb8', None), 129), ((b'^\x05', None), 130), ((b'o*', None), 193), ((b'\xc9\x03', None), 194), ((b'q\xab', None), 193), ((b'U\xfa', None), 129), ((b'E\x93', None), 130), ((b'd\xd5', None), 193), ((b'\xedz', None), 194), ((b'Qk', None), 129), ((b'i{', None), 129), ((b'!\xb2', None), 129), ((b'\x8a\x15', None), 129), ((b'\xbe\xf6', None), 129), ((b'\x7fV', None), 129), ((b'!\x80', None), 194), ((b'\x8c\x0b', None), 194), ((b'\x17\xb3', None), 130), ((b'3\xc4', None), 130), ((b'\xf0\xbd', None), 129), ((b'\x83c', None), 129), ((b'0\\', None), 129), ((b'\xa7\x10', None), 129), ((b'fO', None), 194), ((b'\xa7\xbf', None), 129), ((b'}P', None), 193), ((b'\xec\x0f', None), 129), ((b'h\xce', None), 130), ((b'\x10\xd2', None), 193), ((b'\xa7l', None), 194), ((b'\xff\n', None), 129), ((b'\x9d+', None), 130), ((b'\x9e\xce', None), 130), ((b',_', None), 193), ((b'\xca\xdb', None), 129), ((b'\x82\x08', None), 130), ((b'\xa0\x87', None), 194), ((b'!g', None), 193), ((b'-\xb2', None), 129), ((b'\x86\x9b', None), 193), ((b'\xa1_', None), 193), ((b'9\xb1', None), 130), ((b'\x99\x03', None), 129), ((b'nt', None), 193), ((b'\x85\x8f', None), 129), ((b'?\xbf', None), 129))}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/x8 --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded /work/evaluation/js_files/eval_corpus/js/0f576f2a4eed78968becf1bb79fb4cbeb90a451465c83cb3ef6ff549f58f5878.js
+Hook Logs (Max 0x1000):
+- [*] mprotect(0x7abe001c0000, 0x40000, 0b11)
+- [*] mprotect(0x7abe00200000, 0x40000, 0b11)
+- [*] mprotect(0x7abe00240000, 0x40000, 0b11)
+- [*] mprotect(0x7abe002c0000, 0x40000, 0b11)
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+=================================================================
+[1m[31m==2999019==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7bfff5e25048 at pc 0x5555586c9f0f bp 0x7ffffff69730 sp 0x7ffffff69728
+[1m[0m[1m[34mWRITE of size 8 at 0x7bfff5e25048 thread T0[1m[0m
+    #0 0x5555586c9f0e in v8::internal::JsonParser<unsigned short>::UpdatePointersCallback(void*) src/json/json-parser.h:386:14
+    #1 0x5555581f0df6 in v8::internal::LocalHeap::InvokeGCEpilogueCallbacksInSafepoint(v8::internal::GCCallbacksInSafepoint::GCType) src/heap/gc-callbacks.h:98:9
+    #2 0x55555808dc39 in v8::internal::Heap::GarbageCollectionEpilogueInSafepoint(v8::internal::GarbageCollector) src/heap/heap.cc:1082:19
+    #3 0x5555580a75f2 in v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::internal::GarbageCollectionReason, char const*) src/heap/heap.cc:2309:3
+    #4 0x5555581137db in v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)::$_1::operator()() const src/heap/heap.cc:1664:7
+    #5 0x555558112c2f in void heap::base::Stack::SetMarkerAndCallbackImpl<v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags)::$_1>(heap::base::Stack*, void*, void const*) src/heap/base/stack.h:167:5
+    #6 0x55555aae53a2 in PushAllRegistersAndIterateStack push_registers_asm.cc
+    #7 0x555558093730 in v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) src/heap/base/stack.h:73:7
+    #8 0x55555805ecba in v8::internal::HeapAllocator::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) src/heap/heap-allocator.cc:136:12
+    #9 0x555558062fa1 in v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) src/heap/heap-allocator.cc:148:7
+    #10 0x555557faa9b2 in v8::internal::Factory::AllocateRaw(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) src/heap/heap-allocator-inl.h:232:16
+    #11 0x555557f5c198 in v8::internal::FactoryBase<v8::internal::Factory>::NewRawTwoByteString(int, v8::internal::AllocationType) src/heap/factory-base.cc:1293:18
+    #12 0x5555586c82b3 in v8::internal::JsonParser<unsigned short>::MakeString(v8::internal::JsonString const&, v8::internal::Handle<v8::internal::String>) src/json/json-parser.cc:2138:18
+    #13 0x5555586d703b in v8::internal::JsonParser<unsigned short>::ParseJsonObject(v8::internal::Handle<v8::internal::Map>) src/json/json-parser.cc:1445:14
+    #14 0x5555586c728e in v8::internal::JsonParser<unsigned short>::ParseJson(v8::internal::DirectHandle<v8::internal::Object>) src/json/json-parser.cc:1458:14
+    #15 0x5555586c6a3a in v8::internal::JsonParser<unsigned short>::Parse(v8::internal::Isolate*, v8::internal::Handle<v8::internal::String>, v8::internal::Handle<v8::internal::Object>) src/json/json-parser.h:173:7
+    #16 0x5555578d3aee in v8::internal::Builtin_Impl_JsonParse(v8::internal::BuiltinArguments, v8::internal::Isolate*) src/builtins/builtins-json.cc:25:3
+    #17 0x55555de842f5 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #18 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #19 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #20 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #21 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #22 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #23 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #24 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #25 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #26 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #27 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #28 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #29 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #30 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #31 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #32 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #33 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #34 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #35 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #36 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #37 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #38 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #39 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #40 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #41 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #42 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #43 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #44 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #45 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #46 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #47 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #48 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #49 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #50 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #51 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #52 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #53 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #54 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #55 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #56 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #57 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #58 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #59 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #60 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #61 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #62 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #63 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #64 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #65 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #66 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #67 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #68 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #69 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #70 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #71 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #72 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #73 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #74 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #75 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #76 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #77 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #78 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #79 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #80 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #81 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #82 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #83 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #84 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #85 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #86 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #87 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #88 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #89 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #90 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #91 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #92 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #93 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #94 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #95 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #96 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #97 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #98 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #99 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #100 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #101 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #102 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #103 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #104 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #105 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #106 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #107 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #108 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #109 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #110 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #111 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #112 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #113 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #114 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #115 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #116 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #117 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #118 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #119 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #120 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #121 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #122 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #123 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #124 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #125 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #126 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #127 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #128 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #129 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #130 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #131 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #132 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #133 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #134 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #135 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #136 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #137 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #138 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #139 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #140 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #141 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #142 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #143 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #144 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #145 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #146 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #147 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #148 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #149 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #150 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #151 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #152 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #153 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #154 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #155 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #156 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #157 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #158 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #159 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #160 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #161 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #162 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #163 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #164 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #165 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #166 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #167 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #168 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #169 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #170 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #171 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #172 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #173 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #174 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #175 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #176 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #177 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #178 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #179 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #180 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #181 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #182 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #183 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #184 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #185 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #186 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #187 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #188 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #189 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #190 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #191 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #192 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #193 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #194 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #195 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #196 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #197 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #198 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #199 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #200 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #201 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #202 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #203 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #204 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #205 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #206 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #207 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #208 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #209 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #210 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #211 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #212 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #213 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #214 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #215 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #216 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #217 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #218 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #219 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #220 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #221 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #222 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #223 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #224 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #225 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #226 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #227 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #228 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #229 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #230 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #231 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #232 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #233 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #234 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #235 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #236 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #237 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #238 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #239 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #240 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #241 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #242 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #243 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #244 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #245 0x5555590e4a92 in v8::internal::JSProxy::SetProperty(v8::internal::DirectHandle<v8::internal::JSProxy>, v8::internal::DirectHandle<v8::internal::Name>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2988:3
+    #246 0x5555590e3b4b in v8::internal::Object::SetPropertyInternal(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::Maybe<v8::internal::ShouldThrow>, v8::internal::StoreOrigin, bool*) src/objects/objects.cc:2292:16
+    #247 0x5555590e2f46 in v8::internal::Object::SetProperty(v8::internal::LookupIterator*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/objects/objects.cc:2442:9
+    #248 0x55555969d618 in v8::internal::Runtime::SetObjectProperty(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::MaybeDirectHandle<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber, v8::internal::BigInt, v8::internal::String, v8::internal::Symbol, v8::internal::Boolean, v8::internal::Null, v8::internal::Undefined, v8::internal::JSReceiver>>, v8::internal::StoreOrigin, v8::Maybe<v8::internal::ShouldThrow>) src/runtime/runtime-object.cc:407:3
+    #249 0x5555596ae5d3 in v8::internal::Runtime_SetKeyedProperty(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-object.cc:417:10
+    #250 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #251 0x55555df7c9ce in Builtins_SetKeyedPropertyHandler setup-isolate-deserialize.cc
+    #252 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #253 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #254 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+
+[1m[32mAddress 0x7bfff5e25048 is located in stack of thread T0 at offset 72 in frame[1m[0m
+[1m[0m    #0 0x555557d6c88f in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/execution.cc:270
+
+  This frame has 25 object(s):
+    [32, 40) 'ref.tmp'
+    [64, 72) 'ref.tmp'[1m[32m <== Memory access at offset 72 overflows this variable[1m[0m
+    [96, 104) 'ref.tmp'
+    [128, 144) 'retval'
+    [160, 176) 'retval'
+    [192, 216) 'save' (line 192)
+    [256, 264) 'ref.tmp' (line 198)
+    [288, 296) 'ref.tmp' (line 204)
+    [320, 336) '__begin2' (line 204)
+    [352, 360) 'ref.tmp' (line 206)
+    [384, 400) 'lookup' (line 207)
+    [416, 424) 'ref.tmp' (line 215)
+    [448, 456) 'ref.tmp' (line 215)
+    [480, 512) 'location' (line 221)
+    [544, 632) 'it' (line 231)
+    [672, 704) 'location' (line 243)
+    [736, 744) 'ref.tmp' (line 257)
+    [768, 776) 'ref.tmp' (line 260)
+    [800, 808) 'ref.tmp'
+    [832, 872) 'rcs_timer_scope271' (line 271)
+    [912, 920) 'ref.tmp' (line 301)
+    [944, 968) 'save' (line 304)
+    [1008, 1032) 'save' (line 395)
+    [1072, 1112) 'rcs_timer_scope434' (line 434)
+    [1152, 1192) 'rcs_timer_scope453' (line 453)
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow src/json/json-parser.h:386:14 in v8::internal::JsonParser<unsigned short>::UpdatePointersCallback(void*)
+Shadow bytes around the buggy address:
+  0x7bfff5e24d80: [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m
+  0x7bfff5e24e00: [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m
+  0x7bfff5e24e80: [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m
+  0x7bfff5e24f00: [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m
+  0x7bfff5e24f80: [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m [1m[31mf3[1m[0m
+=>0x7bfff5e25000: [1m[31mf1[1m[0m [1m[31mf1[1m[0m [1m[31mf1[1m[0m [1m[31mf1[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m[[1m[31mf2[1m[0m][1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m
+  0x7bfff5e25080: [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m
+  0x7bfff5e25100: [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m
+  0x7bfff5e25180: [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m
+  0x7bfff5e25200: [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m
+  0x7bfff5e25280: [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[35mf8[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m [1m[31mf2[1m[0m
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           [1m[0m00[1m[0m
+  Partially addressable: [1m[0m01[1m[0m [1m[0m02[1m[0m [1m[0m03[1m[0m [1m[0m04[1m[0m [1m[0m05[1m[0m [1m[0m06[1m[0m [1m[0m07[1m[0m 
+  Heap left redzone:       [1m[31mfa[1m[0m
+  Freed heap region:       [1m[35mfd[1m[0m
+  Stack left redzone:      [1m[31mf1[1m[0m
+  Stack mid redzone:       [1m[31mf2[1m[0m
+  Stack right redzone:     [1m[31mf3[1m[0m
+  Stack after return:      [1m[35mf5[1m[0m
+  Stack use after scope:   [1m[35mf8[1m[0m
+  Global redzone:          [1m[31mf9[1m[0m
+  Global init order:       [1m[36mf6[1m[0m
+  Poisoned by user:        [1m[34mf7[1m[0m
+  Container overflow:      [1m[34mfc[1m[0m
+  Array cookie:            [1m[31mac[1m[0m
+  Intra object redzone:    [1m[33mbb[1m[0m
+  ASan internal:           [1m[33mfe[1m[0m
+  Left alloca redzone:     [1m[34mca[1m[0m
+  Right alloca redzone:    [1m[34mcb[1m[0m
+==2999019==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/x8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/x8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/x8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/x8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/x8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/x8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/x8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/x8(__asan_report_store8+0x3d)[0x555557355ffd]
+/work/v8-build/out/fair-build/x8(+0x3175f0f)[0x5555586c9f0f]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal9LocalHeap36InvokeGCEpilogueCallbacksInSafepointENS0_22GCCallbacksInSafepoint6GCTypeE+0x267)[0x5555581f0df7]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal4Heap36GarbageCollectionEpilogueInSafepointENS0_16GarbageCollectorE+0x54a)[0x55555808dc3a]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal4Heap24PerformGarbageCollectionENS0_16GarbageCollectorENS0_23GarbageCollectionReasonEPKc+0x2113)[0x5555580a75f3]
+/work/v8-build/out/fair-build/x8(+0x2bbf7dc)[0x5555581137dc]
+/work/v8-build/out/fair-build/x8(+0x2bbec30)[0x555558112c30]
+/work/v8-build/out/fair-build/x8(+0x55913a3)[0x55555aae53a3]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

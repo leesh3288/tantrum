@@ -1,0 +1,117 @@
+Input: /work/evaluation/js_files/eval_corpus/js/98a60ff6fb7386ea4727d01418ce3dede19052a862b589c88d269ce2a56d395c.js
+Fault: {93825136128671: [((None, b'\xab'), 207), ((b'b', None), 106)], 93825136374019: [((b'\x0b', b'\xcf'), 190), ((b'\xfc', b'Q'), 170)], 93825135334198: [((None, None), 0), ((None, None), 186), ((None, b'\x8e'), 106), ((None, b'\xe8\xea'), 189), ((b'\xf2\xcc', b'\xa6\x92'), 193), ((b'\x1c\xd7', None), 17)]}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/d8 --no-abort-on-contradictory-flags --trace-turbo-path=nonexistent --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded /work/evaluation/js_files/eval_corpus/js/98a60ff6fb7386ea4727d01418ce3dede19052a862b589c88d269ce2a56d395c.js
+Hook Logs (Max 0x1000):
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+=================================================================
+[1m[31m==1765225==ERROR: AddressSanitizer: global-buffer-overflow on address 0x55555dfef4c0 at pc 0x55555780d1a0 bp 0x7fffffffd360 sp 0x7fffffffd358
+[1m[0m[1m[34mREAD of size 4 at 0x55555dfef4c0 thread T0[1m[0m
+    #0 0x55555780d19f in v8::internal::Builtins::EntrypointTagFor(v8::internal::Builtin) src/builtins/builtins.cc:473:43
+    #1 0x555559417d40 in v8::internal::ProfilerCodeObserver::LogBuiltins() src/objects/code-inl.h:835:14
+    #2 0x555559418c77 in v8::internal::CpuProfiler::CpuProfiler(v8::internal::Isolate*, v8::CpuProfilingNamingMode, v8::CpuProfilingLoggingMode) src/profiler/cpu-profiler.cc:511:23
+    #3 0x5555577a6d18 in v8::CpuProfiler::New(v8::Isolate*, v8::CpuProfilingNamingMode, v8::CpuProfilingLoggingMode) src/api/api.cc:11497:45
+    #4 0x555557394f25 in v8::D8Console::Profile(v8::debug::ConsoleCallArguments const&, v8::debug::ConsoleContext const&) src/d8/d8-console.cc:142:17
+    #5 0x55555787750b in v8::internal::(anonymous namespace)::ConsoleCall(v8::internal::Isolate*, v8::internal::BuiltinArguments const&, void (v8::debug::ConsoleDelegate::*)(v8::debug::ConsoleCallArguments const&, v8::debug::ConsoleContext const&)) src/builtins/builtins-console.cc:169:3
+    #6 0x55555786a4e7 in v8::internal::Builtin_ConsoleProfile(int, unsigned long*, v8::internal::Isolate*) src/builtins/builtins-console.cc:196:1
+    #7 0x55555de842f5 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #8 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #9 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #10 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #11 0x555557d6c7aa in v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/execution.cc:526:10
+    #12 0x555558e5e024 in v8::internal::JSReceiver::OrdinaryToPrimitive(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSReceiver>, v8::internal::OrdinaryToPrimitiveHint) src/objects/js-objects.cc:2149:7
+    #13 0x555558e5db23 in T<v8::internal::Object>::MaybeType v8::internal::JSReceiver::ToPrimitive<v8::internal::DirectHandle>(v8::internal::Isolate*, T<v8::internal::JSReceiver>, v8::internal::ToPrimitiveHint) src/objects/js-objects.cc:2116:10
+    #14 0x555559050453 in T<v8::internal::String>::MaybeType v8::internal::Object::ConvertToString<v8::internal::DirectHandle>(v8::internal::Isolate*, T<v8::internal::Object>) src/objects/objects.cc:506:5
+    #15 0x5555576e51e7 in v8::Value::ToString(v8::Local<v8::Context>) const src/objects/objects-inl.h:868:10
+    #16 0x55555779c951 in v8::String::Utf8Value::Utf8Value(v8::Isolate*, v8::Local<v8::Value>, v8::String::WriteOptions) src/api/api.cc:11144:13
+    #17 0x5555573dba1a in v8::Shell::ReportException(v8::Isolate*, v8::Local<v8::Message>, v8::Local<v8::Value>) src/d8/d8.cc:3548:25
+    #18 0x555557405f03 in v8::PrintMessageCallback(v8::Local<v8::Message>, v8::Local<v8::Value>) src/d8/d8.cc:4075:7
+    #19 0x555557e9befe in v8::internal::MessageHandler::ReportMessageNoExceptions(v8::internal::Isolate*, v8::internal::MessageLocation const*, v8::internal::DirectHandle<v8::internal::Object>, v8::Local<v8::Value>) src/execution/messages.cc:178:9
+    #20 0x555557e9b2ee in v8::internal::MessageHandler::ReportMessage(v8::internal::Isolate*, v8::internal::MessageLocation const*, v8::internal::DirectHandle<v8::internal::JSMessageObject>) src/execution/messages.cc:146:3
+    #21 0x555557ddc36b in v8::internal::Isolate::ReportPendingMessages(bool) src/execution/isolate.cc:3096:5
+    #22 0x555557d6cd75 in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/execution.cc
+    #23 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #24 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #25 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #26 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #27 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #28 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #29 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #30 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #31 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #32 0x5555572a9029 in _start (/work/v8-build/out/fair-build/d8+0x1d55029) (BuildId: fcce9d6441377209)
+
+[1m[32m0x55555dfef4c0 is located 80 bytes after global variable 'v8::internal::(anonymous namespace)::builtin_metadata' defined in '../../src/builtins/builtins.cc' (0x55555dfe1580) of size 57072
+[1m[0mSUMMARY: AddressSanitizer: global-buffer-overflow src/builtins/builtins.cc:473:43 in v8::internal::Builtins::EntrypointTagFor(v8::internal::Builtin)
+Shadow bytes around the buggy address:
+  0x55555dfef200: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x55555dfef280: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x55555dfef300: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x55555dfef380: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m
+  0x55555dfef400: [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[0m00[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m
+=>0x55555dfef480: [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m[[1m[31mf9[1m[0m][1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m
+  0x55555dfef500: [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m
+  0x55555dfef580: [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m
+  0x55555dfef600: [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m
+  0x55555dfef680: [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m
+  0x55555dfef700: [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m [1m[31mf9[1m[0m
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           [1m[0m00[1m[0m
+  Partially addressable: [1m[0m01[1m[0m [1m[0m02[1m[0m [1m[0m03[1m[0m [1m[0m04[1m[0m [1m[0m05[1m[0m [1m[0m06[1m[0m [1m[0m07[1m[0m 
+  Heap left redzone:       [1m[31mfa[1m[0m
+  Freed heap region:       [1m[35mfd[1m[0m
+  Stack left redzone:      [1m[31mf1[1m[0m
+  Stack mid redzone:       [1m[31mf2[1m[0m
+  Stack right redzone:     [1m[31mf3[1m[0m
+  Stack after return:      [1m[35mf5[1m[0m
+  Stack use after scope:   [1m[35mf8[1m[0m
+  Global redzone:          [1m[31mf9[1m[0m
+  Global init order:       [1m[36mf6[1m[0m
+  Poisoned by user:        [1m[34mf7[1m[0m
+  Container overflow:      [1m[34mfc[1m[0m
+  Array cookie:            [1m[31mac[1m[0m
+  Intra object redzone:    [1m[33mbb[1m[0m
+  ASan internal:           [1m[33mfe[1m[0m
+  Left alloca redzone:     [1m[34mca[1m[0m
+  Right alloca redzone:    [1m[34mcb[1m[0m
+==1765225==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/d8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/d8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/d8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/d8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/d8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/d8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/d8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/d8(__asan_report_load4+0x3a)[0x555557355aba]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal8Builtins16EntrypointTagForENS0_7BuiltinE+0x180)[0x55555780d1a0]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal20ProfilerCodeObserver11LogBuiltinsEv+0x251)[0x555559417d41]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal11CpuProfilerC2EPNS0_7IsolateENS_22CpuProfilingNamingModeENS_23CpuProfilingLoggingModeE+0x78)[0x555559418c78]
+/work/v8-build/out/fair-build/d8(_ZN2v811CpuProfiler3NewEPNS_7IsolateENS_22CpuProfilingNamingModeENS_23CpuProfilingLoggingModeE+0x59)[0x5555577a6d19]
+/work/v8-build/out/fair-build/d8(_ZN2v89D8Console7ProfileERKNS_5debug20ConsoleCallArgumentsERKNS1_14ConsoleContextE+0x156)[0x555557394f26]
+/work/v8-build/out/fair-build/d8(+0x232350c)[0x55555787750c]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal22Builtin_ConsoleProfileEiPmPNS0_7IsolateE+0x138)[0x55555786a4e8]
+/work/v8-build/out/fair-build/d8(+0x89302f6)[0x55555de842f6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

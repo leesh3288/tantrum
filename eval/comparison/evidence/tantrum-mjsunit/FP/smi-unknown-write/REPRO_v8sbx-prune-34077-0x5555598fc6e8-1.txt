@@ -1,0 +1,69 @@
+Input: test/mjsunit/harmony/string-iswellformed-external-uncached.js
+Fault: {93825063175912: (((b'?', None), 130), ((b'\xd2', None), 194), ((b'\x81', None), 193), ((b'\xe4', None), 130), ((b'\xd8', None), 129), ((b'\xff', None), 129), ((b'\xfa', None), 193))}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/x8 --no-abort-on-contradictory-flags --trace-turbo-path=nonexistent --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded --expose-externalize-string --harmony-string-is-well-formed test/mjsunit/mjsunit.js test/mjsunit/harmony/string-iswellformed-external-uncached.js
+Hook Logs (Max 0x1000):
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+=================================================================
+[1m[31m==1764129==ERROR: AddressSanitizer: unknown-crash on address 0x0000f6de6303 at pc 0x5555598fce94 bp 0x7fffffffdef0 sp 0x7fffffffdee8
+[1m[0m[1m[34mWRITE of size 8 at 0x0000f6de6303 thread T0[1m[0m
+    #0 0x5555598fce93 in v8::internal::String::IsWellFormedUnicode(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::String>) src/objects/string-inl.h:868:40
+    #1 0x5555598f7bda in v8::internal::Runtime_StringIsWellFormed(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-strings.cc:474:7
+    #2 0x55555de843b5 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #3 0x55555df2f310 in Builtins_StringPrototypeIsWellFormed setup-isolate-deserialize.cc
+    #4 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #5 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #6 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #7 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #8 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #9 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #10 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #11 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #12 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #13 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #14 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #15 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #16 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #17 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #18 0x5555572a9029 in _start (/work/v8-build/out/fair-build/x8+0x1d55029) (BuildId: fcce9d6441377209)
+
+Address 0x0000f6de6303 is located in the shadow gap area.
+SUMMARY: AddressSanitizer: unknown-crash src/objects/string-inl.h:868:40 in v8::internal::String::IsWellFormedUnicode(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::String>)
+==1764129==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/x8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/x8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/x8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/x8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/x8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/x8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/x8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/x8(__asan_report_store8+0x3d)[0x555557355ffd]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal6String19IsWellFormedUnicodeEPNS0_7IsolateENS0_12DirectHandleIS1_EE+0x1324)[0x5555598fce94]
+/work/v8-build/out/fair-build/x8(_ZN2v88internal26Runtime_StringIsWellFormedEiPmPNS0_7IsolateE+0xeb)[0x5555598f7bdb]
+/work/v8-build/out/fair-build/x8(+0x89303b6)[0x55555de843b6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+Warning: unknown flag --harmony-string-is-well-formed.
+Try --help for options
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+

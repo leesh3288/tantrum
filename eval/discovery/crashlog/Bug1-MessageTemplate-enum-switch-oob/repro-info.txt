@@ -1,0 +1,7 @@
+./builds/3ea3463/d8
+
+old_v = u64(d.memory[b.address, 8])
+new_v = old_v ^ random.randrange(0, 1<<64)
+
+$ sha256sum tantrum/tests.txt 
+70cd8a050db1db5145697153fd33f1d5fe1f6853de14698641dd4e3596db5cab  tantrum/tests.txt

@@ -1,0 +1,87 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/a8cd8e98dae89155c1814f620b1373f4.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:51:43:921][v8fuzz_runtime][3789879][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:51:43:921][v8fuzz_runtime][3789879][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:51:43:921][v8fuzz_runtime][3789879][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:51:43:921][v8fuzz_runtime][3789879][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:51:43:922][v8fuzz_runtime][3789879][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/a8cd8e98dae89155c1814f620b1373f4.ron'
+[2026-03-21 04:51:43:922][v8fuzz_runtime][3789879][input.rs:175][INFO] Loaded 5829 bytes input
+[2026-03-21 04:51:43:922][v8fuzz_runtime][3789879][input.rs:68][TRACE] loaded js file is 319 bytes long
+[2026-03-21 04:51:43:922][v8fuzz_runtime][3789879][input.rs:70][TRACE] total_msk_len is Some(5394) bytes
+[2026-03-21 04:51:43:922][v8fuzz_runtime][3789879][input.rs:80][TRACE] Of the 5394 bytes, are 98.99888765294772% zeros (i.e., have no effect)
+[2026-03-21 04:51:43:922][v8fuzz_runtime][3789879][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(3)
+[2026-03-21 04:51:43:930][v8fuzz_runtime][3789879][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:51:43:930][v8fuzz_runtime][3789879][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:51:44:168][v8fuzz_runtime][3789879][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:51:44:172][v8fuzz_runtime][3789879][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:51:44:172][v8fuzz_runtime][3789879][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:51:44:173][v8fuzz_runtime][3789879][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(3)
+[2026-03-21 04:51:44:173][v8fuzz_runtime][3789879][runtime.rs:212][INFO] Reached delayed fork position after 3 injection points (not forking, because we are running without an attached fuzzer)
+=================================================================
+==3789879==ERROR: AddressSanitizer: unknown-crash on address 0x00000000023e at pc 0x640440212d29 bp 0x7fffa80c7fb0 sp 0x7fffa80c7fa8
+WRITE of size 8 at 0x00000000023e thread T0
+    #0 0x640440212d28 in fast_float::from_chars_result_t<char> fast_float::from_chars_advanced<double, char>(fast_float::parsed_number_string_t<char>&, double&) third_party/fast_float/src/include/fast_float/parse_number.h:231:15
+    #1 0x64044020f14f in fast_float::from_chars_result_t<char> fast_float::from_chars_advanced<double, char>(char const*, char const*, double&, fast_float::parse_options_t<char>) third_party/fast_float/src/include/fast_float/parse_number.h:321:10
+    #2 0x6404401cdb92 in double v8::internal::InternalStringToDouble<unsigned char>(unsigned char const*, unsigned char const*, v8::internal::ConversionFlag, double) third_party/fast_float/src/include/fast_float/parse_number.h:148:12
+    #3 0x6404401e9b1b in v8::internal::FlatStringToDouble(v8::internal::Tagged<v8::internal::String>, v8::internal::ConversionFlag, double) src/numbers/conversions.cc:773:10
+    #4 0x64044144858b in T<v8::internal::Union<v8::internal::Smi, v8::internal::HeapNumber>> v8::internal::String::ToNumber<v8::internal::Handle>(v8::internal::Isolate*, T<v8::internal::String>) src/objects/string.cc:662:7
+    #5 0x64044221fa38 in v8::internal::Runtime_StringToNumber(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-numbers.cc:16:11
+    #6 0x64044b135e35 in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit setup-isolate-deserialize.cc
+    #7 0x64044b191012 in Builtins_NonNumberToNumber setup-isolate-deserialize.cc
+    #8 0x64044b184104 in Builtins_ToInteger setup-isolate-deserialize.cc
+    #9 0x64044b20b465 in Builtins_TypedArrayPrototypeSlice setup-isolate-deserialize.cc
+    #10 0x64044b07e65d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #11 0x64044b07bf62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #12 0x64044b07bcaa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #13 0x64043ea0934e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #14 0x64043ea0f2a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #15 0x64043dca81bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #16 0x64043d672d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #17 0x64043d7036db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #18 0x64043d7247d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #19 0x64043d722d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #20 0x64043d72c6bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #21 0x73f90412f1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #22 0x73f90412f28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #23 0x64043d519029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+Address 0x00000000023e is a wild pointer inside of access range of size 0x000000000008.
+SUMMARY: AddressSanitizer: unknown-crash third_party/fast_float/src/include/fast_float/parse_number.h:231:15 in fast_float::from_chars_result_t<char> fast_float::from_chars_advanced<double, char>(fast_float::parsed_number_string_t<char>&, double&)
+Shadow bytes around the buggy address:
+  0x000000000000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000000000080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000000000100: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000000000180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x000000000200: 00 00 00 00 00 00 00[00]00 00 00 00 00 00 00 00
+  0x000000000280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000000000300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000000000380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000000000400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x000000000480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3789879==ABORTING
+
+## V8 sandbox violation detected!
+

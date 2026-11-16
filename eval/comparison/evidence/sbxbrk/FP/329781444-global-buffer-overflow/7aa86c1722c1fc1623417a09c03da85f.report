@@ -1,0 +1,116 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/7aa86c1722c1fc1623417a09c03da85f.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:15:58:642][v8fuzz_runtime][3778786][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:15:58:642][v8fuzz_runtime][3778786][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:15:58:642][v8fuzz_runtime][3778786][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:15:58:642][v8fuzz_runtime][3778786][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:15:58:643][v8fuzz_runtime][3778786][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/7aa86c1722c1fc1623417a09c03da85f.ron'
+[2026-03-21 04:15:58:643][v8fuzz_runtime][3778786][input.rs:175][INFO] Loaded 1098 bytes input
+[2026-03-21 04:15:58:643][v8fuzz_runtime][3778786][input.rs:68][TRACE] loaded js file is 539 bytes long
+[2026-03-21 04:15:58:643][v8fuzz_runtime][3778786][input.rs:70][TRACE] total_msk_len is Some(444) bytes
+[2026-03-21 04:15:58:643][v8fuzz_runtime][3778786][input.rs:80][TRACE] Of the 444 bytes, are 94.81981981981981% zeros (i.e., have no effect)
+[2026-03-21 04:15:58:643][v8fuzz_runtime][3778786][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(6)
+[2026-03-21 04:15:58:652][v8fuzz_runtime][3778786][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:15:58:652][v8fuzz_runtime][3778786][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:15:58:890][v8fuzz_runtime][3778786][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:15:58:894][v8fuzz_runtime][3778786][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:15:58:894][v8fuzz_runtime][3778786][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(4)
+[2026-03-21 04:15:58:895][v8fuzz_runtime][3778786][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(5)
+[2026-03-21 04:15:58:895][v8fuzz_runtime][3778786][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(6)
+[2026-03-21 04:15:58:895][v8fuzz_runtime][3778786][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(7)
+[2026-03-21 04:15:58:971][v8fuzz_runtime][3778786][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:15:58:972][v8fuzz_runtime][3778786][runtime.rs:212][INFO] Reached delayed fork position after 6 injection points (not forking, because we are running without an attached fuzzer)
+=================================================================
+==3778786==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x73d681f540d1 at pc 0x59b9be81d5df bp 0x7fff41ddce30 sp 0x7fff41ddc5f0
+READ of size 65536 at 0x73d681f540d1 thread T0
+    #0 0x59b9be81d5de in __asan_memcpy (/work/v8-build/out/fuzzing-build/d8+0x1d305de) (BuildId: 8baf296317236785)
+    #1 0x59b9c61e7f03 in icu_74::CharString::append(char const*, int, UErrorCode&) third_party/icu/source/common/charstr.cpp:139:13
+    #2 0x59b9c5d9b327 in icu_74::number::impl::DecNum::setTo(icu_74::StringPiece, UErrorCode&) third_party/icu/source/common/charstr.h:124:16
+    #3 0x59b9c5c607c1 in icu_74::number::impl::DecimalQuantity::setToDecNumber(icu_74::StringPiece, UErrorCode&) third_party/icu/source/i18n/number_decimalquantity.cpp:531:12
+    #4 0x59b9c5bd1f92 in icu_74::Formattable::setDecimalNumber(icu_74::StringPiece, UErrorCode&) third_party/icu/source/i18n/fmtable.cpp:811:9
+    #5 0x59b9c1fc6da8 in v8::internal::IntlMathematicalValue::ToFormattable(v8::internal::Isolate*) const src/objects/js-number-format.cc:1790:24
+    #6 0x59b9c1fc4577 in v8::internal::IntlMathematicalValue::FormatRange(v8::internal::Isolate*, icu_74::number::LocalizedNumberRangeFormatter const&, v8::internal::IntlMathematicalValue const&, v8::internal::IntlMathematicalValue const&) src/objects/js-number-format.cc:1605:3
+    #7 0x59b9c1fd7b24 in v8::internal::JSNumberFormat::FormatNumericRangeToParts(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSNumberFormat>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>) src/objects/js-number-format.cc:2044:7
+    #8 0x59b9bf6d8865 in v8::internal::Tagged<v8::internal::Object> v8::internal::NumberFormatRange<v8::internal::JSArray, &v8::internal::JSNumberFormat::FormatNumericRangeToParts(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSNumberFormat>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)>(v8::internal::BuiltinArguments, v8::internal::Isolate*, char const*) src/builtins/builtins-intl.cc:560:3
+    #9 0x59b9bf64cffa in v8::internal::Builtin_NumberFormatPrototypeFormatRangeToParts(int, unsigned long*, v8::internal::Isolate*) src/builtins/builtins-intl.cc:574:10
+    #10 0x59b9cc398d75 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #11 0x59b9cc2e165d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #12 0x59b9cc2def62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #13 0x59b9cc2decaa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #14 0x59b9bfc6c34e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #15 0x59b9bfc722a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #16 0x59b9bef0b1bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #17 0x59b9be8d5d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #18 0x59b9be9666db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #19 0x59b9be9877d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #20 0x59b9be985d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #21 0x59b9be98f6bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #22 0x77b6827011c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #23 0x77b68270128a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #24 0x59b9be77c029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+0x73d681f540d1 is located 0 bytes after 1-byte region [0x73d681f540d0,0x73d681f540d1)
+allocated by thread T0 here:
+    #0 0x59b9be859991 in operator new[](unsigned long, std::nothrow_t const&) (/work/v8-build/out/fuzzing-build/d8+0x1d6c991) (BuildId: 8baf296317236785)
+    #1 0x59b9c26d9db5 in v8::internal::String::ToCString(unsigned int, unsigned int, unsigned long*) src/utils/allocation.h:42:15
+    #2 0x59b9c1fc6d93 in v8::internal::IntlMathematicalValue::ToFormattable(v8::internal::Isolate*) const src/objects/js-number-format.cc:1790:40
+    #3 0x59b9c1fc4577 in v8::internal::IntlMathematicalValue::FormatRange(v8::internal::Isolate*, icu_74::number::LocalizedNumberRangeFormatter const&, v8::internal::IntlMathematicalValue const&, v8::internal::IntlMathematicalValue const&) src/objects/js-number-format.cc:1605:3
+    #4 0x59b9c1fd7b24 in v8::internal::JSNumberFormat::FormatNumericRangeToParts(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSNumberFormat>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>) src/objects/js-number-format.cc:2044:7
+    #5 0x59b9bf6d8865 in v8::internal::Tagged<v8::internal::Object> v8::internal::NumberFormatRange<v8::internal::JSArray, &v8::internal::JSNumberFormat::FormatNumericRangeToParts(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSNumberFormat>, v8::internal::Handle<v8::internal::Object>, v8::internal::Handle<v8::internal::Object>)>(v8::internal::BuiltinArguments, v8::internal::Isolate*, char const*) src/builtins/builtins-intl.cc:560:3
+    #6 0x59b9bf64cffa in v8::internal::Builtin_NumberFormatPrototypeFormatRangeToParts(int, unsigned long*, v8::internal::Isolate*) src/builtins/builtins-intl.cc:574:10
+    #7 0x59b9cc398d75 in Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit setup-isolate-deserialize.cc
+    #8 0x59b9cc2e165d in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #9 0x59b9cc2def62 in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x59b9cc2decaa in Builtins_JSEntry setup-isolate-deserialize.cc
+    #11 0x59b9bfc6c34e in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #12 0x59b9bfc722a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #13 0x59b9bef0b1bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #14 0x59b9be8d5d17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #15 0x59b9be9666db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #16 0x59b9be9877d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #17 0x59b9be985d16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #18 0x59b9be98f6bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #19 0x77b6827011c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #20 0x77b68270128a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #21 0x59b9be77c029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/work/v8-build/out/fuzzing-build/d8+0x1d305de) (BuildId: 8baf296317236785) in __asan_memcpy
+Shadow bytes around the buggy address:
+  0x73d681f53e00: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x73d681f53e80: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x73d681f53f00: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x73d681f53f80: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+  0x73d681f54000: fa fa fd fa fa fa fd fa fa fa fd fa fa fa fd fa
+=>0x73d681f54080: fa fa fd fa fa fa fd fa fa fa[01]fa fa fa fd fa
+  0x73d681f54100: fa fa fd fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x73d681f54180: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x73d681f54200: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x73d681f54280: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x73d681f54300: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3778786==ABORTING
+
+## V8 sandbox violation detected!
+

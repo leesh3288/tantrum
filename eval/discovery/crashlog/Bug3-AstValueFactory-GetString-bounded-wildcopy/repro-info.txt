@@ -1,0 +1,14 @@
+# REPRO: python3 ./tantrum/tantrum-v0.py --d8 ./builds/1d515cf/d8 repro 7467369836627329131325786905 0-27,29-37 --try_offsets=-64,64,4,0,5 --bits_to_flip=-512,512,1,0,5
+
+=====
+
+1-v8sbx-1738632525463432337-1936153-7467369836627329131325786905-invalid-zone-free.txt
+CMD: builds/1d515cf/d8 --sandbox-testing --expose-gc --single-threaded --allow-natives-syntax -e d8.file.execute("./test/mjsunit/mjsunit.js") test/mjsunit/wasm/imported-dataview.js
+
+python3 tantrum-v0.py repro 7467369836627329131325786905 0-27,29-37
+
+try_offsets = random.sample(range(-0x40, 0x40, 4), random.randrange(0, 5))
+bits_to_flip = sorted(random.sample(range(-0x40*8, 0x40*8), random.randrange(0, 5)))
+
+$ sha256sum tantrum/tests.txt 
+70cd8a050db1db5145697153fd33f1d5fe1f6853de14698641dd4e3596db5cab  tantrum/tests.txt

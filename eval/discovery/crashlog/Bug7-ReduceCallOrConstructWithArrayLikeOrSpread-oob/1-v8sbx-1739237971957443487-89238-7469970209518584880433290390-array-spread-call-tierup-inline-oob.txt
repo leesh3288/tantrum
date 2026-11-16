@@ -1,0 +1,187 @@
+[*] ===== testcase =====
+CMD: builds/0242cac/d8 --sandbox-testing --single-threaded --expose-gc --allow-natives-syntax -e d8.file.execute("./test/mjsunit/mjsunit.js") test/mjsunit/es6/spread-call.js
+Hook Logs (Max 0x1000):
+- [*] watching 0xc3460, 0x116750, 0x1211d8, 0x1a1738
+- [+] hit @ 0x555555cb26e1 on accessing address 0x387a001a1738 - targeting addresses 0x387a001a1738
+-     [*] 0x387a001a1738 - flipping bits -0x73f, -0x721, -0x688, -0x3b8, -0x385, -0x26b, -0xf, 0x74, 0x225, 0x44d, 0x6d6, 0x77f
+-     [+] => addr 0x387a001a1650 : 0x6 -> 0x4
+-     [+] => addr 0x387a001a1653 : 0x0 -> 0x80
+-     [+] => addr 0x387a001a1667 : 0x0 -> 0x1
+-     [+] => addr 0x387a001a16c1 : 0x0 -> 0x1
+-     [+] => addr 0x387a001a16c7 : 0x0 -> 0x8
+-     [+] => addr 0x387a001a16ea : 0x0 -> 0x20
+-     [+] => addr 0x387a001a1736 : 0x0 -> 0x2
+-     [+] => addr 0x387a001a1746 : 0x0 -> 0x10
+-     [+] => addr 0x387a001a177c : 0x0 -> 0x20
+-     [+] => addr 0x387a001a17c1 : 0x0 -> 0x20
+-     [+] => addr 0x387a001a1812 : 0x0 -> 0x40
+-     [+] => addr 0x387a001a1827 : 0x0 -> 0x80
+- [+] hit @ 0x555555cb271a on accessing address 0x387a001a1738 - targeting addresses 0x387a001a1738, 0x387a00057908
+-     [*] 0x387a001a1738 - flipping bits 0x29b, 0x333
+-     [+] => addr 0x387a001a178b : 0x0 -> 0x8
+-     [+] => addr 0x387a001a179e : 0x0 -> 0x8
+-     [*] 0x387a00057908 - flipping bits 
+- [*] sigaction(11, 93825021401560, 0)
+- [*] sigaction(6, 93825021387744, 0)
+[*] ===== stderr log =====
+## V8 sandbox violation detected!
+
+Received signal 11 SEGV_MAPERR 55550000007d
+
+==== C stack trace ===============================
+
+builds/0242cac/d8(+0x19723f7)[0x555556ec63f7]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7cd1330]
+builds/0242cac/d8(+0x12001e6)[0x5555567541e6]
+builds/0242cac/d8(+0x119be8e)[0x5555566efe8e]
+builds/0242cac/d8(+0x119bb5b)[0x5555566efb5b]
+builds/0242cac/d8(+0x119b708)[0x5555566ef708]
+builds/0242cac/d8(+0x129b844)[0x5555567ef844]
+builds/0242cac/d8(+0x127638c)[0x5555567ca38c]
+builds/0242cac/d8(+0x127355c)[0x5555567c755c]
+builds/0242cac/d8(+0x12731f1)[0x5555567c71f1]
+builds/0242cac/d8(+0x6365fb)[0x555555b8a5fb]
+builds/0242cac/d8(+0x637ec4)[0x555555b8bec4]
+builds/0242cac/d8(+0xb88789)[0x5555560dc789]
+builds/0242cac/d8(+0xb849b1)[0x5555560d89b1]
+builds/0242cac/d8(+0x17cddb6)[0x555556d21db6]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+
+
+[*] ===== memory map =====
+MemoryMap(start=0x10000, end=0x100000000, permissions=---p, size=0xffff0000, offset=0x0, backing_file=anon_10000)
+MemoryMap(start=0x2d5e00000000, end=0x2d5e00100000, permissions=---p, size=0x100000, offset=0x0, backing_file=anon_2d5e00000000)
+MemoryMap(start=0x2d5e00100000, end=0x2d5e00101000, permissions=rw-p, size=0x1000, offset=0x0, backing_file=anon_2d5e00100000)
+MemoryMap(start=0x2d5e00101000, end=0x2d5e00140000, permissions=---p, size=0x3f000, offset=0x0, backing_file=anon_2d5e00101000)
+MemoryMap(start=0x2d5e00140000, end=0x2d5e00180000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_2d5e00140000)
+MemoryMap(start=0x2d5e00180000, end=0x2d5e40000000, permissions=---p, size=0x3fe80000, offset=0x0, backing_file=anon_2d5e00180000)
+MemoryMap(start=0x387100000000, end=0x387a00000000, permissions=---p, size=0x900000000, offset=0x0, backing_file=anon_387100000000)
+MemoryMap(start=0x387a00000000, end=0x387a00010000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_387a00000000)
+MemoryMap(start=0x387a00010000, end=0x387a00020000, permissions=---p, size=0x10000, offset=0x0, backing_file=anon_387a00010000)
+MemoryMap(start=0x387a00020000, end=0x387a00040000, permissions=r--p, size=0x20000, offset=0x0, backing_file=anon_387a00020000)
+MemoryMap(start=0x387a00040000, end=0x387a00143000, permissions=rw-p, size=0x103000, offset=0x0, backing_file=anon_387a00040000)
+MemoryMap(start=0x387a00143000, end=0x387a00180000, permissions=---p, size=0x3d000, offset=0x0, backing_file=anon_387a00143000)
+MemoryMap(start=0x387a00180000, end=0x387a001c0000, permissions=rw-p, size=0x40000, offset=0x0, backing_file=anon_387a00180000)
+MemoryMap(start=0x387a001c0000, end=0x387a00280000, permissions=---p, size=0xc0000, offset=0x0, backing_file=anon_387a001c0000)
+MemoryMap(start=0x387a00280000, end=0x387a00299000, permissions=r--p, size=0x19000, offset=0x0, backing_file=anon_387a00280000)
+MemoryMap(start=0x387a00299000, end=0x387a002c0000, permissions=---p, size=0x27000, offset=0x0, backing_file=anon_387a00299000)
+MemoryMap(start=0x387a002c0000, end=0x39bb00000000, permissions=---p, size=0x140ffd40000, offset=0x0, backing_file=anon_387a002c0000)
+MemoryMap(start=0x555555554000, end=0x555555a62000, permissions=r--p, size=0x50e000, offset=0x0, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x555555a63000, end=0x555557053000, permissions=r-xp, size=0x15f0000, offset=0x50e000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x555557053000, end=0x5555570b3000, permissions=r--p, size=0x60000, offset=0x1afd000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570b4000, end=0x5555570be000, permissions=rw-p, size=0xa000, offset=0x1b5d000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570be000, end=0x5555570bf000, permissions=r--p, size=0x1000, offset=0x1b67000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570bf000, end=0x5555570c0000, permissions=rw-p, size=0x1000, offset=0x1b68000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570c0000, end=0x5555570c1000, permissions=r--p, size=0x1000, offset=0x1b69000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570c1000, end=0x5555570d0000, permissions=rw-p, size=0xf000, offset=0x1b6a000, backing_file=/tantrum/builds/0242cac/d8)
+MemoryMap(start=0x5555570d0000, end=0x555557144000, permissions=rw-p, size=0x74000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x555557144000, end=0x555557327000, permissions=rw-p, size=0x1e3000, offset=0x0, backing_file=[heap])
+MemoryMap(start=0x5555b6c40000, end=0x5555d6c40000, permissions=rwxp, size=0x20000000, offset=0x0, backing_file=anon_5555b6c40000)
+MemoryMap(start=0x7fff77c20000, end=0x7fff77c30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff77c20000)
+MemoryMap(start=0x7fff77c30000, end=0x7fff7bc20000, permissions=---p, size=0x3ff0000, offset=0x0, backing_file=anon_7fff77c30000)
+MemoryMap(start=0x7fff7bc20000, end=0x7fff7bc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff7bc20000)
+MemoryMap(start=0x7fff7bc30000, end=0x7fff7bc40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff7bc30000)
+MemoryMap(start=0x7fff7bc40000, end=0x7fff9bc20000, permissions=---p, size=0x1ffe0000, offset=0x0, backing_file=anon_7fff7bc40000)
+MemoryMap(start=0x7fff9bc20000, end=0x7fff9bc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff9bc20000)
+MemoryMap(start=0x7fff9bc30000, end=0x7fff9bc40000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fff9bc30000)
+MemoryMap(start=0x7fff9bc40000, end=0x7fff9fc20000, permissions=---p, size=0x3fe0000, offset=0x0, backing_file=anon_7fff9bc40000)
+MemoryMap(start=0x7fff9fc20000, end=0x7fff9fc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fff9fc20000)
+MemoryMap(start=0x7fff9fc30000, end=0x7fffbfc20000, permissions=---p, size=0x1fff0000, offset=0x0, backing_file=anon_7fff9fc30000)
+MemoryMap(start=0x7fffbfc20000, end=0x7fffbfc30000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffbfc20000)
+MemoryMap(start=0x7fffbfc30000, end=0x7fffbfc50000, permissions=rw-p, size=0x20000, offset=0x0, backing_file=anon_7fffbfc30000)
+MemoryMap(start=0x7fffbfc50000, end=0x7fffdfc20000, permissions=---p, size=0x1ffd0000, offset=0x0, backing_file=anon_7fffbfc50000)
+MemoryMap(start=0x7fffdfc2e000, end=0x7fffdfc80000, permissions=rw-p, size=0x52000, offset=0x0, backing_file=anon_7fffdfc2e000)
+MemoryMap(start=0x7fffdfc80000, end=0x7fffe7c80000, permissions=---p, size=0x8000000, offset=0x0, backing_file=anon_7fffdfc80000)
+MemoryMap(start=0x7fffe7c80000, end=0x7fffe7c90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffe7c80000)
+MemoryMap(start=0x7fffe7c90000, end=0x7fffe7ca0000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffe7c90000)
+MemoryMap(start=0x7fffe7ca0000, end=0x7fffefc80000, permissions=---p, size=0x7fe0000, offset=0x0, backing_file=anon_7fffe7ca0000)
+MemoryMap(start=0x7fffefc80000, end=0x7fffefc90000, permissions=r--p, size=0x10000, offset=0x0, backing_file=anon_7fffefc80000)
+MemoryMap(start=0x7fffefc90000, end=0x7fffefca0000, permissions=rw-p, size=0x10000, offset=0x0, backing_file=anon_7fffefc90000)
+MemoryMap(start=0x7fffefca0000, end=0x7ffff7c80000, permissions=---p, size=0x7fe0000, offset=0x0, backing_file=anon_7fffefca0000)
+MemoryMap(start=0x7ffff7c8a000, end=0x7ffff7c8c000, permissions=rw-p, size=0x2000, offset=0x0, backing_file=anon_7ffff7c8a000)
+MemoryMap(start=0x7ffff7c8c000, end=0x7ffff7cb4000, permissions=r--p, size=0x28000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7cb4000, end=0x7ffff7e3c000, permissions=r-xp, size=0x188000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e3c000, end=0x7ffff7e8b000, permissions=r--p, size=0x4f000, offset=0x1b0000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8b000, end=0x7ffff7e8f000, permissions=r--p, size=0x4000, offset=0x1fe000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e8f000, end=0x7ffff7e91000, permissions=rw-p, size=0x2000, offset=0x202000, backing_file=/usr/lib/x86_64-linux-gnu/libc.so.6)
+MemoryMap(start=0x7ffff7e91000, end=0x7ffff7e9e000, permissions=rw-p, size=0xd000, offset=0x0, backing_file=anon_7ffff7e91000)
+MemoryMap(start=0x7ffff7e9e000, end=0x7ffff7ea2000, permissions=r--p, size=0x4000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ea2000, end=0x7ffff7ec6000, permissions=r-xp, size=0x24000, offset=0x4000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ec6000, end=0x7ffff7eca000, permissions=r--p, size=0x4000, offset=0x28000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7eca000, end=0x7ffff7ecb000, permissions=r--p, size=0x1000, offset=0x2b000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecb000, end=0x7ffff7ecc000, permissions=rw-p, size=0x1000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/libgcc_s.so.1)
+MemoryMap(start=0x7ffff7ecc000, end=0x7ffff7edc000, permissions=r--p, size=0x10000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7edc000, end=0x7ffff7f5b000, permissions=r-xp, size=0x7f000, offset=0x10000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7f5b000, end=0x7ffff7fb3000, permissions=r--p, size=0x58000, offset=0x8f000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb3000, end=0x7ffff7fb4000, permissions=r--p, size=0x1000, offset=0xe7000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb4000, end=0x7ffff7fb5000, permissions=rw-p, size=0x1000, offset=0xe8000, backing_file=/usr/lib/x86_64-linux-gnu/libm.so.6)
+MemoryMap(start=0x7ffff7fb5000, end=0x7ffff7fb6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb6000, end=0x7ffff7fb7000, permissions=r-xp, size=0x1000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb7000, end=0x7ffff7fb8000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb8000, end=0x7ffff7fb9000, permissions=r--p, size=0x1000, offset=0x2000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fb9000, end=0x7ffff7fba000, permissions=rw-p, size=0x1000, offset=0x3000, backing_file=/usr/lib/x86_64-linux-gnu/libpthread.so.0)
+MemoryMap(start=0x7ffff7fbb000, end=0x7ffff7fbf000, permissions=rw-p, size=0x4000, offset=0x0, backing_file=anon_7ffff7fbb000)
+MemoryMap(start=0x7ffff7fbf000, end=0x7ffff7fc3000, permissions=r--p, size=0x4000, offset=0x0, backing_file=[vvar])
+MemoryMap(start=0x7ffff7fc3000, end=0x7ffff7fc5000, permissions=r-xp, size=0x2000, offset=0x0, backing_file=[vdso])
+MemoryMap(start=0x7ffff7fc5000, end=0x7ffff7fc6000, permissions=r--p, size=0x1000, offset=0x0, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7fc6000, end=0x7ffff7ff1000, permissions=r-xp, size=0x2b000, offset=0x1000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ff1000, end=0x7ffff7ffb000, permissions=r--p, size=0xa000, offset=0x2c000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffb000, end=0x7ffff7ffd000, permissions=r--p, size=0x2000, offset=0x36000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffff7ffd000, end=0x7ffff7fff000, permissions=rw-p, size=0x2000, offset=0x38000, backing_file=/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+MemoryMap(start=0x7ffffffde000, end=0x7ffffffff000, permissions=rw-p, size=0x21000, offset=0x0, backing_file=[stack])
+
+[*] ===== crash state =====
+--------------------------------------------------------
+[91mrax[0m	0x555500000065
+[91mrbx[0m	[33m0x7fffffffd4f8[0m
+[91mrcx[0m	[92m0x5555570c0000[0m
+[91mrdx[0m	0x941
+[91mrdi[0m	[33m0x555557150ca0[0m
+[91mrsi[0m	[33m0x387a0019f7cd[0m
+[91mr8[0m	0x0
+[91mr9[0m	0x3ff
+[91mr10[0m	0x10000000
+[91mr11[0m	0x6100
+[91mr12[0m	0x0
+[91mr13[0m	0x0
+[91mr14[0m	[33m0x7fffffffd9f0[0m
+[91mr15[0m	0x0
+[91mrbp[0m	[33m0x7fffffffd560[0m
+[91mrsp[0m	[33m0x7fffffffd3a0[0m
+[91mrip[0m	[91m0x5555567541e6[0m
+--------------------------------------------------------
+[*] Instructions: df e8 d4 6a fa ff 83 f8 08 74 18 49 8b b6 b8 00 00 00 48 89 df e8 c0 6a fa ff 83 f8 07 0f 85 53 04 00 00 48 8b 45 a0 48 8b 40 10 48 85 c0 74 1a <4c> 8b 60 18 4d 85 e4 74 11 48 89 df e8 79 c2 48 ff 49 39 c4 0f 84 bf 00 00 00 4a 8b 84 fd 58 ff ff ff 48 85 c0 0f 84 06 04 00 00 48 89 85 40 fe ff
+[91m0x5555567541e6 <v8::internal::compiler::JSInliningHeuristic::Reduce(v8::internal::compiler::Node*)+246> [0m
+[91m0x5555566efe8e <v8::internal::compiler::GraphReducer::Reduce(v8::internal::compiler::Node*)+ae> [0m
+[91m0x5555566efb5b <v8::internal::compiler::GraphReducer::ReduceTop()+28b> [0m
+[91m0x5555566ef708 <v8::internal::compiler::GraphReducer::ReduceNode(v8::internal::compiler::Node*)+c8> [0m
+[91m0x5555567ef844 <v8::internal::compiler::InliningPhase::Run(v8::internal::compiler::TFPipelineData*, v8::internal::Zone*)+3e4> [0m
+[91m0x5555567ca38c <_ZN2v88internal8compiler12PipelineImpl3RunITkNS1_10turboshaft13TurbofanPhaseENS1_13InliningPhaseEJEEEDaDpOT0_+bc> [0m
+[91m0x5555567c755c <v8::internal::compiler::PipelineImpl::CreateGraph(v8::internal::compiler::Linkage*)+cc> [0m
+[91m0x5555567c71f1 <v8::internal::compiler::PipelineCompilationJob::ExecuteJobImpl(v8::internal::RuntimeCallStats*, v8::internal::LocalIsolate*)+111> [0m
+[91m0x555555b8a5fb <v8::internal::(anonymous namespace)::GetOrCompileOptimized(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode, v8::internal::CodeKind, v8::internal::BytecodeOffset, v8::internal::(anonymous namespace)::CompileResultBehavior)+119b> [0m
+[91m0x555555b8bec4 <v8::internal::Compiler::CompileOptimized(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode, v8::internal::CodeKind)+a4> [0m
+[91m0x5555560dc789 <v8::internal::(anonymous namespace)::CompileOptimized(v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::ConcurrencyMode, v8::internal::CodeKind, v8::internal::Isolate*)+e9> [0m
+[91m0x5555560d89b1 <v8::internal::Runtime_OptimizeTurbofanEager(int, unsigned long*, v8::internal::Isolate*)+41> [0m
+[91m0x555556d21db6 <Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit+36> [0m
+[91m0x555556c7c682 <Builtins_OptimizeTurbofanEager+42> [0m
+[91m0x555556c7ac75 <Builtins_InterpreterEntryTrampoline+135> [0m
+[91m0x555556c7875c <Builtins_JSEntryTrampoline+5c> [0m
+[91m0x555556c784ab <Builtins_JSEntry+ab> [0m
+[91m0x555555c2d76d <v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&)+9cd> [0m
+[91m0x555555c2ded7 <v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>)+b7> [0m
+[91m0x555555aa0f81 <v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>)+3c1> [0m
+[91m0x555555a7279f <v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*)+4ff> [0m
+[91m0x555555a884e9 <v8::SourceGroup::Execute(v8::Isolate*)+289> [0m
+[91m0x555555a8c24a <v8::Shell::RunMainIsolate(v8::Isolate*, bool)+13a> [0m
+[91m0x555555a8bf79 <v8::Shell::RunMain(v8::Isolate*, bool)+129> [0m
+[91m0x555555a8d5eb <v8::Shell::Main(int, char**)+bdb> [0m
+[91m0x7ffff7cb61ca <__libc_start_call_main+7a> [0m
+[91m0x7ffff7cb628b <__libc_start_main+8b> [0m
+[91m0x555555a6302a <_start+2a> [0m
+--------------------------------------------------------
+
+

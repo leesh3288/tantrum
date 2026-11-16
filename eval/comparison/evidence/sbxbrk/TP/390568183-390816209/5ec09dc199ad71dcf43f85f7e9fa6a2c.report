@@ -1,0 +1,63 @@
+// Input       : sbxbrk_coverage_experiment_reduced-1/inputs/5ec09dc199ad71dcf43f85f7e9fa6a2c.ron
+// Exit reason : ABRT (6) (ret=134)
+[2026-03-21 04:51:09:209][v8fuzz_runtime][3788955][runtime.rs:97][INFO] Running without a fuzzer attached.
+[2026-03-21 04:51:09:209][v8fuzz_runtime][3788955][runtime.rs:98][INFO] You may set the log level via LOG_LEVEL={trace, debug, info, warn, error}
+[2026-03-21 04:51:09:209][v8fuzz_runtime][3788955][runtime.rs:101][INFO] Allocating fake FuzzerIpc on heap
+[2026-03-21 04:51:09:209][v8fuzz_runtime][3788955][input.rs:155][INFO] Trying to load input from environment
+[2026-03-21 04:51:09:210][v8fuzz_runtime][3788955][input.rs:158][INFO] INPUT environment variable is set: Reading from 'sbxbrk_coverage_experiment_reduced-1/inputs/5ec09dc199ad71dcf43f85f7e9fa6a2c.ron'
+[2026-03-21 04:51:09:210][v8fuzz_runtime][3788955][input.rs:175][INFO] Loaded 13658 bytes input
+[2026-03-21 04:51:09:210][v8fuzz_runtime][3788955][input.rs:68][TRACE] loaded js file is 692 bytes long
+[2026-03-21 04:51:09:210][v8fuzz_runtime][3788955][input.rs:70][TRACE] total_msk_len is Some(12849) bytes
+[2026-03-21 04:51:09:210][v8fuzz_runtime][3788955][input.rs:80][TRACE] Of the 12849 bytes, are 99.91439022492023% zeros (i.e., have no effect)
+[2026-03-21 04:51:09:210][v8fuzz_runtime][3788955][runtime.rs:139][INFO] self.delay_fork_until_nth_injection_point: Some(2)
+[2026-03-21 04:51:09:218][v8fuzz_runtime][3788955][sandbox.rs:23][INFO] Setting heap sandbox base to 0x7dd000000000
+[2026-03-21 04:51:09:218][v8fuzz_runtime][3788955][sandbox.rs:24][INFO] Setting heap sandbox size to 0x10000000000
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+[2026-03-21 04:51:09:457][v8fuzz_runtime][3788955][runtime.rs:432][TRACE] __fuzzer_report_global_this_offset(1577784)
+[2026-03-21 04:51:09:462][v8fuzz_runtime][3788955][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(1)
+[2026-03-21 04:51:09:462][v8fuzz_runtime][3788955][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(12)
+[2026-03-21 04:51:09:463][v8fuzz_runtime][3788955][runtime.rs:212][INFO] Reached delayed fork position after 2 injection points (not forking, because we are running without an attached fuzzer)
+[2026-03-21 04:51:09:463][v8fuzz_runtime][3788955][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(2)
+[2026-03-21 04:51:09:463][v8fuzz_runtime][3788955][runtime.rs:150][TRACE] Setting enable_fuzzing. Fuzzing can start now.
+[2026-03-21 04:51:09:463][v8fuzz_runtime][3788955][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(9)
+[2026-03-21 04:51:09:463][v8fuzz_runtime][3788955][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(5)
+[2026-03-21 04:51:09:463][v8fuzz_runtime][3788955][runtime.rs:440][TRACE] __fuzzer_injection_point_builtin(6)
+
+## V8 sandbox violation detected!
+
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==3788955==ERROR: AddressSanitizer: SEGV on unknown address 0x577478d12108 (pc 0x57745cd1988d bp 0x7fffa38117b0 sp 0x7fffa3811780 T0)
+==3788955==The signal is caused by a READ memory access.
+    #0 0x57745cd1988d in v8::internal::MessageFormatter::TemplateString(v8::internal::MessageTemplate) src/execution/messages.cc:425:3
+    #1 0x57745cd172b9 in v8::internal::MessageFormatter::TryFormat(v8::internal::Isolate*, v8::internal::MessageTemplate, v8::base::Vector<v8::internal::DirectHandle<v8::internal::String> const>) src/execution/messages.cc:439:33
+    #2 0x57745cd07b40 in v8::internal::MessageFormatter::Format(v8::internal::Isolate*, v8::internal::MessageTemplate, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) src/execution/messages.cc:408:45
+    #3 0x57745cd0759d in v8::internal::MessageHandler::GetMessage(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>) src/execution/messages.cc:190:10
+    #4 0x57745bd653ca in v8::Message::Get() const src/api/api.cc:3086:22
+    #5 0x57745b7810d0 in v8::PrintMessageCallback(v8::Local<v8::Message>, v8::Local<v8::Value>) src/d8/d8.cc:4086:47
+    #6 0x57745cd0696a in v8::internal::MessageHandler::ReportMessageNoExceptions(v8::internal::Isolate*, v8::internal::MessageLocation const*, v8::internal::DirectHandle<v8::internal::Object>, v8::Local<v8::Value>) src/execution/messages.cc:178:9
+    #7 0x57745cd04312 in v8::internal::MessageHandler::ReportMessage(v8::internal::Isolate*, v8::internal::MessageLocation const*, v8::internal::DirectHandle<v8::internal::JSMessageObject>) src/execution/messages.cc:103:5
+    #8 0x57745cb6f085 in v8::internal::Isolate::ReportPendingMessages(bool) src/execution/isolate.cc:3096:5
+    #9 0x57745ca924b5 in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/execution.cc
+    #10 0x57745ca9b2a1 in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #11 0x57745bd341bb in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #12 0x57745b6fed17 in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1017:44
+    #13 0x57745b78f6db in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4862:10
+    #14 0x57745b7b07d4 in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5900:37
+    #15 0x57745b7aed16 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5809:18
+    #16 0x57745b7b86bd in v8::Shell::Main(int, char**) src/d8/d8.cc:6700:18
+    #17 0x7a4f5812f1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #18 0x7a4f5812f28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #19 0x57745b5a5029 in _start (/work/v8-build/out/fuzzing-build/d8+0x1c8f029) (BuildId: 8baf296317236785)
+
+==3788955==Register values:
+rax = 0x0000000007800008  rbx = 0x000057746a2d02d0  rcx = 0x000057745ad120e8  rdx = 0x0000000000000004  
+rdi = 0x0000000007800008  rsi = 0x00000000000000cb  rbp = 0x00007fffa38117b0  rsp = 0x00007fffa3811780  
+ r8 = 0x0000000000000000   r9 = 0x00007fffffffff01  r10 = 0x00007fffffffff01  r11 = 0x0000000000000001  
+r12 = 0x0000010000000000  r13 = 0x00007dd000000000  r14 = 0x0000000007800008  r15 = 0x00005774698101a0  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV src/execution/messages.cc:425:3 in v8::internal::MessageFormatter::TemplateString(v8::internal::MessageTemplate)
+
+Command: /work/v8-build/out/fuzzing-build/d8 
+
+==3788955==ABORTING

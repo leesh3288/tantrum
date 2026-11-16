@@ -1,0 +1,77 @@
+Input: test/mjsunit/wasm/stringrefs-exec-gc.js
+Fault: {93825074427798: (((b'\x9e\xca\x99\x12l\x14\xf9\xf3', None), 130), ((b'\x86\xb1\xdf*\xb8XD$', None), 194), ((b'\xa6\x03o\x97g;\xea\x99', None), 129), ((b'\x8a\x88\x8bd\xd6\x80L@', None), 129), ((b'5E\x07\x96\xfdn\xaa\xc8', None), 129), ((b'\xb9\x19\x85_n\x8f!`', None), 130), ((b'\xcb\x93\x11~\xf7\xa6\t\x01', None), 193), ((b'\xec\xe0v\xdc\xcd\x1f\xfa>', None), 194), ((b'\xe0\x07\xc4Tm\xd2\xb8\xb5', None), 130), ((b'\x1b\xd3\xe2\xf7J\x91\xfb2', None), 129), ((b' \xea`m\xe2e\x7f\xde', None), 193), ((b'\x1d\xf9\xa0\x93\x81\x9f}\x1d', None), 194), ((b'V\x1cR\x10\x82\xff\xafJ', None), 194), ((b'\xa6!8\x10\n0\xc1 ', None), 193), ((b'ui:\x03\xf7\xf7\xb5\x98', None), 194), ((b'\xa2o9h\x19LwP', None), 130), ((b'\xf7\x0e\x83\x10v\xd6\x8e\xd3', None), 194), ((b'\x1f\x99U\xfa\xcd\xadl\xc5', None), 129), ((b'\x19\xbf0\xc3B\t\xdd\x07', None), 129), ((b'\xc5k@K2\x9a\xe5\xa5', None), 130), ((b'M\xcc\xab\x0c/\x9a?\xae', None), 130), ((b'z\rs\xe7M\xfe\x9d\xce', None), 194), ((b'\x94\xccV\x953\x99\xb6J', None), 129), ((b'\xb3\xe4K\x93-\x93\xca\xc4', None), 194), ((b'#tk\xd6\xe64I\xfc', None), 130), ((b'y\xc8\xfdH\x1a\x8e\xed\x90', None), 130), ((b'\x88<\xcc3\xeanL\x0e', None), 129), ((b'k\xcc\xe4&\xc8d\xfc\xe0', None), 193), ((b'\xa4$j\xb5\x81\xe7\x16\x16', None), 193), ((b'<\xd2,3\xd2\x80\xee\x89', None), 130), ((b'\xfc\x02\x0b*\xa1\xbdT=', None), 193), ((b'wnejm\xa4\xf6\xdd', None), 130), ((b'\x8e\xfd\x19<I\x9f\x0b\xc2', None), 193), ((b'@\x01\xfb\xa8\xca\x12\x84$', None), 193), ((b'\xe0\xb3\xc7J*\x1a\x1e\xc8', None), 194), ((b'\x01\xa0n\xe0\xda\x0e7\x81', None), 194), ((b'\xe3+\xf1(\xcf\x9f\xe3\x01', None), 130), ((b'\xbc\x07\xf6\x9a\xfdh.\xb5', None), 193), ((b'\xcb:\xac\x9c\x87uA\x1a', None), 193), ((b'\x01\xed\xcd\xa0\xab\xea\xedx', None), 194), ((b'c\xdb\x97\t\xbf[\xb8\xe5', None), 129), ((b'\xdb\x8e\xc1\xf9\x7f\x0f\x06\xcd', None), 194), ((b'\x9d\xd1L\x02\xd6\xed,\xaf', None), 129), ((b'\xe5\xd748\xa2bm\x93', None), 193), ((b'g\x8aLak\x1eV\x91', None), 193), ((b'n:\xb6.\x8f,\xa0K', None), 130), ((b'\x08\xa1\xb4\x7fWD\x1d\x12', None), 130), ((b'\xa9\xb8Z T\x10\xafE', None), 129), ((b'l\x8f\x99\xce%\xd8\n<', None), 194), ((b'd\xdb|i\xaa\xa6\x9e\xcd', None), 130), ((b'x+\x8ckR\xcd\xea\xae', None), 194), ((b'\xef\x14\x9a\xbc\x1cC\xd4\x93', None), 129), ((b'\xf8\xd25\x96\xf6zYy', None), 193), ((b'\n\x895@\xcb\xcelN', None), 193), ((b'-\xb4]7\xfc\xe8\xf6\x92', None), 130), ((b',B\xae\xcc\xd4\xa6\xab2', None), 130), ((b"^J\x96+'\x18\x9f\xac", None), 130), ((b'\t\x08\xf6[\x7f\xd0$\xe7', None), 130), ((b'\xebhY%\xbf\xbf\x9c\xee', None), 130), ((b'\x8cN\xef\x01\x89\xf5\xd9\xb3', None), 130), ((b'J9\xb1W\xa5\xa4R\x9e', None), 193), ((b'\xd9`^\x96DG\xc8\xb9', None), 130), ((b'\x8d\x9e\xb9\xccCeM\x07', None), 193), ((b'\x8d\xaa\xa8!\xb7\x8f\xf9\xfc', None), 129), ((b'\xa6\xf7T\xc5\xf5\x05\xa4\xab', None), 194), ((b'P\xcf*T\xf2c\xfb)', None), 130), ((b'\xa1m\xc0b.\xe1\xe4\xa5', None), 129), ((b'\xe7y\xbei\x86\xa9\x03f', None), 193), ((b'q\xd0\x9f\xa1\xbe\xfc=\x10', None), 194), ((b')3\x19<n\x98\xc6\x99', None), 129), ((b'P/\x0b\tUT\x07\x8c', None), 193), ((b'\xf6\xc8\x903B;\xb6\xab', None), 129), ((b'^\x0c\x8f\xe8/\x12\xbc9', None), 193), ((b'\xdb+G+WD\n\x84', None), 194), ((b'\xf1o\xa1\x831\xb7o!', None), 129), ((b'e\xf9\n\x0c\x01\xc4eQ', None), 130), ((b'\x14\xba\xd5j\xec\xba\xb5#', None), 130), ((b'\xa9\xefq3\t\t\x9f\n', None), 194), ((b'WV\xb3\x12\xc5\xc0\xf7h', None), 129), ((b'\x82\xa6x\xa3\x97\x89]\xab', None), 194), ((b'\xd1\xf2>\x8fC\xae\x04\x05', None), 194), ((b'\xd4R\xb9\xe2ztP\xed', None), 194), ((b'\x83\x92\x08d\xa3\xc2\x84\xba', None), 129), ((b'`\xa6\xe4&\x8a\x1dB\x9f', None), 193), ((b'\x1e\x07I\xe5.\xe4\xc8\xa9', None), 193), ((b'g\xf3\\\xff\xc7\x82_\xd7', None), 194), ((b'\x8b\xa1\xd4vT\x88$\xb2', None), 130), ((b'\x1b$\xb7\xf63O\x82\x8e', None), 130), ((b'\x81\xd6\xcb\xa5\xfd\xfa\xb3\xf3', None), 130), ((b'?\xed\xac\xae\xd5\x8b\x14\x10', None), 129), ((b'\xd6\x08\xe8g\x1e\x1b\xc7\xb2', None), 130), ((b'O~\x0f\x91\xf9(a\t', None), 193), ((b'\x07\x83\xc69\x8c\xd5\x92\xfc', None), 129), ((b'|\xf8\x894\xbf\xe9\x99U', None), 129), ((b'\x8d\n\xe9M\xe9?\xea\x9b', None), 130), ((b'\xeb}\xd3b@\xe7\xbe\x8d', None), 129), ((b'G\x8a\xc8\xf4\xb8\xdel\xdb', None), 130), ((b'1#\xad"D\xb7$\xe7', None), 129), ((b']\x97\xba\xaa\xf3nG\xac', None), 193), ((b'\x8b\x16\xe7\xc1\xee\x8d\x93\xd0', None), 129), ((b'\x9cC\x96\x9c\r43\xdc', None), 130), ((b'\xea\xe5\x97\xf2\xf0\x8a\x06\xea', None), 130), ((b'af\x01Y\x99\xbe\x15\xd3', None), 130), ((b'\xa5O\xc8[\x86Y94', None), 129), ((b'\xbe\xba\x923\xfdY\x83\xad', None), 129), ((b'\x1b\xad\x9aJ\x12\x12\x12\x18', None), 193), ((b'\xc8 =\xbe\xc8Y\xae\xcd', None), 194), ((b'\xada4\xe7\xab\xdd\x9c/', None), 130), ((b'_\x15\x01\xc1\xa8\xa3\xe5y', None), 129), ((b'\xe4\xec\xf2\x0bf\x9dv\x80', None), 129), ((b'\xc1\xc6\x12\xc0zf\xbeM', None), 193), ((b'+\x84\x82\xa0\xa4\xae\x05\x89', None), 129), ((b'\xd0\xc3\xf3\xfa\x9bH\xca6', None), 130))}
+[*] ===== testcase =====
+CMD: /work/v8-build/out/fair-build/d8 --no-abort-on-contradictory-flags --trace-turbo-path=nonexistent --fuzzing --sandbox-fuzzing --single-threaded --allow-natives-syntax --expose-gc --predictable --single-threaded --experimental-wasm-stringref --expose-externalize-string test/mjsunit/mjsunit.js test/mjsunit/wasm/stringrefs-exec-gc.js
+Hook Logs (Max 0x1000):
+- [*] mprotect(0x7abf00000000, 0x100000, 0b11)
+- [*] mprotect(0x7bffec420000, 0x10000, 0b11)
+- [*] mprotect(0x7ffff7771000, 0x8000, 0b111)
+- [*] mprotect(0x7ffff776f000, 0x2000, 0b111)
+- [*] mprotect(0x7bffdc400000, 0x10000, 0b11)
+- [*] sigaction(6, 93825152379008, 0)
+[*] ===== stderr log =====
+Sandbox testing mode is enabled. Only sandbox violations will be reported, all other crashes will be ignored.
+=================================================================
+[1m[31m==1766300==ERROR: AddressSanitizer: unknown-crash on address 0xc0768f3e44442e0 at pc 0x55555734a5df bp 0x7fffffffdbc0 sp 0x7fffffffd380
+[1m[0m[1m[34mREAD of size 199 at 0xc0768f3e44442e0 thread T0[1m[0m
+    #0 0x55555734a5de in __asan_memcpy (/work/v8-build/out/fair-build/d8+0x1df65de) (BuildId: fcce9d6441377209)
+    #1 0x555557fd4d82 in v8::internal::Factory::NewWasmArrayFromMemory(unsigned int, v8::internal::DirectHandle<v8::internal::Map>, unsigned long) src/utils/memcopy.h
+    #2 0x55555a3b77aa in v8::internal::Runtime_WasmArrayNewSegment(int, unsigned long*, v8::internal::Isolate*) src/runtime/runtime-wasm.cc:1242:33
+    #3 0x55555de84708 in Builtins_WasmCEntry setup-isolate-deserialize.cc
+    #4 0x7ffff776f9be  (<unknown module>)
+    #5 0x7ffff776f8f2  (<unknown module>)
+    #6 0x55555de7ad17 in Builtins_JSToWasmWrapperAsm setup-isolate-deserialize.cc
+    #7 0x55555df5d2ef in Builtins_JSToWasmWrapper setup-isolate-deserialize.cc
+    #8 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #9 0x55555ddd8ac0 in Builtins_InterpreterEntryTrampoline setup-isolate-deserialize.cc
+    #10 0x55555ddd66db in Builtins_JSEntryTrampoline setup-isolate-deserialize.cc
+    #11 0x55555ddd642a in Builtins_JSEntry setup-isolate-deserialize.cc
+    #12 0x555557d6e2fe in v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) src/execution/simulator.h:191:12
+    #13 0x555557d7142c in v8::internal::Execution::CallScript(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>) src/execution/execution.cc:536:10
+    #14 0x5555576b5de7 in v8::Script::Run(v8::Local<v8::Context>, v8::Local<v8::Data>) src/api/api.cc:2155:7
+    #15 0x5555573c7bab in v8::Shell::ExecuteString(v8::Isolate*, v8::Local<v8::String>, v8::Local<v8::String>, v8::Shell::ReportExceptions, v8::Global<v8::Value>*) src/d8/d8.cc:1013:44
+    #16 0x55555740dc4c in v8::SourceGroup::Execute(v8::Isolate*) src/d8/d8.cc:4942:10
+    #17 0x55555741e6bd in v8::Shell::RunMainIsolate(v8::Isolate*, bool) src/d8/d8.cc:5886:37
+    #18 0x55555741da69 in v8::Shell::RunMain(v8::Isolate*, bool) src/d8/d8.cc:5795:18
+    #19 0x555557422463 in v8::Shell::Main(int, char**) src/d8/d8.cc:6649:18
+    #20 0x7ffff7c8d1c9 in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #21 0x7ffff7c8d28a in __libc_start_main csu/../csu/libc-start.c:360:3
+    #22 0x5555572a9029 in _start (/work/v8-build/out/fair-build/d8+0x1d55029) (BuildId: fcce9d6441377209)
+
+Address 0xc0768f3e44442e0 is a wild pointer inside of access range of size 0x0000000000c7.
+SUMMARY: AddressSanitizer: unknown-crash (/work/v8-build/out/fair-build/d8+0x1df65de) (BuildId: fcce9d6441377209) in __asan_memcpy
+==1766300==ABORTING
+
+## V8 sandbox violation detected!
+
+Received signal 6
+
+==== C stack trace ===============================
+
+/work/v8-build/out/fair-build/d8(__interceptor_backtrace+0x4a)[0x5555572f129a]
+/work/v8-build/out/fair-build/d8(_ZN2v84base5debug10StackTraceC1Ev+0x3c)[0x555557659a9c]
+/work/v8-build/out/fair-build/d8(+0x21057d5)[0x5555576597d5]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330)[0x7ffff7ca8330]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11c)[0x7ffff7d01b2c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e)[0x7ffff7ca827e]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xdf)[0x7ffff7c8b8ff]
+/work/v8-build/out/fair-build/d8(+0x1e19860)[0x55555736d860]
+/work/v8-build/out/fair-build/d8(+0x1e17fd2)[0x55555736bfd2]
+/work/v8-build/out/fair-build/d8(+0x1dfef3b)[0x555557352f3b]
+/work/v8-build/out/fair-build/d8(+0x1e00d31)[0x555557354d31]
+/work/v8-build/out/fair-build/d8(__asan_memcpy+0x3af)[0x55555734a60f]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal7Factory22NewWasmArrayFromMemoryEjNS0_12DirectHandleINS0_3MapEEEm+0x983)[0x555557fd4d83]
+/work/v8-build/out/fair-build/d8(_ZN2v88internal27Runtime_WasmArrayNewSegmentEiPmPNS0_7IsolateE+0x88b)[0x55555a3b77ab]
+/work/v8-build/out/fair-build/d8(+0x8930709)[0x55555de84709]
+[end of stack trace]
+
+
+[*] ===== stdout log =====
+TestStringNewWtf8Array
+
+
+[*] ===== memory map =====
+
+[*] ===== crash state =====
+
+
